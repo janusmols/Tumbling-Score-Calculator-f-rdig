@@ -8,10 +8,12 @@
 
 #import "ViewController.h"
 
+int g_iWhichLabel;
+
 @interface ViewController ()
 {
     NSArray *springArray;
-    NSArray *pointArray;
+    
 }
 
 @end
@@ -22,9 +24,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    springArray = [[NSArray alloc]initWithObjects:@"rondat",@"flikflak",@"whip",nil];
-    pointArray = [[NSArray alloc]initWithObjects:@"0,2",@"0,2",@"0,3",@"0,5", nil];
+    springArray = [[NSArray alloc]initWithObjects:@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",nil];
     picker.hidden = YES;
+    
 }
 
 
@@ -40,9 +42,6 @@
         case 0:
             return springArray.count;
             break;
-        case 1:
-            return pointArray.count;
-            break;
             
         default:
             break;
@@ -55,9 +54,6 @@
         case 0:
             return [springArray objectAtIndex:row];
             break;
-        case 1:
-            return [pointArray objectAtIndex:row];
-            break;
             
         default:
             break;
@@ -68,8 +64,8 @@
 }
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-    label.text = [NSString stringWithFormat:@"%@ %@",[springArray objectAtIndex:[picker selectedRowInComponent:0]],[pointArray objectAtIndex:[picker selectedRowInComponent:1]]];
-    picker.hidden = YES;
+    label.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+        picker.hidden = YES;
 
 }
 
@@ -79,10 +75,46 @@
 }
 
 - (IBAction)press:(id)sender {
+    g_iWhichLabel=1;
     picker.hidden = NO;
 }
 
-- (IBAction)tryk:(id)sender {
-  picker.hidden = YES;
+- (IBAction)pressto:(id)sender {
+    g_iWhichLabel=2;
+    picker.hidden = NO;
 }
+
+- (IBAction)presstre:(id)sender {
+    g_iWhichLabel=3;
+    picker.hidden = NO;
+}
+
+- (IBAction)pressfire:(id)sender {
+    g_iWhichLabel=4;
+    picker.hidden = NO;
+}
+
+- (IBAction)pressfem:(id)sender {
+    g_iWhichLabel=5;
+        picker.hidden = NO;
+}
+
+
+- (IBAction)pressseks:(id)sender {
+    g_iWhichLabel=6;
+    picker.hidden = NO;
+}
+
+- (IBAction)presssyv:(id)sender {
+    g_iWhichLabel=7;
+    picker.hidden = NO;
+}
+
+- (IBAction)pressotte:(id)sender {
+    g_iWhichLabel=8;
+    picker.hidden = NO;
+    
+}
+
+
 @end

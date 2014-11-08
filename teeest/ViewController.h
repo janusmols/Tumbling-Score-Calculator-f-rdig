@@ -12,11 +12,42 @@
 
 @property (weak, nonatomic) IBOutlet UIPickerView *picker;
 
-@property (weak, nonatomic) IBOutlet UILabel *label;
-
+//vælg vælg 1-8 = press - pressotte
 - (IBAction)press:(id)sender;
 
+- (IBAction)pressto:(id)sender;
 
-- (IBAction)tryk:(id)sender;
+- (IBAction)presstre:(id)sender;
+
+- (IBAction)pressfire:(id)sender;
+
+- (IBAction)pressfem:(id)sender;
+
+- (IBAction)pressseks:(id)sender;
+
+- (IBAction)presssyv:(id)sender;
+
+- (IBAction)pressotte:(id)sender;
+
+//Tom 1-8 = label - labelotte
+@property (weak, nonatomic) IBOutlet UILabel *label;
+
+@property (weak, nonatomic) IBOutlet UILabel *labelto;
+
+@property (weak, nonatomic) IBOutlet UILabel *labeltre;
+
+@property (weak, nonatomic) IBOutlet UILabel *labelfire;
+
+@property (weak, nonatomic) IBOutlet UILabel *labelfem;
+
+@property (weak, nonatomic) IBOutlet UILabel *labelseks;
+
+@property (weak, nonatomic) IBOutlet UILabel *labelsyv;
+
+@property (weak, nonatomic) IBOutlet UILabel *labelotte;
+
 @end
+
+
+
 
