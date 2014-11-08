@@ -130,7 +130,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="pressotte:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Jao-fb-UMC"/>
+                                    <action selector="pressotte:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="URX-zN-tbd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4S-pK-2YG">
@@ -197,12 +197,23 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9oq-Pt-Ism">
-                                <rect key="frame" x="6" y="311" width="309" height="162"/>
+                                <rect key="frame" x="-5" y="319" width="309" height="162"/>
                                 <connections>
                                     <outlet property="dataSource" destination="vXZ-lx-hvc" id="EmW-Ds-tIh"/>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="OWz-GS-ZfP"/>
                                 </connections>
                             </pickerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q2c-Fr-O78">
+                                <rect key="frame" x="207" y="310" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resultat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="877-ww-IJS">
+                                <rect key="frame" x="215" y="314" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -211,11 +222,13 @@
                         <outlet property="label" destination="eOG-co-mk8" id="QaC-TN-SWJ"/>
                         <outlet property="labelfem" destination="Fms-OM-fdE" id="Ben-dG-4vy"/>
                         <outlet property="labelfire" destination="XDZ-bz-7z0" id="FyT-gB-YI9"/>
+                        <outlet property="labelotte" destination="Hi4-EE-Lgw" id="U2S-ZW-1wa"/>
                         <outlet property="labelseks" destination="lit-VJ-q9r" id="Yds-wr-Eqb"/>
                         <outlet property="labelsyv" destination="f2s-hI-zh3" id="IAM-he-7BM"/>
                         <outlet property="labelto" destination="9qJ-tv-E0a" id="RIu-v1-A4V"/>
                         <outlet property="labeltre" destination="Cb6-8f-PWY" id="hlG-x0-x5L"/>
                         <outlet property="picker" destination="9oq-Pt-Ism" id="5oJ-tS-pF8"/>
+                        <outlet property="resultat" destination="877-ww-IJS" id="vHO-62-4Gl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

@@ -24,8 +24,13 @@ int g_iWhichLabel;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    springArray = [[NSArray alloc]initWithObjects:@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",nil];
+    springArray = [[NSArray alloc]initWithObjects:@"rondat 0,2",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",nil];
     picker.hidden = YES;
+    NSString *Resultat;
+    Resultat = @"3.4";
+    _resultat.text = Resultat;
+    //@"hushiu";
+
     
 }
 
@@ -64,7 +69,43 @@ int g_iWhichLabel;
 }
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-    label.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+    switch (g_iWhichLabel) {
+        case 1:
+             label.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            break;
+            
+        case 2:
+            _labelto.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            break;
+
+        case 3:
+            _labeltre.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            break;
+
+        case 4:
+            _labelfire.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            break;
+
+        case 5:
+            _labelfem.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            break;
+
+        case 6:
+            _labelseks.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            break;
+
+        case 7:
+            _labelsyv.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            break;
+
+        case 8:
+            _labelotte.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            break;
+
+            
+        default:
+            break;
+    }
         picker.hidden = YES;
 
 }
@@ -87,6 +128,7 @@ int g_iWhichLabel;
 - (IBAction)presstre:(id)sender {
     g_iWhichLabel=3;
     picker.hidden = NO;
+    
 }
 
 - (IBAction)pressfire:(id)sender {
@@ -113,7 +155,6 @@ int g_iWhichLabel;
 - (IBAction)pressotte:(id)sender {
     g_iWhichLabel=8;
     picker.hidden = NO;
-    
 }
 
 

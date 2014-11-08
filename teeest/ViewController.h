@@ -29,6 +29,7 @@
 
 - (IBAction)pressotte:(id)sender;
 
+
 //Tom 1-8 = label - labelotte
 @property (weak, nonatomic) IBOutlet UILabel *label;
 
@@ -45,6 +46,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelsyv;
 
 @property (weak, nonatomic) IBOutlet UILabel *labelotte;
+
+//resultat:
+@property (weak, nonatomic) IBOutlet UILabel *resultat;
 
 @end
 
