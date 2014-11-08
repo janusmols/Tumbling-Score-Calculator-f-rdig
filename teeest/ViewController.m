@@ -29,24 +29,14 @@ int g_iWhichLabel;
 
 
 
-//"Rondat 3.4"
+//Krav: streng indeholder 10+3 karakterer eksempel "Rondat    3.4"
 float FindValue(NSString *mytxt)
 {
-    float fValue;
-    
     //Finder talværdien i strengen og returnerer denne....
-    
-    
-    return fValue;
+    NSString *myString4 = ([mytxt substringFromIndex:10]);
+    float stringFloat = [myString4 floatValue];
+    return stringFloat;
 }
-
-
-
-//float findomkreds(float radius)
-//{
-//    fOmkreds = 2*pi*radius;
-//    return fOmkreds;
-//}
 
 
 
@@ -54,21 +44,15 @@ float FindValue(NSString *mytxt)
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    springArray = [[NSArray alloc]initWithObjects:@"rondat 0,2",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",nil];
+    springArray = [[NSArray alloc]initWithObjects:@"rondat    0,2",@"flikflak  0.2",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",nil];
     picker.hidden = YES;
     NSString *Resultat;
     float fPoint;
 
-    //Resultat = @"Rondat 3.4";
-    Resultat = @"Rondat 3.4";
+    Resultat = @"Whip      6.1";
     fPoint = FindValue(Resultat);
-    //fPoint = 8.7;
-    
-    _resultat.text = [NSString stringWithFormat:@"%.1f",fPoint];
-    
 
-
-    
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",fPoint];
 }
 
 
