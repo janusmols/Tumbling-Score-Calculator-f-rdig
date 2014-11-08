@@ -1,3 +1,9 @@
+// NÆSTE 4 linier må slettes ...
+//NSString *Resultat;
+//Resultat = @"3.4";
+//_resultat.text = Resultat;
+////@"hushiu";
+
 //
 //  ViewController.m
 //  teeest
@@ -21,15 +27,46 @@ int g_iWhichLabel;
 @implementation ViewController
 @synthesize picker,label;
 
+
+
+//"Rondat 3.4"
+float FindValue(NSString *mytxt)
+{
+    float fValue;
+    
+    //Finder talværdien i strengen og returnerer denne....
+    
+    
+    return fValue;
+}
+
+
+
+//float findomkreds(float radius)
+//{
+//    fOmkreds = 2*pi*radius;
+//    return fOmkreds;
+//}
+
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     springArray = [[NSArray alloc]initWithObjects:@"rondat 0,2",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",nil];
     picker.hidden = YES;
     NSString *Resultat;
-    Resultat = @"3.4";
-    _resultat.text = Resultat;
-    //@"hushiu";
+    float fPoint;
+
+    //Resultat = @"Rondat 3.4";
+    Resultat = @"Rondat 3.4";
+    fPoint = FindValue(Resultat);
+    //fPoint = 8.7;
+    
+    _resultat.text = [NSString stringWithFormat:@"%.1f",fPoint];
+    
+
 
     
 }
