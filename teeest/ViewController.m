@@ -33,7 +33,7 @@ int g_iWhichLabel;
 float FindValue(NSString *mytxt)
 {
     //Finder talværdien i strengen og returnerer denne....
-    NSString *myString4 = ([mytxt substringFromIndex:10]);
+    NSString *myString4 = ([mytxt substringFromIndex:36]);
     float stringFloat = [myString4 floatValue];
     return stringFloat;
 }
@@ -44,7 +44,66 @@ float FindValue(NSString *mytxt)
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    springArray = [[NSArray alloc]initWithObjects:@"rondat    0.2",@"flikflak  0.2",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",nil];
+    springArray = [[NSArray alloc]initWithObjects:
+               
+                   @"Rondat (                            0.2",
+                   @"Kraftspring .f                      0.2",
+                   @"flikflak f                          0.2",
+                   @"Whipback ^                          0.3",
+                   @"lukket baglæns salto -o             0.5",
+                   @"Hofte baglæns salto -<              0.6",
+                   @"Strakt baglæns salto -/             0.6",
+                   @"lukket forlæns salto .–o            0.5",
+                   @"Hofte forlæns salto .-<             0.6",
+                   @"Strakt forlæns salto .-/            0.6",
+                   @"Barani .1                           0.6",
+                   @"forlæns 1-skrue .2                  0.7",
+                   @"forlæns 1,5-skrue .3                0.9",
+                   @"baglæns 0,5-skrue 1.                0.6",
+                   @"baglæns 1-skrue  2.                 0.7",
+                   @"baglæns 1,5-skrue 3.                0.9",
+                   @"baglæns 2-skrue 4.                  1.1",
+                   @"baglæns 2,5-skrue 5.                1.4",
+                   @"baglæns 3-skrue 6.                  1.7",
+                   @"baglæns 3,5-skrue 7.                2.1",
+                   @"baglæns 4-skrue 8.                  2.5",
+                   @"dobbeltback --o                     2.0",
+                   @"dobbeltback hoftebøjet --<          2.2",
+                   @"dobbeltback strakt --/              2.4",
+                   @"dobbelt forlæns lukket .--o         2.0",
+                   @"dobbelt forlæns hoftebøjet .--<     2.2",
+                   @"Half-in lukket 1 -o                 2.2",
+                   @"Half-in hoftebøjet 1-<              2.4",
+                   @"Half-out strakt -1/                 2.6",
+                   @"Forlæns Dobbelt lukket-out .-1o     2.2",
+                   @"Forlæns dobbelt hoftebøjet out .-1< 2.4",
+                   @"Full-in lukket 2-o                  2.4",
+                   @"Full-in hoftebøjet 2-<              2.6",
+                   @"Full-in strakt 2-/                  2.8",
+                   @"Full-out lukket -2o                 2.4",
+                   @"Full-out hofte -2<                  2.6",
+                   @"Full-out strakt -2/                 2.8",
+                   @"Full-Full lukket 22o                3.2",
+                   @"Full-Full strakt 22/                3.6",
+                   @"Full-rudy lukket 23o                3.8",
+                   @"Full-rudy strakt 23/                4.2",
+                   @"Miller lukket 24o                   4.4",
+                   @"Miller strakt 24/                   4.8",
+                   @"Killer strakt 44/                   6.4",
+                   @"Trippelback lukket ---o             4.5",
+                   @"Trippelback hoftebøjet ---<         5.1",
+                   @"Full-in triff lukket 2--o           6.3",
+                   @"Full-in triff hoftebøjet 2--<       6.9",
+                   nil];
+    
+    label.numberOfLines = 3;
+    _labelto.numberOfLines = 3;
+    _labeltre.numberOfLines = 3;
+    _labelfire.numberOfLines = 3;
+    _labelfem.numberOfLines = 3;
+    _labelseks.numberOfLines = 3;
+    _labelsyv.numberOfLines = 3;
+    _labelotte.numberOfLines = 3;
     picker.hidden = YES;
 }
 
