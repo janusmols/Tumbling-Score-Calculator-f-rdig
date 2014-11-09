@@ -12,6 +12,8 @@
 
 @property (weak, nonatomic) IBOutlet UIPickerView *picker;
 
+- (IBAction)Beregn:(id)sender;
+
 //vælg vælg 1-8 = press - pressotte
 - (IBAction)press:(id)sender;
 

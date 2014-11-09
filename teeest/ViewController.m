@@ -44,15 +44,8 @@ float FindValue(NSString *mytxt)
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    springArray = [[NSArray alloc]initWithObjects:@"rondat    0,2",@"flikflak  0.2",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",nil];
+    springArray = [[NSArray alloc]initWithObjects:@"rondat    0.2",@"flikflak  0.2",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",@"rondat",@"flikflak",@"whip",nil];
     picker.hidden = YES;
-    NSString *Resultat;
-    float fPoint;
-
-    Resultat = @"Whip      6.1";
-    fPoint = FindValue(Resultat);
-
-    _resultat.text =  [NSString stringWithFormat:@"%.1f",fPoint];
 }
 
 
@@ -179,4 +172,38 @@ float FindValue(NSString *mytxt)
 }
 
 
+- (IBAction)Beregn:(id)sender {
+    NSString *Resultat;
+    float fPoint[10];
+    float fPointRes;
+    
+    Resultat = label.text;
+    fPoint[1] = FindValue(Resultat);
+    
+    Resultat = _labelto.text;
+    fPoint[2] = FindValue(Resultat);
+    
+    Resultat = _labeltre.text;
+    fPoint[3] = FindValue(Resultat);
+    
+    Resultat = _labelfire.text;
+    fPoint[4] = FindValue(Resultat);
+    
+    Resultat = _labelfem.text;
+    fPoint[5] = FindValue(Resultat);
+    
+    Resultat = _labelseks.text;
+    fPoint[6] = FindValue(Resultat);
+    
+    Resultat = _labelsyv.text;
+    fPoint[7] = FindValue(Resultat);
+    
+    Resultat = _labelotte.text;
+    fPoint[8] = FindValue(Resultat);
+    
+    fPointRes = fPoint[1]+fPoint[2]+fPoint[3]+fPoint[4]+fPoint[5]+fPoint[6]+fPoint[7]+fPoint[8];
+    
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",fPointRes];
+
+}
 @end
