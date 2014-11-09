@@ -16,6 +16,13 @@
 
 int g_iWhichLabel;
 
+
+
+NSString *Springarraytext[60];
+
+
+
+
 @interface ViewController ()
 {
     NSArray *springArray;
@@ -33,12 +40,27 @@ int g_iWhichLabel;
 float FindValue(NSString *mytxt)
 {
     //Finder talværdien i strengen og returnerer denne....
-    NSString *myString4 = ([mytxt substringFromIndex:36]);
+    NSString *myString4 = ([mytxt substringFromIndex:38]);
     float stringFloat = [myString4 floatValue];
     return stringFloat;
 }
 
 
+- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view
+{
+    UILabel *pickerViewLabel = (id)view;
+ 
+    
+    if (!pickerViewLabel) {
+        pickerViewLabel= [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 0.0f, [pickerView rowSizeForComponent:component].width - 10.0f, [pickerView rowSizeForComponent:component].height)];
+    }
+    
+    pickerViewLabel.backgroundColor = [UIColor clearColor];
+    pickerViewLabel.text = Springarraytext[row]; // where therapyTypes[row] is a specific example from my cod2
+    pickerViewLabel.font = [UIFont fontWithName:@"ChalkboardSE-Regular" size:12];
+    
+    return pickerViewLabel;
+}
 
 
 - (void)viewDidLoad {
@@ -46,55 +68,62 @@ float FindValue(NSString *mytxt)
     // Do any additional setup after loading the view, typically from a nib.
     springArray = [[NSArray alloc]initWithObjects:
                
-                   @"Rondat (                            0.2",
-                   @"Kraftspring .f                      0.2",
-                   @"flikflak f                          0.2",
-                   @"Whipback ^                          0.3",
-                   @"lukket baglæns salto -o             0.5",
-                   @"Hofte baglæns salto -<              0.6",
-                   @"Strakt baglæns salto -/             0.6",
-                   @"lukket forlæns salto .–o            0.5",
-                   @"Hofte forlæns salto .-<             0.6",
-                   @"Strakt forlæns salto .-/            0.6",
-                   @"Barani .1                           0.6",
-                   @"forlæns 1-skrue .2                  0.7",
-                   @"forlæns 1,5-skrue .3                0.9",
-                   @"baglæns 0,5-skrue 1.                0.6",
-                   @"baglæns 1-skrue  2.                 0.7",
-                   @"baglæns 1,5-skrue 3.                0.9",
-                   @"baglæns 2-skrue 4.                  1.1",
-                   @"baglæns 2,5-skrue 5.                1.4",
-                   @"baglæns 3-skrue 6.                  1.7",
-                   @"baglæns 3,5-skrue 7.                2.1",
-                   @"baglæns 4-skrue 8.                  2.5",
-                   @"dobbeltback --o                     2.0",
-                   @"dobbeltback hoftebøjet --<          2.2",
-                   @"dobbeltback strakt --/              2.4",
-                   @"dobbelt forlæns lukket .--o         2.0",
-                   @"dobbelt forlæns hoftebøjet .--<     2.2",
-                   @"Half-in lukket 1 -o                 2.2",
-                   @"Half-in hoftebøjet 1-<              2.4",
-                   @"Half-out strakt -1/                 2.6",
-                   @"Forlæns Dobbelt lukket-out .-1o     2.2",
-                   @"Forlæns dobbelt hoftebøjet out .-1< 2.4",
-                   @"Full-in lukket 2-o                  2.4",
-                   @"Full-in hoftebøjet 2-<              2.6",
-                   @"Full-in strakt 2-/                  2.8",
-                   @"Full-out lukket -2o                 2.4",
-                   @"Full-out hofte -2<                  2.6",
-                   @"Full-out strakt -2/                 2.8",
-                   @"Full-Full lukket 22o                3.2",
-                   @"Full-Full strakt 22/                3.6",
-                   @"Full-rudy lukket 23o                3.8",
-                   @"Full-rudy strakt 23/                4.2",
-                   @"Miller lukket 24o                   4.4",
-                   @"Miller strakt 24/                   4.8",
-                   @"Killer strakt 44/                   6.4",
-                   @"Trippelback lukket ---o             4.5",
-                   @"Trippelback hoftebøjet ---<         5.1",
-                   @"Full-in triff lukket 2--o           6.3",
-                   @"Full-in triff hoftebøjet 2--<       6.9",
+                   @"Rondat (                             \n0.2",
+                   @"Kraftspring .f                       \n0.2",
+                   @"flikflak f                           \n0.2",
+                   @"Whipback ^                           \n0.3",
+                   @"lukket baglæns salto -o              \n0.5",
+                   @"Hofte baglæns salto -<               \n0.6",
+                   @"Strakt baglæns salto -/              \n0.6",
+                   @"lukket forlæns salto .–o             \n0.5",
+                   @"Hofte forlæns salto .-<              \n0.6",
+                   @"Strakt forlæns salto .-/             \n0.6",
+                   @"Barani .1                            \n0.6",
+                   @"forlæns hel-skrue .2                 \n0.7",
+                   @"forlæns halvanden-skrue .3           \n0.9",
+                   @"baglæns halv-skrue 1.                \n0.6",
+                   @"baglæns hel-skrue  2.                \n0.7",
+                   @"baglæns halvanden-skrue 3.           \n0.9",
+                   @"baglæns dobbelt-skrue 4.             \n1.1",
+                   @"baglæns 2,5-skrue 5.                 \n1.4",
+                   @"baglæns 3-skrue 6.                   \n1.7",
+                   @"baglæns 3,5-skrue 7.                 \n2.1",
+                   @"baglæns 4-skrue 8.                   \n2.5",
+                   @"dobbeltback --o                      \n2.0",
+                   @"dobbeltback hoftebøjet --<           \n2.2",
+                   @"dobbeltback strakt --/               \n2.4",
+                   @"dobbelt forlæns lukket .--o          \n2.0",
+                   @"dobbelt forlæns hoftebøjet .--<      \n2.2",
+                   @"Half-in lukket 1 -o                  \n2.2",
+                   @"Half-in hoftebøjet 1-<               \n2.4",
+                   @"Half-out strakt -1/                  \n2.6",
+                   @"dobbelt lukket-out .-1o              \n2.2",
+                   @"dobbelt hoftebøjet out .-1<          \n2.4",
+                   @"Full-in lukket 2-o                   \n2.4",
+                   @"Full-in hoftebøjet 2-<               \n2.6",
+                   @"Full-in strakt 2-/                   \n2.8",
+                   @"Full-out lukket -2o                  \n2.4",
+                   @"Full-out hofte -2<                   \n2.6",
+                   @"Full-out strakt -2/                  \n2.8",
+                   @"Full-Full lukket 22o                 \n3.2",
+                   @"Full-Full strakt 22/                 \n3.6",
+                   @"Full-rudy lukket 23o                 \n3.8",
+                   @"Full-rudy strakt 23/                 \n4.2",
+                   @"Miller lukket 24o                    \n4.4",
+                   @"Miller strakt 24/                    \n4.8",
+                   @"Killer strakt 44/                    \n6.4",
+                   @"Trippelback lukket ---o              \n4.5",
+                   @"Trippelback hoftebøjet ---<          \n5.1",
+                   @"Full-in triff lukket 2--o            \n6.3",
+                   @"Full-in triff hoftebøjet 2--<        \n6.9",
                    nil];
+    
+    
+    //Copy to temporary string array
+    int x=0;
+    for (id tempObject in springArray) {
+        Springarraytext[x++]=tempObject;
+    }
     
     label.numberOfLines = 3;
     _labelto.numberOfLines = 3;
