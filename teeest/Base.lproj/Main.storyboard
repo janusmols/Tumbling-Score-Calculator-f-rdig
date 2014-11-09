@@ -373,10 +373,19 @@
                                     <segue destination="Dal-Fo-mVF" kind="modal" modalTransitionStyle="crossDissolve" id="Cx2-PX-EIi"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkA-4p-EvY">
+                                <rect key="frame" x="16" y="149" width="288" height="277"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.87715871710000004" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="textinfo" destination="GkA-4p-EvY" id="7l2-g5-rPL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sL8-Dr-7M4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

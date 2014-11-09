@@ -10,4 +10,5 @@
 
 @interface ViewControllerinfo : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *textinfo;
 @end
