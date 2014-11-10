@@ -1,18 +1,13 @@
-// NÆSTE 4 linier må slettes ...
-//NSString *Resultat;
-//Resultat = @"3.4";
-//_resultat.text = Resultat;
-////@"hushiu";
 
 //
-//  ViewController.m
+//  ViewControllerfem.m
 //  teeest
 //
 //  Created by Janus Broch Mols on 08/11/14.
 //  Copyright (c) 2014 Janus Broch Mols. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ViewControllerfem.h"
 
 int g_iWhichLabel;
 
@@ -23,7 +18,7 @@ NSString *Springarraytext[60];
 
 
 
-@interface ViewController ()
+@interface ViewControllerfem ()
 {
     NSArray *springArray;
     
@@ -31,7 +26,7 @@ NSString *Springarraytext[60];
 
 @end
 
-@implementation ViewController
+@implementation ViewControllerfem
 @synthesize picker,label;
 
 
@@ -49,7 +44,7 @@ float FindValue(NSString *mytxt)
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view
 {
     UILabel *pickerViewLabel = (id)view;
- 
+    
     
     if (!pickerViewLabel) {
         pickerViewLabel= [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 0.0f, [pickerView rowSizeForComponent:component].width - 10.0f, [pickerView rowSizeForComponent:component].height)];
@@ -67,7 +62,7 @@ float FindValue(NSString *mytxt)
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     springArray = [[NSArray alloc]initWithObjects:
-               
+                   
                    @"Rondat (                             \n0.2",
                    @"Kraftspring .f                       \n0.2",
                    @"Flikflak f                           \n0.2",
@@ -130,10 +125,7 @@ float FindValue(NSString *mytxt)
     _labeltre.numberOfLines = 3;
     _labelfire.numberOfLines = 3;
     _labelfem.numberOfLines = 3;
-    _labelseks.numberOfLines = 3;
-    _labelsyv.numberOfLines = 3;
-    _labelotte.numberOfLines = 3;
-    picker.hidden = YES;
+       picker.hidden = YES;
 }
 
 
@@ -166,50 +158,38 @@ float FindValue(NSString *mytxt)
             break;
     }
     return 0;
-
-
+    
+    
 }
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     switch (g_iWhichLabel) {
         case 1:
-             label.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            label.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
             break;
             
         case 2:
             _labelto.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
             break;
-
+            
         case 3:
             _labeltre.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
             break;
-
+            
         case 4:
             _labelfire.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
             break;
-
+            
         case 5:
             _labelfem.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
             break;
-
-        case 6:
-            _labelseks.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
-            break;
-
-        case 7:
-            _labelsyv.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
-            break;
-
-        case 8:
-            _labelotte.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
-            break;
-
+            
             
         default:
             break;
     }
-        picker.hidden = YES;
-
+    picker.hidden = YES;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -240,7 +220,7 @@ float FindValue(NSString *mytxt)
 
 - (IBAction)pressfem:(id)sender {
     g_iWhichLabel=5;
-        picker.hidden = NO;
+    picker.hidden = NO;
 }
 
 
@@ -280,18 +260,10 @@ float FindValue(NSString *mytxt)
     Resultat = _labelfem.text;
     fPoint[5] = FindValue(Resultat);
     
-    Resultat = _labelseks.text;
-    fPoint[6] = FindValue(Resultat);
     
-    Resultat = _labelsyv.text;
-    fPoint[7] = FindValue(Resultat);
-    
-    Resultat = _labelotte.text;
-    fPoint[8] = FindValue(Resultat);
-    
-    fPointRes = fPoint[1]+fPoint[2]+fPoint[3]+fPoint[4]+fPoint[5]+fPoint[6]+fPoint[7]+fPoint[8];
+    fPointRes = fPoint[1]+fPoint[2]+fPoint[3]+fPoint[4]+fPoint[5];
     
     _resultat.text =  [NSString stringWithFormat:@"%.1f",fPointRes];
-
+    
 }
 @end
