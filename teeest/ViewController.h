@@ -18,6 +18,27 @@ NSString *Springarraytext[60];
 
 @property (weak, nonatomic) IBOutlet UIPickerView *picker;
 
+@property (weak, nonatomic) IBOutlet UIButton *press6;
+
+@property (weak, nonatomic) IBOutlet UIButton *press7;
+
+@property (weak, nonatomic) IBOutlet UIButton *press8;
+
+@property (weak, nonatomic) IBOutlet UILabel *momentseks;
+@property (weak, nonatomic) IBOutlet UILabel *momentsyv;
+@property (weak, nonatomic) IBOutlet UILabel *momentotte;
+
+@property (weak, nonatomic) IBOutlet UIButton *moment55;
+@property (weak, nonatomic) IBOutlet UIButton *moment88;
+
+
+- (IBAction)moment5:(id)sender;
+
+- (IBAction)moment8:(id)sender;
+
+
+
+
 - (IBAction)Beregn:(id)sender;
 
 //vælg vælg 1-8 = press - pressotte

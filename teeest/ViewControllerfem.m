@@ -7,13 +7,13 @@
 //
 
 
-#import "ViewController.h"
+
+//#import "ViewController.h"
 #import "ViewControllerfem.h"
 
 @interface ViewControllerfem()
 {
     NSArray *springArray;
-    
 }
 
 @end
@@ -21,10 +21,12 @@
 @implementation ViewControllerfem
 @synthesize picker,label;
 
+//Temporary SLET ###
+NSString *Springarraytext[60]; /////// ###
+int g_iWhichLabel; // ###
 
 
-
-//Krav: streng indeholder 10+3 karakterer eksempel "Rondat    3.4"
+//Krav: streng indeholder 10+3 karakterer eksempelvis: "Rondat    3.4"
 float FindValue5(NSString *mytxt)
 {
     //Finder talværdien i strengen og returnerer denne....
@@ -33,10 +35,12 @@ float FindValue5(NSString *mytxt)
     return stringFloat;
 }
 
+
+
+///////////// Ingen virkning ////////////
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view
 {
     UILabel *pickerViewLabel = (id)view;
-    
     
     if (!pickerViewLabel) {
         pickerViewLabel= [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 0.0f, [pickerView rowSizeForComponent:component].width - 10.0f, [pickerView rowSizeForComponent:component].height)];
@@ -50,6 +54,7 @@ float FindValue5(NSString *mytxt)
 }
 
 
+///////////// Ingen virkning ////////////
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -122,11 +127,15 @@ float FindValue5(NSString *mytxt)
 }
 
 
+///////////// Ingen virkning ////////////
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
     return 2;
 }
 
 
+
+
+///////////// Ingen virkning ////////////
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
     
     switch (component) {
@@ -140,6 +149,9 @@ float FindValue5(NSString *mytxt)
     return 0;
 }
 
+
+
+///////////// Ingen virkning ////////////
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
     switch (component) {
         case 0:
@@ -150,10 +162,10 @@ float FindValue5(NSString *mytxt)
             break;
     }
     return 0;
-    
-    
 }
 
+
+///////////// Ingen virkning ////////////
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     switch (g_iWhichLabel) {
         case 1:
@@ -176,21 +188,14 @@ float FindValue5(NSString *mytxt)
             _labelfem.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
             break;
             
-            
         default:
             break;
     }
     picker.hidden = YES;
-    
 }
 
 
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 /*
 #pragma mark - Navigation
@@ -203,6 +208,7 @@ float FindValue5(NSString *mytxt)
 */
 
 
+///////////// Ingen virkning ////////////
 - (void)didReceiveMemoryWarning5 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

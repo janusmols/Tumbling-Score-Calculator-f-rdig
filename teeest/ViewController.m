@@ -17,7 +17,6 @@
 @interface ViewController ()
 {
     NSArray *springArray;
-    
 }
 
 @end
@@ -131,7 +130,7 @@ float FindValue(NSString *mytxt)
 
 
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
-    return 2;
+    return 1;
 }
 
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
@@ -250,6 +249,46 @@ float FindValue(NSString *mytxt)
     picker.hidden = NO;
 }
 
+
+- (IBAction)moment5:(id)sender {
+
+    _momentseks.hidden = YES;
+    _momentsyv.hidden = YES;
+    _momentotte.hidden = YES;
+    _labelseks.hidden = YES;
+    _labelsyv.hidden = YES;
+    _labelotte.hidden = YES;
+    _press6.hidden = YES;
+    _press7.hidden = YES;
+    _press8.hidden = YES;
+    _labelseks.text = nil;
+    _labelsyv.text = nil;
+    _labelotte.text = nil;
+    _moment88.tintColor = [UIColor grayColor];
+    _moment55.tintColor = [UIColor blueColor];
+    
+    
+    
+}
+
+- (IBAction)moment8:(id)sender {
+    
+    _momentseks.hidden = NO;
+    _momentsyv.hidden = NO;
+    _momentotte.hidden = NO;
+    _labelseks.hidden = NO;
+    _labelsyv.hidden = NO;
+    _labelotte.hidden = NO;
+    _press6.hidden = NO;
+    _press7.hidden = NO;
+    _press8.hidden = NO;
+    _labelseks.text = @"Tom                                                     0.0";
+    _labelsyv.text = @"Tom                                                     0.0";
+    _labelotte.text = @"Tom                                                     0.0";
+    _moment55.tintColor = [UIColor grayColor];
+    _moment88.tintColor = [UIColor blueColor];
+
+}
 
 - (IBAction)Beregn:(id)sender {
     NSString *Resultat;
