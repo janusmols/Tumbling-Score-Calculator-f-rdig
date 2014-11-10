@@ -56,6 +56,8 @@ float FindValue(NSString *mytxt)
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    _moment55.tintColor = [UIColor blueColor];
+    _moment88.tintColor = [UIColor blueColor];
     springArray = [[NSArray alloc]initWithObjects:
                
                    @"Rondat (                             \n0.2",
