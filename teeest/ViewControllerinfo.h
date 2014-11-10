@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewControllerinfo : UIViewController
+@interface ViewControllerinfo : UIViewController{}
 
 @property (weak, nonatomic) IBOutlet UILabel *textinfo;
+
+- (IBAction)vis:(id)sender;
+
+
 @end

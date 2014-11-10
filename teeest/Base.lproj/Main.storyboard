@@ -353,6 +353,16 @@
                                     <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="crossDissolve" id="e7I-aF-rfB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PdW-4S-0Yz">
+                                <rect key="frame" x="195" y="380" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="vis">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="vis:" destination="4mT-lp-Gnk" eventType="touchUpInside" id="AOl-82-34f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.87715871710000004" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -371,7 +381,7 @@
         <image name="cooltext1776802532.png" width="800" height="110"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0Hc-lx-IZi"/>
-        <segue reference="scM-pM-fjc"/>
+        <segue reference="e7I-aF-rfB"/>
+        <segue reference="Cx2-PX-EIi"/>
     </inferredMetricsTieBreakers>
 </document>
