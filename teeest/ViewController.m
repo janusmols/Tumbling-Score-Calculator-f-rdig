@@ -1,8 +1,3 @@
-// NÆSTE 4 linier må slettes ...
-//NSString *Resultat;
-//Resultat = @"3.4";
-//_resultat.text = Resultat;
-////@"hushiu";
 
 //
 //  ViewController.m
@@ -14,11 +9,7 @@
 
 #import "ViewController.h"
 
-int g_iWhichLabel;
 
-
-
-NSString *Springarraytext[60];
 
 
 
@@ -292,6 +283,5 @@ float FindValue(NSString *mytxt)
     fPointRes = fPoint[1]+fPoint[2]+fPoint[3]+fPoint[4]+fPoint[5]+fPoint[6]+fPoint[7]+fPoint[8];
     
     _resultat.text =  [NSString stringWithFormat:@"%.1f",fPointRes];
-
 }
 @end

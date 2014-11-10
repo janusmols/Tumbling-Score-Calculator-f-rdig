@@ -1,24 +1,16 @@
-
 //
 //  ViewControllerfem.m
 //  teeest
 //
-//  Created by Janus Broch Mols on 08/11/14.
+//  Created by Janus Broch Mols on 10/11/14.
 //  Copyright (c) 2014 Janus Broch Mols. All rights reserved.
 //
 
+
+#import "ViewController.h"
 #import "ViewControllerfem.h"
 
-int g_iWhichLabel;
-
-
-
-NSString *Springarraytext[60];
-
-
-
-
-@interface ViewControllerfem ()
+@interface ViewControllerfem()
 {
     NSArray *springArray;
     
@@ -31,15 +23,15 @@ NSString *Springarraytext[60];
 
 
 
+
 //Krav: streng indeholder 10+3 karakterer eksempel "Rondat    3.4"
-float FindValue(NSString *mytxt)
+float FindValue5(NSString *mytxt)
 {
     //Finder talværdien i strengen og returnerer denne....
     NSString *myString4 = ([mytxt substringFromIndex:38]);
     float stringFloat = [myString4 floatValue];
     return stringFloat;
 }
-
 
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view
 {
@@ -60,7 +52,7 @@ float FindValue(NSString *mytxt)
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view.
     springArray = [[NSArray alloc]initWithObjects:
                    
                    @"Rondat (                             \n0.2",
@@ -125,15 +117,15 @@ float FindValue(NSString *mytxt)
     _labeltre.numberOfLines = 3;
     _labelfire.numberOfLines = 3;
     _labelfem.numberOfLines = 3;
-       picker.hidden = YES;
+    
+    picker.hidden = YES;
 }
-
-
 
 
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
     return 2;
 }
+
 
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
     
@@ -192,10 +184,31 @@ float FindValue(NSString *mytxt)
     
 }
 
+
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+
+- (void)didReceiveMemoryWarning5 {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+
 
 - (IBAction)press:(id)sender {
     g_iWhichLabel=1;
@@ -210,7 +223,6 @@ float FindValue(NSString *mytxt)
 - (IBAction)presstre:(id)sender {
     g_iWhichLabel=3;
     picker.hidden = NO;
-    
 }
 
 - (IBAction)pressfire:(id)sender {
@@ -224,46 +236,28 @@ float FindValue(NSString *mytxt)
 }
 
 
-- (IBAction)pressseks:(id)sender {
-    g_iWhichLabel=6;
-    picker.hidden = NO;
-}
-
-- (IBAction)presssyv:(id)sender {
-    g_iWhichLabel=7;
-    picker.hidden = NO;
-}
-
-- (IBAction)pressotte:(id)sender {
-    g_iWhichLabel=8;
-    picker.hidden = NO;
-}
-
-
 - (IBAction)Beregn:(id)sender {
     NSString *Resultat;
     float fPoint[10];
     float fPointRes;
     
     Resultat = label.text;
-    fPoint[1] = FindValue(Resultat);
+    fPoint[1] = FindValue5(Resultat);
     
     Resultat = _labelto.text;
-    fPoint[2] = FindValue(Resultat);
+    fPoint[2] = FindValue5(Resultat);
     
     Resultat = _labeltre.text;
-    fPoint[3] = FindValue(Resultat);
+    fPoint[3] = FindValue5(Resultat);
     
     Resultat = _labelfire.text;
-    fPoint[4] = FindValue(Resultat);
+    fPoint[4] = FindValue5(Resultat);
     
     Resultat = _labelfem.text;
-    fPoint[5] = FindValue(Resultat);
-    
+    fPoint[5] = FindValue5(Resultat);
     
     fPointRes = fPoint[1]+fPoint[2]+fPoint[3]+fPoint[4]+fPoint[5];
     
     _resultat.text =  [NSString stringWithFormat:@"%.1f",fPointRes];
-    
 }
 @end

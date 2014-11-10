@@ -55,7 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B5G-RM-wq8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="369" y="219"/>
+            <point key="canvasLocation" x="461" y="115"/>
         </scene>
         <!--View Controllerfem-->
         <scene sceneID="KdO-8c-gyB">
@@ -92,6 +92,7 @@
                                         </state>
                                         <connections>
                                             <action selector="press:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CSN-YW-rec"/>
+                                            <action selector="press:" destination="Mm6-8h-UYI" eventType="touchUpInside" id="nmN-u4-azt"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Moment 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5f-ej-u9N">
@@ -132,6 +133,7 @@
                                         </state>
                                         <connections>
                                             <action selector="pressto:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="00B-0r-Nbh"/>
+                                            <action selector="pressto:" destination="Mm6-8h-UYI" eventType="touchUpInside" id="OOF-Y4-tg9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKT-R2-eXl">
@@ -141,6 +143,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="pressfem:" destination="Mm6-8h-UYI" eventType="touchUpInside" id="k7G-aV-D5N"/>
                                             <action selector="pressfem:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qTc-oU-NOR"/>
                                         </connections>
                                     </button>
@@ -151,6 +154,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="presstre:" destination="Mm6-8h-UYI" eventType="touchUpInside" id="Jpi-k2-0kK"/>
                                             <action selector="presstre:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="g6i-mj-TSv"/>
                                         </connections>
                                     </button>
@@ -162,6 +166,8 @@
                                         </state>
                                         <connections>
                                             <action selector="pressfire:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RdY-yg-ClW"/>
+                                            <action selector="pressfire:" destination="Mm6-8h-UYI" eventType="touchUpInside" id="qEh-Rk-TOG"/>
+                                            <action selector="presstre:" destination="Mm6-8h-UYI" eventType="touchUpInside" id="Abv-Ut-TD8"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tryk på &quot;Vælg&quot; og bestem øvelserne" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Q2-Uo-mvx">
@@ -218,6 +224,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="Beregn:" destination="Mm6-8h-UYI" eventType="touchUpInside" id="RZ9-LG-MIZ"/>
                                             <action selector="Beregn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bz9-wC-ZWE"/>
                                         </connections>
                                     </button>
@@ -234,6 +241,15 @@
                         <color key="backgroundColor" white="0.87715871710000004" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="label" destination="QMR-Jv-JDX" id="kWR-sB-ib3"/>
+                        <outlet property="labelfem" destination="w6R-jj-Xg5" id="THz-Sc-bHU"/>
+                        <outlet property="labelfire" destination="fUJ-3m-t7O" id="Za4-lW-Vcj"/>
+                        <outlet property="labelto" destination="Xkz-T1-HQW" id="0vF-6u-jYc"/>
+                        <outlet property="labeltre" destination="n9E-NT-dqE" id="Yzl-oK-yOP"/>
+                        <outlet property="picker" destination="bov-ZY-BjQ" id="lRj-eT-ZME"/>
+                        <outlet property="resultat" destination="STh-nr-E68" id="Sv9-RW-D2s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uru-IV-HaD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
