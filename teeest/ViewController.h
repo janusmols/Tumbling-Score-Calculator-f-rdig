@@ -16,22 +16,38 @@ NSString *Springarraytext[60];
 
 @interface ViewController : UIViewController<UIPickerViewDataSource,UIPickerViewDelegate>
 
+
+
 @property (weak, nonatomic) IBOutlet UIPickerView *picker;
 
+
+//Vælg knapperne som labels
 @property (weak, nonatomic) IBOutlet UIButton *press6;
 
 @property (weak, nonatomic) IBOutlet UIButton *press7;
 
 @property (weak, nonatomic) IBOutlet UIButton *press8;
 
+
+//Moment labels
+
 @property (weak, nonatomic) IBOutlet UILabel *momentseks;
+
 @property (weak, nonatomic) IBOutlet UILabel *momentsyv;
+
 @property (weak, nonatomic) IBOutlet UILabel *momentotte;
 
+
+
+
+//De to knapper som viser 5moment udsenent og 8moment udsenet som labels
 @property (weak, nonatomic) IBOutlet UIButton *moment55;
 @property (weak, nonatomic) IBOutlet UIButton *moment88;
 
 
+
+
+//De to knapper som viser 5moment udsenent og 8moment udsenet som knapper
 - (IBAction)moment5:(id)sender;
 
 - (IBAction)moment8:(id)sender;
@@ -39,7 +55,6 @@ NSString *Springarraytext[60];
 
 
 
-- (IBAction)Beregn:(id)sender;
 
 //vælg vælg 1-8 = press - pressotte
 - (IBAction)press:(id)sender;

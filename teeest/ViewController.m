@@ -125,7 +125,7 @@ float FindValue(NSString *mytxt)
     _labelseks.numberOfLines = 3;
     _labelsyv.numberOfLines = 3;
     _labelotte.numberOfLines = 3;
-    picker.hidden = YES;
+    picker.hidden = NO;
 }
 
 
@@ -200,7 +200,7 @@ float FindValue(NSString *mytxt)
         default:
             break;
     }
-        picker.hidden = YES;
+        picker.hidden = NO;
     
     //From button "Beregn"
     NSString *Resultat;
@@ -347,6 +347,8 @@ float FindValue(NSString *mytxt)
     _moment88.tintColor = [UIColor blueColor];
 
 }
+
+
 
 
 
