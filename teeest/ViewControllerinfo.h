@@ -10,8 +10,12 @@
 
 @interface ViewControllerinfo : UIViewController{}
 
+
+//information og guide til appen (label text)
 @property (weak, nonatomic) IBOutlet UILabel *textinfo;
 
+
+//denne knap sender dig videre til gymdanmarks tumbling reglement
 - (IBAction)vis:(id)sender;
 
 

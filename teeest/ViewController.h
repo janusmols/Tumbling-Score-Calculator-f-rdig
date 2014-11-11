@@ -17,7 +17,7 @@ NSString *Springarraytext[60];
 @interface ViewController : UIViewController<UIPickerViewDataSource,UIPickerViewDelegate>
 
 
-
+//scrolleren man kan vælge springene i
 @property (weak, nonatomic) IBOutlet UIPickerView *picker;
 
 
@@ -90,6 +90,8 @@ NSString *Springarraytext[60];
 @property (weak, nonatomic) IBOutlet UILabel *labelsyv;
 
 @property (weak, nonatomic) IBOutlet UILabel *labelotte;
+
+
 
 //resultat:
 @property (weak, nonatomic) IBOutlet UILabel *resultat;

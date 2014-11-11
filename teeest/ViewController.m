@@ -16,6 +16,8 @@
 
 @interface ViewController ()
 {
+   
+    //Springlisten
     NSArray *springArray;
 }
 
@@ -26,7 +28,7 @@
 
 
 
-//Krav: streng indeholder 10+3 karakterer eksempel "Rondat    3.4"
+//Krav: streng indeholder 38+3 karakterer eksempel "Rondat    3.4"
 float FindValue(NSString *mytxt)
 {
     //Finder talværdien i strengen og returnerer denne....
@@ -47,8 +49,11 @@ float FindValue(NSString *mytxt)
     
     pickerViewLabel.backgroundColor = [UIColor clearColor];
     pickerViewLabel.text = Springarraytext[row]; // where therapyTypes[row] is a specific example from my cod2
-    pickerViewLabel.font = [UIFont fontWithName:@"ChalkboardSE-Regular" size:12];
     
+    //Skriftype og størelse på teksten i ""pickeren"
+    pickerViewLabel.font = [UIFont fontWithName:@"ChalkboardSE-Regular" size:12];
+   
+ 
     return pickerViewLabel;
 }
 
@@ -56,8 +61,12 @@ float FindValue(NSString *mytxt)
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+   
+    //Den skal starte med at udsenet skal se således ud at 8-moment er klar blå og 5-moment er grålig
     _moment55.tintColor = [UIColor grayColor];
     _moment88.tintColor = [UIColor blueColor];
+   
+    //springlisten
     springArray = [[NSArray alloc]initWithObjects:
                
                    @"Rondat (                             \n0.2",
@@ -116,7 +125,7 @@ float FindValue(NSString *mytxt)
     for (id tempObject in springArray) {
         Springarraytext[x++]=tempObject;
     }
-    
+    //Disse koder lader disse labels have flere linjer
     label.numberOfLines = 3;
     _labelto.numberOfLines = 3;
     _labeltre.numberOfLines = 3;
@@ -125,16 +134,19 @@ float FindValue(NSString *mytxt)
     _labelseks.numberOfLines = 3;
     _labelsyv.numberOfLines = 3;
     _labelotte.numberOfLines = 3;
+    
+    //Når man ser "beregnersiden" første gang så er "pickeren" ikke hidden = synlig
     picker.hidden = NO;
 }
 
 
 
-
+//Hvor mange rækker vandret skal "pickeren" bestå af
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
     return 1;
 }
 
+//Her bliver der beregnet hvor mange rækker lodret der skal være.
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
     
     switch (component) {
@@ -148,6 +160,7 @@ float FindValue(NSString *mytxt)
     return 0;
 }
 
+//Her finder koden ud af hvad hver enkelt spring i "pickeren" skal hede
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
     switch (component) {
         case 0:
@@ -161,6 +174,8 @@ float FindValue(NSString *mytxt)
 
 
 }
+
+//Her finder den ud af at hvis man f.eks har trykket på "vælg" ud for moment 3 at den så også skriver springet man har valgt i labeled ud for moment 3
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     switch (g_iWhichLabel) {
@@ -200,9 +215,11 @@ float FindValue(NSString *mytxt)
         default:
             break;
     }
+    
         picker.hidden = NO;
     
     //From button "Beregn"
+    //Her lægger den alle springene sammen og skriver resultatet i resultat labelet
     NSString *Resultat;
     float fPoint[10];
     float fPointRes;
@@ -240,6 +257,10 @@ float FindValue(NSString *mytxt)
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
+//her sætter man "g_iwichlabel" sammen med hver "vælg" knap med et nummer som "(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{" bruger
 
 - (IBAction)press:(id)sender {
     g_iWhichLabel=1;
@@ -283,6 +304,8 @@ float FindValue(NSString *mytxt)
     picker.hidden = NO;
 }
 
+//Her er en kopi af beregneren ovenfor som bare bruges til at beregne 5-moment karakterene sammen og skrive den i resulat labelet og
+//Når man vælger 5-moment "mode" så gøres 5-moment knappen klar blå og 8-moment kanppen grålig og fjerner moment 6-8 og medhørende ting
 
 - (IBAction)moment5:(id)sender {
     NSString *Resultat;
@@ -329,6 +352,7 @@ float FindValue(NSString *mytxt)
     
 }
 
+//Når man vælger 8-moment "mode" så gøres 5-moment knappen grålig og 8-moment kanppen klar blå 
 - (IBAction)moment8:(id)sender {
     
     _momentseks.hidden = NO;
