@@ -285,7 +285,10 @@ float FindValue(NSString *mytxt)
 
 
 - (IBAction)moment5:(id)sender {
-
+    NSString *Resultat;
+    float fPoint[10];
+    float fPointRes;
+    
     _momentseks.hidden = YES;
     _momentsyv.hidden = YES;
     _momentotte.hidden = YES;
@@ -300,7 +303,28 @@ float FindValue(NSString *mytxt)
     _labelotte.text = nil;
     _moment88.tintColor = [UIColor grayColor];
     _moment55.tintColor = [UIColor blueColor];
+
+    Resultat = label.text;
+    fPoint[1] = FindValue(Resultat);
     
+    Resultat = _labelto.text;
+    fPoint[2] = FindValue(Resultat);
+    
+    Resultat = _labeltre.text;
+    fPoint[3] = FindValue(Resultat);
+    
+    Resultat = _labelfire.text;
+    fPoint[4] = FindValue(Resultat);
+    
+    Resultat = _labelfem.text;
+    fPoint[5] = FindValue(Resultat);
+    
+    
+    
+    fPointRes = fPoint[1]+fPoint[2]+fPoint[3]+fPoint[4]+fPoint[5];
+    
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",fPointRes];
+
     
     
 }
