@@ -20,7 +20,7 @@
                     <rect key="frame" x="0.0" y="20" width="328" height="85"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="41590_23656642917_1773_n.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ZR0-Ea-zLg">
-                    <rect key="frame" x="57" y="301" width="214" height="178"/>
+                    <rect key="frame" x="57" y="270" width="214" height="178"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
