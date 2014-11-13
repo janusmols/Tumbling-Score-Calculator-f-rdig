@@ -14,11 +14,14 @@
 //information og guide til appen (label text)
 @property (weak, nonatomic) IBOutlet UILabel *textinfo;
 @property (weak, nonatomic) IBOutlet UILabel *textinfo2;
+@property (weak, nonatomic) IBOutlet UILabel *textinfo3;
+
 
 
 
 //denne knap sender dig videre til gymdanmarks tumbling reglement
 - (IBAction)visreglement:(id)sender;
+
 
 
 

@@ -349,11 +349,12 @@ float FindValue(NSString *mytxt)
     _resultat.text =  [NSString stringWithFormat:@"%.1f",fPointRes];
     
     
-    label.text = @"Tom                                                     0.0";
-    _labelto.text = @"Tom                                                     0.0";
-    _labeltre.text = @"Tom                                                     0.0";
-    _labelfire.text = @"Tom                                                     0.0";
-    _labelfem.text = @"Tom                                                     0.0";
+    
+    label.text = @"Tom                                                                              0.0";
+    _labelto.text = @"Tom                                                                              0.0";
+    _labeltre.text = @"Tom                                                                              0.0";
+    _labelfire.text = @"Tom                                                                              0.0";
+    _labelfem.text = @"Tom                                                                              0.0";
     
     _resultat.text = @"0.0";
     
@@ -375,14 +376,14 @@ float FindValue(NSString *mytxt)
     
     
     
-     label.text = @"Tom                                                     0.0";
-    _labelto.text = @"Tom                                                     0.0";
-    _labeltre.text = @"Tom                                                     0.0";
-    _labelfire.text = @"Tom                                                     0.0";
-    _labelfem.text = @"Tom                                                     0.0";
-    _labelseks.text = @"Tom                                                     0.0";
-    _labelsyv.text = @"Tom                                                     0.0";
-    _labelotte.text = @"Tom                                                     0.0";
+     label.text = @"Tom                                                                              0.0";
+    _labelto.text = @"Tom                                                                              0.0";
+    _labeltre.text = @"Tom                                                                              0.0";
+    _labelfire.text = @"Tom                                                                              0.0";
+    _labelfem.text = @"Tom                                                                              0.0";
+    _labelseks.text = @"Tom                                                                              0.0";
+    _labelsyv.text = @"Tom                                                                              0.0";
+    _labelotte.text = @"Tom                                                                              0.0";
     
     _resultat.text = @"0.0";
     

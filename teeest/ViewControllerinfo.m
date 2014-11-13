@@ -22,12 +22,17 @@
 //regulering af linjer
 - (void)viewDidLoad {
     [super viewDidLoad];
-   _textinfo.text = @"Med denne app kan du nemt og hurtigt beregne vanskeligheden ud fra dine indtastede rutiner. Du kan beregne vanskligheden for 5-moment rutiner og 8-moment rutiner hver for sig ved blot at vælge mellem de to valgmuligheder øverst i beregneren.";
+   _textinfo.text = @"Med denne app kan du nemt og hurtigt beregne vanskeligheden ud fra dine indtastede rutiner. Du kan beregne vanskeligheden for 5-moment rutiner og 8-moment rutiner hver for sig ved blot at vælge mellem de to valgmuligheder øverst i beregneren.";
     _textinfo.numberOfLines = 25;
     
     
-    _textinfo2.text = @"Denne app er baseret på GymDanmarks Power Tumbling Reglement 2013-2017\n\nCreated by Janus Broch Mols.\nCopyright (c) 2014 Janus Broch Mols. All rights reserved.";
+    _textinfo2.text = @"Denne app er baseret på GymDanmarks Power Tumbling Reglement 2013-2017";
     _textinfo2.numberOfLines = 10;
+    
+    
+    _textinfo3.text = @"\n\n\n\n\n\nCreated by Janus Broch Mols.\nCopyright (c) 2014 Janus Broch Mols. All rights reserved.";
+    _textinfo3.numberOfLines = 10;
+
     
     
 }
