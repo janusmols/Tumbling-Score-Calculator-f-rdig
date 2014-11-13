@@ -16,18 +16,27 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cooltext1776802532.png" translatesAutoresizingMaskIntoConstraints="NO" id="wvA-ig-0D0">
-                    <rect key="frame" x="0.0" y="20" width="328" height="85"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cooltext1776802532.png" translatesAutoresizingMaskIntoConstraints="NO" id="kCV-Dn-CRi">
+                    <rect key="frame" x="52" y="20" width="224" height="61"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="61" id="iO8-8u-A2X"/>
+                    </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="41590_23656642917_1773_n.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ZR0-Ea-zLg">
-                    <rect key="frame" x="57" y="270" width="214" height="178"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="41590_23656642917_1773_n.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="W8k-cQ-ef6">
+                    <rect key="frame" x="57" y="258" width="214" height="178"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="kCV-Dn-CRi" secondAttribute="trailing" constant="44" id="47T-10-WD3"/>
+                <constraint firstItem="W8k-cQ-ef6" firstAttribute="top" secondItem="kCV-Dn-CRi" secondAttribute="bottom" constant="177" id="KEu-Kv-TBQ"/>
                 <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
+                <constraint firstAttribute="trailing" secondItem="W8k-cQ-ef6" secondAttribute="trailing" constant="49" id="LKG-au-vIA"/>
                 <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
                 <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
+                <constraint firstItem="kCV-Dn-CRi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="eQN-Vi-tiN"/>
+                <constraint firstItem="W8k-cQ-ef6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="57" id="q41-1A-5ei"/>
+                <constraint firstItem="kCV-Dn-CRi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="52" id="uop-un-EEy"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

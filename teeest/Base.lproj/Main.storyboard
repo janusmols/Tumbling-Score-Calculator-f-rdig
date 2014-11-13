@@ -284,13 +284,10 @@
                                     <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="crossDissolve" id="scM-pM-fjc"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="41590_23656642917_1773_n.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Z9u-W6-UQR">
-                                <rect key="frame" x="57" y="333" width="214" height="178"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7W-mn-XMY">
                                 <rect key="frame" x="21" y="89" width="278" height="74"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Information/Instruktioner">
+                                <state key="normal" title="Information">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -302,6 +299,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="whp-Ru-VVw"/>
                                 </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="41590_23656642917_1773_n.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Z9u-W6-UQR">
+                                <rect key="frame" x="57" y="332" width="214" height="178"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -338,8 +338,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tf-p4-Gkv">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tf-p4-Gkv">
                                 <rect key="frame" x="0.0" y="75" width="50" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Tilbage">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -367,6 +368,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CgL-RD-1qm">
                                 <rect key="frame" x="16" y="353" width="93" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Vis reglement">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -390,7 +392,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceJ-VS-aoJ">
-                                <rect key="frame" x="126" y="381" width="68" height="30"/>
+                                <rect key="frame" x="119" y="381" width="83" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Beregn">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -447,7 +449,7 @@
         <image name="cooltext1776802532.png" width="800" height="110"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EtY-N9-9WT"/>
+        <segue reference="scM-pM-fjc"/>
         <segue reference="Cx2-PX-EIi"/>
     </inferredMetricsTieBreakers>
 </document>
