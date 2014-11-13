@@ -135,8 +135,8 @@ float FindValue(NSString *mytxt)
     _labelsyv.numberOfLines = 3;
     _labelotte.numberOfLines = 3;
     
-    //Når man ser "beregnersiden" første gang så er "pickeren" ikke hidden = synlig
-    picker.hidden = NO;
+    //Når man ser "beregnersiden" første gang så er "pickeren" hidden = ikke synlig
+    picker.hidden = YES;
 }
 
 
@@ -305,7 +305,7 @@ float FindValue(NSString *mytxt)
 }
 
 //Her er en kopi af beregneren ovenfor som bare bruges til at beregne 5-moment karakterene sammen og skrive den i resulat labelet og
-//Når man vælger 5-moment "mode" så gøres 5-moment knappen klar blå og 8-moment kanppen grålig og fjerner moment 6-8 og medhørende ting
+//Når man vælger 5-moment "mode" så gøres 5-moment knappen klar blå og 8-moment kanppen grålig og fjerner moment 6-8 og medhørende ting og nulstilles og "pickeren" gøres usynlig
 
 - (IBAction)moment5:(id)sender {
     NSString *Resultat;
@@ -347,12 +347,20 @@ float FindValue(NSString *mytxt)
     fPointRes = fPoint[1]+fPoint[2]+fPoint[3]+fPoint[4]+fPoint[5];
     
     _resultat.text =  [NSString stringWithFormat:@"%.1f",fPointRes];
-
     
     
+    label.text = @"Tom                                                     0.0";
+    _labelto.text = @"Tom                                                     0.0";
+    _labeltre.text = @"Tom                                                     0.0";
+    _labelfire.text = @"Tom                                                     0.0";
+    _labelfem.text = @"Tom                                                     0.0";
+    
+    _resultat.text = @"0.0";
+    
+       picker.hidden = YES;
 }
 
-//Når man vælger 8-moment "mode" så gøres 5-moment knappen grålig og 8-moment kanppen klar blå 
+//Når man vælger 8-moment "mode" så gøres 5-moment knappen grålig og 8-moment kanppen klar blå og alle ting nulstilles og "pickeren" gøres usynlig 
 - (IBAction)moment8:(id)sender {
     
     _momentseks.hidden = NO;
@@ -364,11 +372,27 @@ float FindValue(NSString *mytxt)
     _press6.hidden = NO;
     _press7.hidden = NO;
     _press8.hidden = NO;
+    
+    
+    
+     label.text = @"Tom                                                     0.0";
+    _labelto.text = @"Tom                                                     0.0";
+    _labeltre.text = @"Tom                                                     0.0";
+    _labelfire.text = @"Tom                                                     0.0";
+    _labelfem.text = @"Tom                                                     0.0";
     _labelseks.text = @"Tom                                                     0.0";
     _labelsyv.text = @"Tom                                                     0.0";
     _labelotte.text = @"Tom                                                     0.0";
+    
+    _resultat.text = @"0.0";
+    
+    
     _moment55.tintColor = [UIColor grayColor];
     _moment88.tintColor = [UIColor blueColor];
+    
+    picker.hidden = YES;
+
+
 
 }
 
