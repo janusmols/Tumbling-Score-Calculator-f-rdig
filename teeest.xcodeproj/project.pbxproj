@@ -183,6 +183,7 @@
 					};
 					616662D41A0E779E00445753 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 9CRRCXUMP7;
 						TestTargetID = 616662BB1A0E779E00445753;
 					};
 				};
@@ -362,7 +363,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f8ebb013-b994-47ef-af69-1136893c6303";
+				PROVISIONING_PROFILE = "7b61933b-d415-4e9a-a30f-e09fa4b10c43";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -378,7 +379,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f8ebb013-b994-47ef-af69-1136893c6303";
+				PROVISIONING_PROFILE = "7b61933b-d415-4e9a-a30f-e09fa4b10c43";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -387,6 +388,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -398,6 +401,7 @@
 				INFOPLIST_FILE = teeestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/teeest.app/teeest";
 			};
 			name = Debug;
@@ -406,6 +410,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -413,6 +419,7 @@
 				INFOPLIST_FILE = teeestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/teeest.app/teeest";
 			};
 			name = Release;
@@ -465,7 +472,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f8ebb013-b994-47ef-af69-1136893c6303";
+				PROVISIONING_PROFILE = "7b61933b-d415-4e9a-a30f-e09fa4b10c43";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Distribution;
@@ -474,6 +481,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -481,6 +490,7 @@
 				INFOPLIST_FILE = teeestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/teeest.app/teeest";
 			};
 			name = Distribution;
