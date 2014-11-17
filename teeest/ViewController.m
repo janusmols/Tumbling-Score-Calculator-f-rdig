@@ -61,7 +61,19 @@ float FindValue(NSString *mytxt)
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-   
+   //Vælg knappernes farve er blå
+    _press1.tintColor = [UIColor blueColor];
+    _press2.tintColor = [UIColor blueColor];
+    _press3.tintColor = [UIColor blueColor];
+    _press4.tintColor = [UIColor blueColor];
+    _press5.tintColor = [UIColor blueColor];
+    _press6.tintColor = [UIColor blueColor];
+    _press7.tintColor = [UIColor blueColor];
+    _press8.tintColor = [UIColor blueColor];
+    
+
+    
+    
     //Den skal starte med at udsenet skal se således ud at 8-moment er klar blå og 5-moment er grålig
     _moment55.tintColor = [UIColor grayColor];
     _moment88.tintColor = [UIColor blueColor];
@@ -261,47 +273,119 @@ float FindValue(NSString *mytxt)
 
 
 //her sætter man "g_iwichlabel" sammen med hver "vælg" knap med et nummer som "(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{" bruger
+//når du trykker på en "vælg" knap så gøres de andre vælg knapper grå
 
 - (IBAction)press:(id)sender {
     g_iWhichLabel=1;
     picker.hidden = NO;
+    _press1.tintColor = [UIColor blueColor];
+    _press2.tintColor = [UIColor grayColor];
+    _press3.tintColor = [UIColor grayColor];
+    _press4.tintColor = [UIColor grayColor];
+    _press5.tintColor = [UIColor grayColor];
+    _press6.tintColor = [UIColor grayColor];
+    _press7.tintColor = [UIColor grayColor];
+    _press8.tintColor = [UIColor grayColor];
 }
 
 - (IBAction)pressto:(id)sender {
     g_iWhichLabel=2;
     picker.hidden = NO;
+    _press2.tintColor = [UIColor blueColor];
+    _press1.tintColor = [UIColor grayColor];
+    _press3.tintColor = [UIColor grayColor];
+    _press4.tintColor = [UIColor grayColor];
+    _press5.tintColor = [UIColor grayColor];
+    _press6.tintColor = [UIColor grayColor];
+    _press7.tintColor = [UIColor grayColor];
+    _press8.tintColor = [UIColor grayColor];
+
 }
 
 - (IBAction)presstre:(id)sender {
     g_iWhichLabel=3;
     picker.hidden = NO;
+    _press3.tintColor = [UIColor blueColor];
+    _press2.tintColor = [UIColor grayColor];
+    _press1.tintColor = [UIColor grayColor];
+    _press4.tintColor = [UIColor grayColor];
+    _press5.tintColor = [UIColor grayColor];
+    _press6.tintColor = [UIColor grayColor];
+    _press7.tintColor = [UIColor grayColor];
+    _press8.tintColor = [UIColor grayColor];
+
     
 }
 
 - (IBAction)pressfire:(id)sender {
     g_iWhichLabel=4;
     picker.hidden = NO;
+    _press4.tintColor = [UIColor blueColor];
+    _press2.tintColor = [UIColor grayColor];
+    _press3.tintColor = [UIColor grayColor];
+    _press1.tintColor = [UIColor grayColor];
+    _press5.tintColor = [UIColor grayColor];
+    _press6.tintColor = [UIColor grayColor];
+    _press7.tintColor = [UIColor grayColor];
+    _press8.tintColor = [UIColor grayColor];
+
 }
 
 - (IBAction)pressfem:(id)sender {
     g_iWhichLabel=5;
         picker.hidden = NO;
+    _press5.tintColor = [UIColor blueColor];
+    _press2.tintColor = [UIColor grayColor];
+    _press3.tintColor = [UIColor grayColor];
+    _press4.tintColor = [UIColor grayColor];
+    _press1.tintColor = [UIColor grayColor];
+    _press6.tintColor = [UIColor grayColor];
+    _press7.tintColor = [UIColor grayColor];
+    _press8.tintColor = [UIColor grayColor];
+
 }
 
 
 - (IBAction)pressseks:(id)sender {
     g_iWhichLabel=6;
     picker.hidden = NO;
+    _press6.tintColor = [UIColor blueColor];
+    _press2.tintColor = [UIColor grayColor];
+    _press3.tintColor = [UIColor grayColor];
+    _press4.tintColor = [UIColor grayColor];
+    _press5.tintColor = [UIColor grayColor];
+    _press1.tintColor = [UIColor grayColor];
+    _press7.tintColor = [UIColor grayColor];
+    _press8.tintColor = [UIColor grayColor];
+
 }
 
 - (IBAction)presssyv:(id)sender {
     g_iWhichLabel=7;
     picker.hidden = NO;
+    _press7.tintColor = [UIColor blueColor];
+    _press2.tintColor = [UIColor grayColor];
+    _press3.tintColor = [UIColor grayColor];
+    _press4.tintColor = [UIColor grayColor];
+    _press5.tintColor = [UIColor grayColor];
+    _press6.tintColor = [UIColor grayColor];
+    _press1.tintColor = [UIColor grayColor];
+    _press8.tintColor = [UIColor grayColor];
+
 }
 
 - (IBAction)pressotte:(id)sender {
     g_iWhichLabel=8;
     picker.hidden = NO;
+    _press8.tintColor = [UIColor blueColor];
+    _press2.tintColor = [UIColor grayColor];
+    _press3.tintColor = [UIColor grayColor];
+    _press4.tintColor = [UIColor grayColor];
+    _press5.tintColor = [UIColor grayColor];
+    _press6.tintColor = [UIColor grayColor];
+    _press7.tintColor = [UIColor grayColor];
+    _press1.tintColor = [UIColor grayColor];
+
 }
 
 //Her er en kopi af beregneren ovenfor som bare bruges til at beregne 5-moment karakterene sammen og skrive den i resulat labelet og

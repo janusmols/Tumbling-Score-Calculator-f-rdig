@@ -22,6 +22,17 @@ NSString *Springarraytext[60];
 
 
 //Vælg knapperne som labels
+
+@property (weak, nonatomic) IBOutlet UIButton *press1;
+
+@property (weak, nonatomic) IBOutlet UIButton *press2;
+
+@property (weak, nonatomic) IBOutlet UIButton *press3;
+
+@property (weak, nonatomic) IBOutlet UIButton *press4;
+
+@property (weak, nonatomic) IBOutlet UIButton *press5;
+
 @property (weak, nonatomic) IBOutlet UIButton *press6;
 
 @property (weak, nonatomic) IBOutlet UIButton *press7;
