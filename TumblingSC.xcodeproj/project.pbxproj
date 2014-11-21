@@ -35,7 +35,7 @@
 		611DEA031A101E24002F9751 /* ViewControllerinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerinfo.h; sourceTree = "<group>"; };
 		611DEA041A101E24002F9751 /* ViewControllerinfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerinfo.m; sourceTree = "<group>"; };
 		611DEA061A10221B002F9751 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
-		616662BC1A0E779E00445753 /* teeest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = teeest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		616662BC1A0E779E00445753 /* TumblingSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TumblingSC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		616662C01A0E779E00445753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		616662C11A0E779E00445753 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		616662C31A0E779E00445753 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		616662C71A0E779E00445753 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		616662CA1A0E779E00445753 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		616662CC1A0E779E00445753 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		616662D51A0E779E00445753 /* teeestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = teeestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		616662D51A0E779E00445753 /* TumblingSCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TumblingSCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		616662DA1A0E779E00445753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		616662DB1A0E779E00445753 /* teeestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = teeestTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,8 +79,8 @@
 		616662BD1A0E779E00445753 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				616662BC1A0E779E00445753 /* teeest.app */,
-				616662D51A0E779E00445753 /* teeestTests.xctest */,
+				616662BC1A0E779E00445753 /* TumblingSC.app */,
+				616662D51A0E779E00445753 /* TumblingSCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,9 +133,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		616662BB1A0E779E00445753 /* teeest */ = {
+		616662BB1A0E779E00445753 /* TumblingSC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 616662DF1A0E779E00445753 /* Build configuration list for PBXNativeTarget "teeest" */;
+			buildConfigurationList = 616662DF1A0E779E00445753 /* Build configuration list for PBXNativeTarget "TumblingSC" */;
 			buildPhases = (
 				616662B81A0E779E00445753 /* Sources */,
 				616662B91A0E779E00445753 /* Frameworks */,
@@ -145,14 +145,14 @@
 			);
 			dependencies = (
 			);
-			name = teeest;
+			name = TumblingSC;
 			productName = teeest;
-			productReference = 616662BC1A0E779E00445753 /* teeest.app */;
+			productReference = 616662BC1A0E779E00445753 /* TumblingSC.app */;
 			productType = "com.apple.product-type.application";
 		};
-		616662D41A0E779E00445753 /* teeestTests */ = {
+		616662D41A0E779E00445753 /* TumblingSCTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 616662E21A0E779E00445753 /* Build configuration list for PBXNativeTarget "teeestTests" */;
+			buildConfigurationList = 616662E21A0E779E00445753 /* Build configuration list for PBXNativeTarget "TumblingSCTests" */;
 			buildPhases = (
 				616662D11A0E779E00445753 /* Sources */,
 				616662D21A0E779E00445753 /* Frameworks */,
@@ -163,9 +163,9 @@
 			dependencies = (
 				616662D71A0E779E00445753 /* PBXTargetDependency */,
 			);
-			name = teeestTests;
+			name = TumblingSCTests;
 			productName = teeestTests;
-			productReference = 616662D51A0E779E00445753 /* teeestTests.xctest */;
+			productReference = 616662D51A0E779E00445753 /* TumblingSCTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -188,7 +188,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 616662B71A0E779E00445753 /* Build configuration list for PBXProject "teeest" */;
+			buildConfigurationList = 616662B71A0E779E00445753 /* Build configuration list for PBXProject "TumblingSC" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -201,8 +201,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				616662BB1A0E779E00445753 /* teeest */,
-				616662D41A0E779E00445753 /* teeestTests */,
+				616662BB1A0E779E00445753 /* TumblingSC */,
+				616662D41A0E779E00445753 /* TumblingSCTests */,
 			);
 		};
 /* End PBXProject section */
@@ -254,7 +254,7 @@
 /* Begin PBXTargetDependency section */
 		616662D71A0E779E00445753 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 616662BB1A0E779E00445753 /* teeest */;
+			target = 616662BB1A0E779E00445753 /* TumblingSC */;
 			targetProxy = 616662D61A0E779E00445753 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -362,7 +362,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TumblingSC;
 				PROVISIONING_PROFILE = "7b61933b-d415-4e9a-a30f-e09fa4b10c43";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -378,7 +378,7 @@
 				INFOPLIST_FILE = teeest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TumblingSC;
 				PROVISIONING_PROFILE = "7b61933b-d415-4e9a-a30f-e09fa4b10c43";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -400,7 +400,7 @@
 				);
 				INFOPLIST_FILE = teeestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TumblingSCTests;
 				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/teeest.app/teeest";
 			};
@@ -418,7 +418,7 @@
 				);
 				INFOPLIST_FILE = teeestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TumblingSCTests;
 				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/teeest.app/teeest";
 			};
@@ -471,7 +471,7 @@
 				INFOPLIST_FILE = teeest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TumblingSC;
 				PROVISIONING_PROFILE = "7b61933b-d415-4e9a-a30f-e09fa4b10c43";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -489,7 +489,7 @@
 				);
 				INFOPLIST_FILE = teeestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TumblingSCTests;
 				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/teeest.app/teeest";
 			};
@@ -498,7 +498,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		616662B71A0E779E00445753 /* Build configuration list for PBXProject "teeest" */ = {
+		616662B71A0E779E00445753 /* Build configuration list for PBXProject "TumblingSC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				616662DD1A0E779E00445753 /* Debug */,
@@ -508,7 +508,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		616662DF1A0E779E00445753 /* Build configuration list for PBXNativeTarget "teeest" */ = {
+		616662DF1A0E779E00445753 /* Build configuration list for PBXNativeTarget "TumblingSC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				616662E01A0E779E00445753 /* Debug */,
@@ -518,7 +518,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		616662E21A0E779E00445753 /* Build configuration list for PBXNativeTarget "teeestTests" */ = {
+		616662E21A0E779E00445753 /* Build configuration list for PBXNativeTarget "TumblingSCTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				616662E31A0E779E00445753 /* Debug */,
