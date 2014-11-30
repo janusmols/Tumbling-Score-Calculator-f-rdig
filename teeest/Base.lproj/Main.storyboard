@@ -268,10 +268,10 @@
             </objects>
             <point key="canvasLocation" x="52" y="162"/>
         </scene>
-        <!--View Controller-->
+        <!--First-->
         <scene sceneID="YOq-AO-YcI">
             <objects>
-                <viewController id="Dal-Fo-mVF" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="Dal-Fo-mVF" customClass="first" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7D8-6y-dzg"/>
                         <viewControllerLayoutGuide type="bottom" id="zZn-zu-ucb"/>
@@ -309,11 +309,16 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="41590_23656642917_1773_n.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Z9u-W6-UQR">
                                 <rect key="frame" x="57" y="332" width="214" height="178"/>
                             </imageView>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="aay-uE-DP4">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                            </adBannerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="zZn-zu-ucb" firstAttribute="top" secondItem="aay-uE-DP4" secondAttribute="bottom" id="30m-oA-FUS"/>
                             <constraint firstItem="JuL-xc-eUf" firstAttribute="leading" secondItem="ZEl-QS-n8y" secondAttribute="leadingMargin" constant="36" id="6vD-cP-yL6"/>
                             <constraint firstItem="uAQ-WK-Gll" firstAttribute="top" secondItem="U7W-mn-XMY" secondAttribute="bottom" constant="29" id="AsI-3s-F4q"/>
+                            <constraint firstAttribute="centerX" secondItem="aay-uE-DP4" secondAttribute="centerX" id="Bqb-sq-xYC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="U7W-mn-XMY" secondAttribute="trailing" constant="5" id="Oej-xg-huq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Z9u-W6-UQR" secondAttribute="trailing" constant="33" id="UML-0F-CEN"/>
                             <constraint firstItem="U7W-mn-XMY" firstAttribute="top" secondItem="JuL-xc-eUf" secondAttribute="bottom" constant="8" id="WT7-iP-cis"/>
@@ -407,6 +412,9 @@
                                     <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="crossDissolve" id="EtY-N9-9WT"/>
                                 </connections>
                             </button>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="6PN-Eg-ych">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                            </adBannerView>
                         </subviews>
                         <color key="backgroundColor" white="0.87715871710000004" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -414,6 +422,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="KhO-om-oi3" secondAttribute="trailing" constant="32" id="859-kn-UDI"/>
                             <constraint firstItem="CgL-RD-1qm" firstAttribute="top" secondItem="lzl-LL-ure" secondAttribute="bottom" constant="-11" id="8yP-ir-fb5"/>
                             <constraint firstItem="1B7-Cz-rJj" firstAttribute="trailing" secondItem="LMH-lK-bI3" secondAttribute="trailingMargin" id="9JI-oi-coK"/>
+                            <constraint firstAttribute="centerX" secondItem="6PN-Eg-ych" secondAttribute="centerX" id="GOa-1t-D6c"/>
                             <constraint firstItem="GkA-4p-EvY" firstAttribute="leading" secondItem="LMH-lK-bI3" secondAttribute="leadingMargin" id="JIu-MZ-Mok"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ceJ-VS-aoJ" secondAttribute="trailing" constant="110" id="NjB-s9-x6z"/>
                             <constraint firstItem="1c6-3R-IIc" firstAttribute="top" secondItem="lzl-LL-ure" secondAttribute="bottom" constant="9" id="RGb-rC-nSs"/>
@@ -422,6 +431,7 @@
                             <constraint firstItem="1c6-3R-IIc" firstAttribute="leading" secondItem="LMH-lK-bI3" secondAttribute="leadingMargin" id="ceg-ue-xnZ"/>
                             <constraint firstItem="GkA-4p-EvY" firstAttribute="trailing" secondItem="LMH-lK-bI3" secondAttribute="trailingMargin" id="ciP-Z1-uiz"/>
                             <constraint firstItem="1B7-Cz-rJj" firstAttribute="top" secondItem="6tf-p4-Gkv" secondAttribute="bottom" constant="8" id="dMF-P2-qwf"/>
+                            <constraint firstItem="8iC-oj-nPT" firstAttribute="top" secondItem="6PN-Eg-ych" secondAttribute="bottom" id="lB0-JI-grw"/>
                             <constraint firstItem="lzl-LL-ure" firstAttribute="top" secondItem="1B7-Cz-rJj" secondAttribute="bottom" constant="15" id="mwE-aH-xQW"/>
                             <constraint firstItem="ceJ-VS-aoJ" firstAttribute="leading" secondItem="LMH-lK-bI3" secondAttribute="leadingMargin" constant="110" id="n3c-iZ-Xqa"/>
                             <constraint firstItem="6tf-p4-Gkv" firstAttribute="top" secondItem="KhO-om-oi3" secondAttribute="bottom" constant="-6" id="rIA-gx-Hxk"/>
@@ -455,7 +465,7 @@
         <image name="cooltext1776802532.png" width="800" height="110"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="EtY-N9-9WT"/>
         <segue reference="0Hc-lx-IZi"/>
-        <segue reference="scM-pM-fjc"/>
     </inferredMetricsTieBreakers>
 </document>
