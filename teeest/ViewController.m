@@ -79,6 +79,7 @@ float FindValue(NSString *mytxt)
    _crækkenoutlet.tintColor = [UIColor grayColor];
     _moment55.tintColor = [UIColor grayColor];
     _moment88.tintColor = [UIColor blueColor];
+    _crække2outlet.tintColor = [UIColor grayColor];
     
    
     //springlisten
@@ -141,14 +142,14 @@ float FindValue(NSString *mytxt)
         Springarraytext[x++]=tempObject;
     }
     //Disse koder lader disse labels have flere linjer
-    label.numberOfLines = 3;
-    _labelto.numberOfLines = 3;
-    _labeltre.numberOfLines = 3;
-    _labelfire.numberOfLines = 3;
-    _labelfem.numberOfLines = 3;
-    _labelseks.numberOfLines = 3;
-    _labelsyv.numberOfLines = 3;
-    _labelotte.numberOfLines = 3;
+    label.numberOfLines = 5;
+    _labelto.numberOfLines = 5;
+    _labeltre.numberOfLines = 5;
+    _labelfire.numberOfLines = 5;
+    _labelfem.numberOfLines = 5;
+    _labelseks.numberOfLines = 5;
+    _labelsyv.numberOfLines = 5;
+    _labelotte.numberOfLines = 5;
     
     //Når man ser "beregnersiden" første gang så er "pickeren" hidden = ikke synlig
     picker.hidden = YES;
@@ -411,9 +412,14 @@ float FindValue(NSString *mytxt)
     _labelseks.text = nil;
     _labelsyv.text = nil;
     _labelotte.text = nil;
+    _press1.hidden = YES;
+    _press2.hidden = YES;
+    _press3.hidden = YES;
+    _press4.hidden = YES;
     _crækkenoutlet.tintColor = [UIColor blueColor];
     _moment88.tintColor = [UIColor grayColor];
     _moment55.tintColor = [UIColor grayColor];
+    _crække2outlet.tintColor = [UIColor grayColor];
     
     Resultat = label.text;
     fPoint[1] = FindValue(Resultat);
@@ -438,13 +444,13 @@ float FindValue(NSString *mytxt)
     
     
     
-    label.text = @"Tom                                                                              0.0";
-    _labelto.text = @"Tom                                                                              0.0";
-    _labeltre.text = @"Tom                                                                              0.0";
-    _labelfire.text = @"Tom                                                                              0.0";
+    label.text = @"Rondat (                             \n0.2";
+    _labelto.text = @"Flikflak f                           \n0.2";
+    _labeltre.text = @"Whipback ^                           \n0.3";
+    _labelfire.text = @"Flikflak f                           \n0.2";
     _labelfem.text = @"Tom                                                                              0.0";
     
-    _resultat.text = @"0.0";
+    _resultat.text = @"0.9";
     
     picker.hidden = YES;
 
@@ -470,6 +476,7 @@ float FindValue(NSString *mytxt)
     _moment88.tintColor = [UIColor grayColor];
     _moment55.tintColor = [UIColor blueColor];
     _crækkenoutlet.tintColor = [UIColor grayColor];
+    _crække2outlet.tintColor = [UIColor grayColor];
 
     Resultat = label.text;
     fPoint[1] = FindValue(Resultat);
@@ -535,7 +542,7 @@ float FindValue(NSString *mytxt)
     _moment55.tintColor = [UIColor grayColor];
     _moment88.tintColor = [UIColor blueColor];
      _crækkenoutlet.tintColor = [UIColor grayColor];
-    
+    _crække2outlet.tintColor = [UIColor grayColor];
     picker.hidden = YES;
 
 
@@ -543,6 +550,72 @@ float FindValue(NSString *mytxt)
 }
 
 
+
+
+
+- (IBAction)crække2:(id)sender {
+    
+    NSString *Resultat;
+    float fPoint[10];
+    float fPointRes;
+    
+    _momentseks.hidden = YES;
+    _momentsyv.hidden = YES;
+    _momentotte.hidden = YES;
+    _labelseks.hidden = YES;
+    _labelsyv.hidden = YES;
+    _labelotte.hidden = YES;
+    _press6.hidden = YES;
+    _press7.hidden = YES;
+    _press8.hidden = YES;
+    _labelseks.text = nil;
+    _labelsyv.text = nil;
+    _labelotte.text = nil;
+    _press1.hidden = YES;
+    _press2.hidden = YES;
+    _press3.hidden = YES;
+    _press4.hidden = YES;
+    _crækkenoutlet.tintColor = [UIColor grayColor];
+    _moment88.tintColor = [UIColor grayColor];
+    _moment55.tintColor = [UIColor grayColor];
+    _crække2outlet.tintColor = [UIColor blueColor];
+    
+    Resultat = label.text;
+    fPoint[1] = FindValue(Resultat);
+    
+    Resultat = _labelto.text;
+    fPoint[2] = FindValue(Resultat);
+    
+    Resultat = _labeltre.text;
+    fPoint[3] = FindValue(Resultat);
+    
+    Resultat = _labelfire.text;
+    fPoint[4] = FindValue(Resultat);
+    
+    Resultat = _labelfem.text;
+    fPoint[5] = FindValue(Resultat);
+    
+    
+    
+    fPointRes = fPoint[1]+fPoint[2]+fPoint[3]+fPoint[4]+fPoint[5];
+    
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",fPointRes];
+    
+    
+    
+    label.text = @"Rondat (                             \n0.2";
+    _labelto.text = @"Whipback ^                           \n0.3";
+    _labeltre.text = @"Whipback ^                           \n0.3";
+    _labelfire.text = @"Flikflak f                           \n0.2";
+    _labelfem.text = @"Tom                                                                              0.0";
+    
+    _resultat.text = @"0.9";
+    
+    picker.hidden = YES;
+    
+
+    
+}
 
 
 

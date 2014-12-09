@@ -56,10 +56,12 @@ NSString *Springarraytext[60];
 @property (weak, nonatomic) IBOutlet UIButton *moment88;
 @property (weak, nonatomic) IBOutlet UIButton *crækkenoutlet;
 
+@property (weak, nonatomic) IBOutlet UIButton *crække2outlet;
 
 
 
 //De tre knapper som viser c række udsenent og b række og elite række udsenet som knapper
+- (IBAction)crække2:(id)sender;
 
 - (IBAction)crækken:(id)sender;
 

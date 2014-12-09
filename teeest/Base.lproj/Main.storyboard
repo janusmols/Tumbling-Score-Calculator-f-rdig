@@ -166,12 +166,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tom                                                                              0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fms-OM-fdE">
-                                <rect key="frame" x="124" y="186" width="400" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tom                                                                              0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2s-hI-zh3">
                                 <rect key="frame" x="124" y="244" width="400" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -214,12 +208,21 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlJ-ah-T6b">
-                                <rect key="frame" x="140" y="36" width="59" height="30"/>
+                                <rect key="frame" x="144" y="20" width="59" height="30"/>
                                 <state key="normal" title="B-række">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="moment5:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CQP-x0-7JG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnG-E1-vch">
+                                <rect key="frame" x="216" y="20" width="78" height="30"/>
+                                <state key="normal" title="Elite-række">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moment8:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pla-HQ-i4k"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tom                                                                              0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hi4-EE-Lgw">
@@ -229,23 +232,29 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPQ-qy-Ks3">
-                                <rect key="frame" x="60" y="34" width="63" height="34"/>
-                                <state key="normal" title="C-række">
+                                <rect key="frame" x="63" y="18" width="73" height="34"/>
+                                <state key="normal" title="C-række 1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="crækken:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ye9-zm-XYK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnG-E1-vch">
-                                <rect key="frame" x="220" y="36" width="78" height="30"/>
-                                <state key="normal" title="Elite-række">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVG-As-uLt">
+                                <rect key="frame" x="63" y="46" width="73" height="30"/>
+                                <state key="normal" title="C-række 2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="moment8:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pla-HQ-i4k"/>
+                                    <action selector="crække2:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bTb-nb-FGA"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tom                                                                              0.0" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fms-OM-fdE">
+                                <rect key="frame" x="124" y="186" width="400" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.87715871710000004" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -253,6 +262,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="crække2outlet" destination="dVG-As-uLt" id="nKk-eb-hs7"/>
                         <outlet property="crækkenoutlet" destination="hPQ-qy-Ks3" id="Rqp-5W-N46"/>
                         <outlet property="label" destination="eOG-co-mk8" id="QaC-TN-SWJ"/>
                         <outlet property="labelfem" destination="Fms-OM-fdE" id="Ben-dG-4vy"/>
