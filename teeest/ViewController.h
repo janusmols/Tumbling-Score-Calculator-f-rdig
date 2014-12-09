@@ -116,6 +116,7 @@ NSString *Springarraytext[60];
 
 //krav beskrivelsen
 @property (weak, nonatomic) IBOutlet UILabel *krav;
+@property (weak, nonatomic) IBOutlet UILabel *elitekrav;
 
 @end
 

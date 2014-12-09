@@ -268,6 +268,12 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFS-3e-lUF">
+                                <rect key="frame" x="5" y="311" width="191" height="94"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.87715871710000004" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -277,6 +283,7 @@
                     <connections>
                         <outlet property="crække2outlet" destination="dVG-As-uLt" id="nKk-eb-hs7"/>
                         <outlet property="crækkenoutlet" destination="hPQ-qy-Ks3" id="Rqp-5W-N46"/>
+                        <outlet property="elitekrav" destination="XFS-3e-lUF" id="ntE-O9-7N6"/>
                         <outlet property="krav" destination="Ku7-H1-MFi" id="sTS-TO-BHe"/>
                         <outlet property="label" destination="eOG-co-mk8" id="QaC-TN-SWJ"/>
                         <outlet property="labelfem" destination="Fms-OM-fdE" id="Ben-dG-4vy"/>

@@ -63,6 +63,7 @@ float FindValue(NSString *mytxt)
     // Do any additional setup after loading the view, typically from a nib.
    //Vælg knappernes farve er blå
     _resultat.text = @"0.0";
+    _krav.hidden = YES;
     _press1.tintColor = [UIColor blueColor];
     _press2.tintColor = [UIColor blueColor];
     _press3.tintColor = [UIColor blueColor];
@@ -82,6 +83,7 @@ float FindValue(NSString *mytxt)
     _crække2outlet.tintColor = [UIColor grayColor];
     
    
+    
     //springlisten
     springArray = [[NSArray alloc]initWithObjects:
                
@@ -454,6 +456,7 @@ float FindValue(NSString *mytxt)
     
     picker.hidden = YES;
     
+    _krav.hidden = NO;
     _krav.text = @"￼\nMikro og mini: Øvelse 1: Rondat - Flik - whip - flik -\n(frit slutspring)\nJunior og senior: Øvelse 1: Rondat - Flik - whip - flik - (frit slutspring) I enten øvelse 1 eller øvelse 2 skal\nslutspringet indeholde mindst en hel skrue)";
 
 }
@@ -511,7 +514,11 @@ float FindValue(NSString *mytxt)
     
     _resultat.text = @"0.0";
     
-       picker.hidden = YES;
+    picker.hidden = YES;
+    
+    _krav.hidden = NO;
+    _krav.text = @"\nMini, junior og senior: Øvelse 1: 5 spring - Fri øvelse - minimum 2 saltospring\nØvelse 2: 5 spring - Fri øvelse - minimum 2 saltospring og et spring med hel skrue";
+    
 }
 
 //Når man vælger 8-moment "mode" så gøres 5-moment knappen grålig og 8-moment kanppen klar blå og alle ting nulstilles og "pickeren" gøres usynlig 
@@ -547,6 +554,10 @@ float FindValue(NSString *mytxt)
     _crække2outlet.tintColor = [UIColor grayColor];
     picker.hidden = YES;
 
+    
+    _krav.hidden = YES;
+    _elitekrav.text = @"￼\nMini og Junior: Øvelse 1: Øvelse 1: 8 spring - Fri øvelse - minimum 3 saltospring Øvelse 2: 8 spring - Fri øvelse - minimum 3 saltospring og et spring med hel skrue\nsenior: Øvelse 1: 8 spring - Fri øvelse - minimum 3 saltospring - Max en halv skrue Øvelse 2: 8 spring - Fri øvelse - minimum 3 saltospring og 2spring med hel skrue";
+    
 
 
 }
@@ -561,6 +572,7 @@ float FindValue(NSString *mytxt)
     float fPoint[10];
     float fPointRes;
     
+    _krav.hidden = NO;
     _krav.text = @"￼\nMikro og mini: Øvelse 2: Rondat - whip - whip - flik -\n(frit slutspring)\nJunior og senior: Øvelse 2: Rondat - whip - whip -\nflik - (frit slutspring) I enten øvelse 1 eller øvelse 2 skal\nslutspringet indeholde mindst en hel skrue)";
     
     _momentseks.hidden = YES;
