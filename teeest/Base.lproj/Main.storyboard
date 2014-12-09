@@ -214,21 +214,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlJ-ah-T6b">
-                                <rect key="frame" x="67" y="36" width="71" height="30"/>
-                                <state key="normal" title="5-Moment">
+                                <rect key="frame" x="140" y="36" width="59" height="30"/>
+                                <state key="normal" title="B-række">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="moment5:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CQP-x0-7JG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnG-E1-vch">
-                                <rect key="frame" x="184" y="36" width="71" height="30"/>
-                                <state key="normal" title="8-Moment">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="moment8:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pla-HQ-i4k"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tom                                                                              0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hi4-EE-Lgw">
@@ -237,6 +228,24 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPQ-qy-Ks3">
+                                <rect key="frame" x="60" y="34" width="63" height="34"/>
+                                <state key="normal" title="C-række">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="crækken:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ye9-zm-XYK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnG-E1-vch">
+                                <rect key="frame" x="220" y="36" width="78" height="30"/>
+                                <state key="normal" title="Elite-række">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moment8:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pla-HQ-i4k"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.87715871710000004" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -244,6 +253,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="crækkenoutlet" destination="hPQ-qy-Ks3" id="Rqp-5W-N46"/>
                         <outlet property="label" destination="eOG-co-mk8" id="QaC-TN-SWJ"/>
                         <outlet property="labelfem" destination="Fms-OM-fdE" id="Ben-dG-4vy"/>
                         <outlet property="labelfire" destination="XDZ-bz-7z0" id="FyT-gB-YI9"/>
@@ -505,7 +515,7 @@
         <image name="cooltext1776802532.png" width="800" height="110"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EtY-N9-9WT"/>
-        <segue reference="Cx2-PX-EIi"/>
+        <segue reference="scM-pM-fjc"/>
+        <segue reference="0Hc-lx-IZi"/>
     </inferredMetricsTieBreakers>
 </document>

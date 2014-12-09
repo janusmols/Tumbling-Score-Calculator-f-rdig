@@ -54,11 +54,15 @@ NSString *Springarraytext[60];
 //De to knapper som viser 5moment udsenent og 8moment udsenet som labels
 @property (weak, nonatomic) IBOutlet UIButton *moment55;
 @property (weak, nonatomic) IBOutlet UIButton *moment88;
+@property (weak, nonatomic) IBOutlet UIButton *crækkenoutlet;
 
 
 
 
-//De to knapper som viser 5moment udsenent og 8moment udsenet som knapper
+//De tre knapper som viser c række udsenent og b række og elite række udsenet som knapper
+
+- (IBAction)crækken:(id)sender;
+
 - (IBAction)moment5:(id)sender;
 
 - (IBAction)moment8:(id)sender;

@@ -62,6 +62,7 @@ float FindValue(NSString *mytxt)
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
    //Vælg knappernes farve er blå
+    _resultat.text = @"0.0";
     _press1.tintColor = [UIColor blueColor];
     _press2.tintColor = [UIColor blueColor];
     _press3.tintColor = [UIColor blueColor];
@@ -75,8 +76,10 @@ float FindValue(NSString *mytxt)
     
     
     //Den skal starte med at udsenet skal se således ud at 8-moment er klar blå og 5-moment er grålig
+   _crækkenoutlet.tintColor = [UIColor grayColor];
     _moment55.tintColor = [UIColor grayColor];
     _moment88.tintColor = [UIColor blueColor];
+    
    
     //springlisten
     springArray = [[NSArray alloc]initWithObjects:
@@ -391,6 +394,62 @@ float FindValue(NSString *mytxt)
 //Her er en kopi af beregneren ovenfor som bare bruges til at beregne 5-moment karakterene sammen og skrive den i resulat labelet og
 //Når man vælger 5-moment "mode" så gøres 5-moment knappen klar blå og 8-moment kanppen grålig og fjerner moment 6-8 og medhørende ting og nulstilles og "pickeren" gøres usynlig
 
+- (IBAction)crækken:(id)sender {
+    NSString *Resultat;
+    float fPoint[10];
+    float fPointRes;
+    
+    _momentseks.hidden = YES;
+    _momentsyv.hidden = YES;
+    _momentotte.hidden = YES;
+    _labelseks.hidden = YES;
+    _labelsyv.hidden = YES;
+    _labelotte.hidden = YES;
+    _press6.hidden = YES;
+    _press7.hidden = YES;
+    _press8.hidden = YES;
+    _labelseks.text = nil;
+    _labelsyv.text = nil;
+    _labelotte.text = nil;
+    _crækkenoutlet.tintColor = [UIColor blueColor];
+    _moment88.tintColor = [UIColor grayColor];
+    _moment55.tintColor = [UIColor grayColor];
+    
+    Resultat = label.text;
+    fPoint[1] = FindValue(Resultat);
+    
+    Resultat = _labelto.text;
+    fPoint[2] = FindValue(Resultat);
+    
+    Resultat = _labeltre.text;
+    fPoint[3] = FindValue(Resultat);
+    
+    Resultat = _labelfire.text;
+    fPoint[4] = FindValue(Resultat);
+    
+    Resultat = _labelfem.text;
+    fPoint[5] = FindValue(Resultat);
+    
+    
+    
+    fPointRes = fPoint[1]+fPoint[2]+fPoint[3]+fPoint[4]+fPoint[5];
+    
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",fPointRes];
+    
+    
+    
+    label.text = @"Tom                                                                              0.0";
+    _labelto.text = @"Tom                                                                              0.0";
+    _labeltre.text = @"Tom                                                                              0.0";
+    _labelfire.text = @"Tom                                                                              0.0";
+    _labelfem.text = @"Tom                                                                              0.0";
+    
+    _resultat.text = @"0.0";
+    
+    picker.hidden = YES;
+
+}
+
 - (IBAction)moment5:(id)sender {
     NSString *Resultat;
     float fPoint[10];
@@ -410,6 +469,7 @@ float FindValue(NSString *mytxt)
     _labelotte.text = nil;
     _moment88.tintColor = [UIColor grayColor];
     _moment55.tintColor = [UIColor blueColor];
+    _crækkenoutlet.tintColor = [UIColor grayColor];
 
     Resultat = label.text;
     fPoint[1] = FindValue(Resultat);
@@ -474,6 +534,7 @@ float FindValue(NSString *mytxt)
     
     _moment55.tintColor = [UIColor grayColor];
     _moment88.tintColor = [UIColor blueColor];
+     _crækkenoutlet.tintColor = [UIColor grayColor];
     
     picker.hidden = YES;
 
