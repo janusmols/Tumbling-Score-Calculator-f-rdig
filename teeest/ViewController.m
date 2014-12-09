@@ -453,6 +453,8 @@ float FindValue(NSString *mytxt)
     _resultat.text = @"0.9";
     
     picker.hidden = YES;
+    
+    _krav.text = @"￼\nMikro og mini: Øvelse 1: Rondat - Flik - whip - flik -\n(frit slutspring)\nJunior og senior: Øvelse 1: Rondat - Flik - whip - flik - (frit slutspring) I enten øvelse 1 eller øvelse 2 skal\nslutspringet indeholde mindst en hel skrue)";
 
 }
 
@@ -558,6 +560,8 @@ float FindValue(NSString *mytxt)
     NSString *Resultat;
     float fPoint[10];
     float fPointRes;
+    
+    _krav.text = @"￼\nMikro og mini: Øvelse 2: Rondat - whip - whip - flik -\n(frit slutspring)\nJunior og senior: Øvelse 2: Rondat - whip - whip -\nflik - (frit slutspring) I enten øvelse 1 eller øvelse 2 skal\nslutspringet indeholde mindst en hel skrue)";
     
     _momentseks.hidden = YES;
     _momentsyv.hidden = YES;

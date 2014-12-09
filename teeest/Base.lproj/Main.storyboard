@@ -166,6 +166,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tom                                                                              0.0" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fms-OM-fdE">
+                                <rect key="frame" x="124" y="186" width="400" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tom                                                                              0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2s-hI-zh3">
                                 <rect key="frame" x="124" y="244" width="400" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -249,10 +255,17 @@
                                     <action selector="crække2:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bTb-nb-FGA"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tom                                                                              0.0" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fms-OM-fdE">
-                                <rect key="frame" x="124" y="186" width="400" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ku7-H1-MFi">
+                                <rect key="frame" x="4" y="166" width="300" height="161"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="hhu">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="10" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -264,6 +277,7 @@
                     <connections>
                         <outlet property="crække2outlet" destination="dVG-As-uLt" id="nKk-eb-hs7"/>
                         <outlet property="crækkenoutlet" destination="hPQ-qy-Ks3" id="Rqp-5W-N46"/>
+                        <outlet property="krav" destination="Ku7-H1-MFi" id="sTS-TO-BHe"/>
                         <outlet property="label" destination="eOG-co-mk8" id="QaC-TN-SWJ"/>
                         <outlet property="labelfem" destination="Fms-OM-fdE" id="Ben-dG-4vy"/>
                         <outlet property="labelfire" destination="XDZ-bz-7z0" id="FyT-gB-YI9"/>
