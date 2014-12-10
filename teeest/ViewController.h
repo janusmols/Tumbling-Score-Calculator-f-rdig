@@ -8,9 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+#define c1 1
+#define c2 2
+#define b1 3
+#define b2 4
+#define e1 5
+#define e2 6
+
+int raekke;
+
+
+
 int g_iWhichLabel;
 
-
+NSString *container[7][9];
 
 NSString *Springarraytext[60];
 

@@ -382,18 +382,18 @@
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Z9u-W6-UQR" secondAttribute="trailing" constant="31" id="6Tz-OM-T4p"/>
                             <constraint firstItem="Z9u-W6-UQR" firstAttribute="top" secondItem="uAQ-WK-Gll" secondAttribute="bottom" constant="24" id="7gZ-6S-Kck"/>
-                            <constraint firstItem="zZn-zu-ucb" firstAttribute="top" secondItem="Z9u-W6-UQR" secondAttribute="bottom" constant="82" id="K8B-pH-gv3"/>
+                            <constraint firstItem="JuL-xc-eUf" firstAttribute="top" secondItem="7D8-6y-dzg" secondAttribute="bottom" id="BAP-SU-SEg"/>
                             <constraint firstAttribute="centerX" secondItem="U7W-mn-XMY" secondAttribute="centerX" id="KzQ-tn-DeH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="JuL-xc-eUf" secondAttribute="trailing" constant="28" id="UsT-a6-OYz"/>
                             <constraint firstAttribute="centerX" secondItem="Z9u-W6-UQR" secondAttribute="centerX" constant="-15.5" id="Vnp-wc-3A9"/>
                             <constraint firstItem="U7W-mn-XMY" firstAttribute="top" secondItem="JuL-xc-eUf" secondAttribute="bottom" constant="8" id="bc5-K9-Awi"/>
-                            <constraint firstItem="JuL-xc-eUf" firstAttribute="top" secondItem="7D8-6y-dzg" secondAttribute="bottom" id="biG-jG-4be"/>
                             <constraint firstItem="Z9u-W6-UQR" firstAttribute="leading" secondItem="ZEl-QS-n8y" secondAttribute="leadingMargin" constant="62" id="cTp-tS-dSi"/>
                             <constraint firstItem="JuL-xc-eUf" firstAttribute="leading" secondItem="ZEl-QS-n8y" secondAttribute="leadingMargin" constant="36" id="f72-cv-zki"/>
                             <constraint firstAttribute="centerY" secondItem="Z9u-W6-UQR" secondAttribute="centerY" constant="-76.5" id="gNw-hU-iqv"/>
-                            <constraint firstItem="JuL-xc-eUf" firstAttribute="top" secondItem="7D8-6y-dzg" secondAttribute="bottom" id="nCX-Y1-3gK"/>
-                            <constraint firstItem="zZn-zu-ucb" firstAttribute="top" secondItem="aay-uE-DP4" secondAttribute="bottom" id="oPU-4Q-O2i"/>
+                            <constraint firstItem="zZn-zu-ucb" firstAttribute="top" secondItem="Z9u-W6-UQR" secondAttribute="bottom" constant="82" id="lIX-Gq-edb"/>
+                            <constraint firstItem="JuL-xc-eUf" firstAttribute="top" secondItem="7D8-6y-dzg" secondAttribute="bottom" id="oZc-bT-pEP"/>
                             <constraint firstAttribute="centerY" secondItem="Z9u-W6-UQR" secondAttribute="centerY" constant="-76.5" id="saN-pT-P8c"/>
+                            <constraint firstItem="zZn-zu-ucb" firstAttribute="top" secondItem="aay-uE-DP4" secondAttribute="bottom" id="vM2-lH-Lww"/>
                             <constraint firstAttribute="centerX" secondItem="JuL-xc-eUf" secondAttribute="centerX" constant="-4" id="vyA-ir-OXE"/>
                             <constraint firstAttribute="centerX" secondItem="uAQ-WK-Gll" secondAttribute="centerX" constant="2.5" id="yjs-dH-Kjd"/>
                             <constraint firstItem="uAQ-WK-Gll" firstAttribute="top" secondItem="U7W-mn-XMY" secondAttribute="bottom" constant="8" id="zzG-uR-lqD"/>
@@ -456,13 +456,13 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Roo-Nw-B5J">
                                 <rect key="frame" x="25" y="98" width="279" height="147"/>
-                                <string key="text">Med denne app kan du nemt og hurtigt beregne vanskeligheden ud fra dine indtastede rutiner. Du kan beregne vanskeligheden for 5-moment rutiner og 8-moment rutiner hver for sig ved blot at vælge mellem de to valgmuligheder øverst i beregneren.</string>
+                                <string key="text">Med denne app kan du nemt og hurtigt beregne vanskeligheden af dine indtastede rutiner rutiner. Du kan beregne vanskeligheden for C-rækken, B-rækken og Elite-rækken hver for sig ved blot at vælge mellem de forskellige valgmuligheder øverst i beregneren.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Denne app er baseret på:" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2Z-3e-dTj">
-                                <rect key="frame" x="25" y="291" width="164" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Beregningssystemet er baseret på:" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2Z-3e-dTj">
+                                <rect key="frame" x="25" y="291" width="225" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -524,9 +524,9 @@
                             <constraint firstAttribute="centerY" secondItem="ceJ-VS-aoJ" secondAttribute="centerY" constant="-112" id="gIS-U1-NDm"/>
                             <constraint firstItem="8iC-oj-nPT" firstAttribute="top" secondItem="6PN-Eg-ych" secondAttribute="bottom" id="lB0-JI-grw"/>
                             <constraint firstItem="ceJ-VS-aoJ" firstAttribute="leading" secondItem="LMH-lK-bI3" secondAttribute="leadingMargin" constant="110" id="n3c-iZ-Xqa"/>
-                            <constraint firstAttribute="centerX" secondItem="C2Z-3e-dTj" secondAttribute="centerX" constant="53" id="oc6-C7-ic9"/>
                             <constraint firstItem="6tf-p4-Gkv" firstAttribute="top" secondItem="KhO-om-oi3" secondAttribute="bottom" constant="-6" id="rIA-gx-Hxk"/>
                             <constraint firstItem="Roo-Nw-B5J" firstAttribute="top" secondItem="6tf-p4-Gkv" secondAttribute="bottom" constant="-7" id="sOC-Kd-4xr"/>
+                            <constraint firstAttribute="centerX" secondItem="C2Z-3e-dTj" secondAttribute="centerX" constant="22.5" id="t8f-ap-B9m"/>
                             <constraint firstItem="6tf-p4-Gkv" firstAttribute="leading" secondItem="LMH-lK-bI3" secondAttribute="leadingMargin" constant="-11" id="urB-8o-LFN"/>
                             <constraint firstItem="KhO-om-oi3" firstAttribute="leading" secondItem="LMH-lK-bI3" secondAttribute="leadingMargin" constant="32" id="vEB-eO-9uR"/>
                             <constraint firstItem="Roo-Nw-B5J" firstAttribute="leading" secondItem="LMH-lK-bI3" secondAttribute="leadingMargin" constant="9" id="vmy-Fh-FQa"/>
@@ -566,7 +566,7 @@
         <image name="cooltext1776802532.png" width="800" height="110"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="scM-pM-fjc"/>
+        <segue reference="EtY-N9-9WT"/>
         <segue reference="0Hc-lx-IZi"/>
     </inferredMetricsTieBreakers>
 </document>

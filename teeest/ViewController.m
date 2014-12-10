@@ -60,7 +60,11 @@ float FindValue(NSString *mytxt)
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+   
+    
+    
+    
+    
    //Vælg knappernes farve er blå
     _resultat.text = @"0.0";
     _elitekrav.hidden = NO;
@@ -203,40 +207,57 @@ float FindValue(NSString *mytxt)
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     switch (g_iWhichLabel) {
         case 1:
-             label.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            
+            container[e1][1] = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            label.text = container[e1][1];
             break;
             
         case 2:
-            _labelto.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+           
+            container[e1][2] = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            _labelto.text = container[e1][2];
             break;
 
         case 3:
-            _labeltre.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            container[e1][3] = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            _labeltre.text = container[e1][3];
             break;
 
         case 4:
-            _labelfire.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+           
+            container[e1][4] = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            _labelfire.text = container[e1][4];
             break;
 
         case 5:
-            _labelfem.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            
+            container[e1][5] = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            _labelfem.text = container[e1][5];
             break;
 
         case 6:
-            _labelseks.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+                       container[e1][6] = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            _labelseks.text = container[e1][6];
             break;
 
         case 7:
-            _labelsyv.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+          
+            container[e1][7] = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            _labelsyv.text = container[e1][7];
             break;
 
         case 8:
-            _labelotte.text = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            
+            container[e1][8] = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            _labelotte.text = container[e1][8];
             break;
 
             
         default:
             break;
+            
+           
+            
     }
     
         picker.hidden = NO;
@@ -274,7 +295,7 @@ float FindValue(NSString *mytxt)
     fPointRes = fPoint[1]+fPoint[2]+fPoint[3]+fPoint[4]+fPoint[5]+fPoint[6]+fPoint[7]+fPoint[8];
     
     _resultat.text =  [NSString stringWithFormat:@"%.1f",fPointRes];
-    _elitesamletresultat.text = [NSString stringWithFormat:@"%.1f",fPointRes];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -408,6 +429,8 @@ float FindValue(NSString *mytxt)
     float fPoint[10];
     float fPointRes;
     
+    raekke = c1;
+    
     _momentseks.hidden = YES;
     _momentsyv.hidden = YES;
     _momentotte.hidden = YES;
@@ -475,6 +498,7 @@ float FindValue(NSString *mytxt)
     NSString *Resultat;
     float fPoint[10];
     float fPointRes;
+    raekke = b2;
     
     _momentseks.hidden = YES;
     _momentsyv.hidden = YES;
@@ -542,6 +566,7 @@ float FindValue(NSString *mytxt)
     NSString *Resultat;
     float fPoint[10];
     float fPointRes;
+    raekke = b1;
     
     _momentseks.hidden = YES;
     _momentsyv.hidden = YES;
@@ -608,6 +633,7 @@ float FindValue(NSString *mytxt)
 
 - (IBAction)eliterække2:(id)sender {
     
+    raekke = e2;
     _momentseks.hidden = NO;
     _momentsyv.hidden = NO;
     _momentotte.hidden = NO;
@@ -656,6 +682,8 @@ float FindValue(NSString *mytxt)
 
 //Når man vælger 8-moment "mode" så gøres 5-moment knappen grålig og 8-moment kanppen klar blå og alle ting nulstilles og "pickeren" gøres usynlig 
 - (IBAction)moment8:(id)sender {
+    
+    raekke = e1;
     
     _momentseks.hidden = NO;
     _momentsyv.hidden = NO;
@@ -708,6 +736,8 @@ float FindValue(NSString *mytxt)
 
 
 - (IBAction)crække2:(id)sender {
+    
+    raekke = c2;
     
     NSString *Resultat;
     float fPoint[10];
