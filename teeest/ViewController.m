@@ -64,7 +64,7 @@ float FindValue(NSString *mytxt)
    //Vælg knappernes farve er blå
     _resultat.text = @"0.0";
     _elitekrav.hidden = NO;
-     _elitekrav.text = @"￼\nMini og Junior: Øvelse 1: 8 spring - Fri øvelse\n- minimum 3 saltospring\nØvelse 2: 8 spring - Fri øvelse - minimum 3 saltospring og et spring med hel skrue\nsenior: Øvelse 1: 8 spring - Fri øvelse - minimum 3 saltospring - Max en halv skrue\nØvelse 2: 8 spring - Fri øvelse - minimum 3 saltospring og 2 spring med hel skrue";
+     _elitekrav.text = @"￼￼\nMini og Junior: Øvelse 1: 8 spring - Fri øvelse- minimum 3\nsaltospring.\nSenior: Øvelse 1: 8 spring - Fri øvelse - minimum 3 saltospring - Max en halv skrue.";
     
     _krav.hidden = YES;
     _press1.tintColor = [UIColor blueColor];
@@ -84,6 +84,8 @@ float FindValue(NSString *mytxt)
     _moment55.tintColor = [UIColor grayColor];
     _moment88.tintColor = [UIColor blueColor];
     _crække2outlet.tintColor = [UIColor grayColor];
+    _brække2.tintColor = [UIColor grayColor];
+    _eliterække2.tintColor = [UIColor grayColor];
     
    
     
@@ -272,6 +274,7 @@ float FindValue(NSString *mytxt)
     fPointRes = fPoint[1]+fPoint[2]+fPoint[3]+fPoint[4]+fPoint[5]+fPoint[6]+fPoint[7]+fPoint[8];
     
     _resultat.text =  [NSString stringWithFormat:@"%.1f",fPointRes];
+    _elitesamletresultat.text = [NSString stringWithFormat:@"%.1f",fPointRes];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -425,6 +428,8 @@ float FindValue(NSString *mytxt)
     _moment88.tintColor = [UIColor grayColor];
     _moment55.tintColor = [UIColor grayColor];
     _crække2outlet.tintColor = [UIColor grayColor];
+    _brække2.tintColor = [UIColor grayColor];
+    _eliterække2.tintColor = [UIColor grayColor];
     
     Resultat = label.text;
     fPoint[1] = FindValue(Resultat);
@@ -465,6 +470,74 @@ float FindValue(NSString *mytxt)
 
 }
 
+- (IBAction)brække2:(id)sender {
+    
+    NSString *Resultat;
+    float fPoint[10];
+    float fPointRes;
+    
+    _momentseks.hidden = YES;
+    _momentsyv.hidden = YES;
+    _momentotte.hidden = YES;
+    _labelseks.hidden = YES;
+    _labelsyv.hidden = YES;
+    _labelotte.hidden = YES;
+    _press6.hidden = YES;
+    _press7.hidden = YES;
+    _press8.hidden = YES;
+    _labelseks.text = nil;
+    _labelsyv.text = nil;
+    _labelotte.text = nil;
+    _press1.hidden = NO;
+    _press2.hidden = NO;
+    _press3.hidden = NO;
+    _press4.hidden = NO;
+    
+    _moment88.tintColor = [UIColor grayColor];
+    _moment55.tintColor = [UIColor grayColor];
+    _crækkenoutlet.tintColor = [UIColor grayColor];
+    _crække2outlet.tintColor = [UIColor grayColor];
+    _brække2.tintColor = [UIColor blueColor];
+    _eliterække2.tintColor = [UIColor grayColor];
+    
+    Resultat = label.text;
+    fPoint[1] = FindValue(Resultat);
+    
+    Resultat = _labelto.text;
+    fPoint[2] = FindValue(Resultat);
+    
+    Resultat = _labeltre.text;
+    fPoint[3] = FindValue(Resultat);
+    
+    Resultat = _labelfire.text;
+    fPoint[4] = FindValue(Resultat);
+    
+    Resultat = _labelfem.text;
+    fPoint[5] = FindValue(Resultat);
+    
+    
+    
+    fPointRes = fPoint[1]+fPoint[2]+fPoint[3]+fPoint[4]+fPoint[5];
+    
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",fPointRes];
+    
+    
+    
+    label.text = @"Tom                                                                              0.0";
+    _labelto.text = @"Tom                                                                              0.0";
+    _labeltre.text = @"Tom                                                                              0.0";
+    _labelfire.text = @"Tom                                                                              0.0";
+    _labelfem.text = @"Tom                                                                              0.0";
+    
+    _resultat.text = @"0.0";
+    
+    picker.hidden = YES;
+    
+    _elitekrav.hidden = YES;
+    _krav.hidden = NO;
+    _krav.text = @"\nMini, junior og senior: Øvelse 2: 5 spring - Fri øvelse - minimum\n2 saltospring og et spring med hel skrue";
+}
+
 - (IBAction)moment5:(id)sender {
     NSString *Resultat;
     float fPoint[10];
@@ -491,6 +564,8 @@ float FindValue(NSString *mytxt)
     _moment55.tintColor = [UIColor blueColor];
     _crækkenoutlet.tintColor = [UIColor grayColor];
     _crække2outlet.tintColor = [UIColor grayColor];
+    _brække2.tintColor = [UIColor grayColor];
+    _eliterække2.tintColor = [UIColor grayColor];
 
     Resultat = label.text;
     fPoint[1] = FindValue(Resultat);
@@ -527,7 +602,55 @@ float FindValue(NSString *mytxt)
     
     _elitekrav.hidden = YES;
     _krav.hidden = NO;
-    _krav.text = @"\nMini, junior og senior: Øvelse 1: 5 spring - Fri øvelse - minimum 2 saltospring\nØvelse 2: 5 spring - Fri øvelse - minimum 2 saltospring og et spring med hel skrue";
+    _krav.text = @"\nMini, junior og senior: Øvelse 1: 5 spring - Fri øvelse - minimum 2 saltospring";
+    
+}
+
+- (IBAction)eliterække2:(id)sender {
+    
+    _momentseks.hidden = NO;
+    _momentsyv.hidden = NO;
+    _momentotte.hidden = NO;
+    _labelseks.hidden = NO;
+    _labelsyv.hidden = NO;
+    _labelotte.hidden = NO;
+    _press6.hidden = NO;
+    _press7.hidden = NO;
+    _press8.hidden = NO;
+    _press1.hidden = NO;
+    _press2.hidden = NO;
+    _press3.hidden = NO;
+    _press4.hidden = NO;
+    
+    
+    
+    label.text = @"Tom                                                                              0.0";
+    _labelto.text = @"Tom                                                                              0.0";
+    _labeltre.text = @"Tom                                                                              0.0";
+    _labelfire.text = @"Tom                                                                              0.0";
+    _labelfem.text = @"Tom                                                                              0.0";
+    _labelseks.text = @"Tom                                                                              0.0";
+    _labelsyv.text = @"Tom                                                                              0.0";
+    _labelotte.text = @"Tom                                                                              0.0";
+    
+    _resultat.text = @"0.0";
+    
+    
+    _moment55.tintColor = [UIColor grayColor];
+    _moment88.tintColor = [UIColor grayColor];
+    _crækkenoutlet.tintColor = [UIColor grayColor];
+    _crække2outlet.tintColor = [UIColor grayColor];
+    _brække2.tintColor = [UIColor grayColor];
+    _eliterække2.tintColor = [UIColor blueColor];
+    
+
+    picker.hidden = YES;
+    
+    
+    _krav.hidden = YES;
+    _elitekrav.hidden = NO;
+    _elitekrav.text = @"￼\nMini og Junior: Øvelse 2: 8 spring - Fri øvelse - minimum 3\nsaltospring og et spring med hel skrue.\nSenior: Øvelse 2: 8 spring - Fri øvelse - minimum 3\nsaltospring og 2 spring med hel skrue";
+    
     
 }
 
@@ -566,13 +689,16 @@ float FindValue(NSString *mytxt)
     _moment88.tintColor = [UIColor blueColor];
      _crækkenoutlet.tintColor = [UIColor grayColor];
     _crække2outlet.tintColor = [UIColor grayColor];
+    _brække2.tintColor = [UIColor grayColor];
+    _eliterække2.tintColor = [UIColor grayColor];
     picker.hidden = YES;
 
     
     _krav.hidden = YES;
     _elitekrav.hidden = NO;
-    _elitekrav.text = @"￼\nMini og Junior: Øvelse 1: 8 spring - Fri øvelse\n- minimum 3 saltospring\nØvelse 2: 8 spring - Fri øvelse - minimum 3 saltospring og et spring med hel skrue\nsenior: Øvelse 1: 8 spring - Fri øvelse - minimum 3 saltospring - Max en halv skrue\nØvelse 2: 8 spring - Fri øvelse - minimum 3 saltospring og 2 spring med hel skrue";
+    _elitekrav.text = @"￼\nMini og Junior: Øvelse 1: 8 spring - Fri øvelse- minimum 3\nsaltospring.\nSenior: Øvelse 1: 8 spring - Fri øvelse - minimum 3 saltospring - Max en halv skrue.";
     
+
 
 
 }
@@ -611,6 +737,8 @@ float FindValue(NSString *mytxt)
     _moment88.tintColor = [UIColor grayColor];
     _moment55.tintColor = [UIColor grayColor];
     _crække2outlet.tintColor = [UIColor blueColor];
+    _brække2.tintColor = [UIColor grayColor];
+    _eliterække2.tintColor = [UIColor grayColor];
     
     Resultat = label.text;
     fPoint[1] = FindValue(Resultat);
