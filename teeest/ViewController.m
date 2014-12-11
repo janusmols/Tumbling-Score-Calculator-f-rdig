@@ -263,45 +263,25 @@ float FindValue(NSString *mytxt)
     
         picker.hidden = NO;
     
-    //From button "Beregn"
-    //Her lægger den alle springene sammen og skriver resultatet i resultat labelet
-    //
-    // NSString *Resultat;
-    //float fPoint[10];
-    float fPointRes;
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+
+    if ((raekke == e1) || (raekke == e2)){
+    _samletresultat.text = [NSString stringWithFormat:@"%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
+    }
     
-    //Resultat = label.text;
-    //fPoint[1] = FindValue(Resultat);
     
-    //Resultat = _labelto.text;
-    //fPoint[2] = FindValue(Resultat);
+     if ((raekke == c1) || (raekke == c2)){
+    _samletresultat.text = [NSString stringWithFormat:@"%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
+     }
     
-    //Resultat = _labeltre.text;
-    //fPoint[3] = FindValue(Resultat);
-    
-    //Resultat = _labelfire.text;
-    //fPoint[4] = FindValue(Resultat);
-    
-    //Resultat = _labelfem.text;
-    //fPoint[5] = FindValue(Resultat);
-    
-    //Resultat = _labelseks.text;
-    //fPoint[6] = FindValue(Resultat);
-    
-    //Resultat = _labelsyv.text;
-    //fPoint[7] = FindValue(Resultat);
-    
-    //Resultat = _labelotte.text;
-    //fPoint[8] = FindValue(Resultat);
-    
-    //fPointRes = fPoint[1]+fPoint[2]+fPoint[3]+fPoint[4]+fPoint[5]+fPoint[6]+fPoint[7]+fPoint[8];
-    fPointRes = CalcRaekke();
-    _resultat.text =  [NSString stringWithFormat:@"%.1f",fPointRes];
+     if ((raekke == b1) || (raekke == b2)){
+    _samletresultat.text = [NSString stringWithFormat:@"%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
+     }
 }
 
 
 
-float CalcRaekke()
+float CalcRaekke(int raekke)
 {
     //From button "Beregn"
     //Her lægger den alle springene sammen og skriver resultatet i resultat labelet
@@ -538,6 +518,8 @@ float CalcRaekke()
     _elitekrav.hidden = YES;
     _krav.hidden = NO;
     _krav.text = @"\nMini, junior og senior: Øvelse 2: 5 spring - Fri øvelse - minimum\n2 saltospring og et spring med hel skrue";
+    
+    [self b2tilbagetillabel];
 }
 
 - (IBAction)moment5:(id)sender {
@@ -607,6 +589,8 @@ float CalcRaekke()
     _krav.hidden = NO;
     _krav.text = @"\nMini, junior og senior: Øvelse 1: 5 spring - Fri øvelse - minimum 2 saltospring";
     
+    [self b1tilbagetillabel];
+    
 }
 
 - (IBAction)eliterække2:(id)sender {
@@ -656,6 +640,7 @@ float CalcRaekke()
     _elitekrav.text = @"￼\nMini og Junior: Øvelse 2: 8 spring - Fri øvelse - minimum 3\nsaltospring og et spring med hel skrue.\nSenior: Øvelse 2: 8 spring - Fri øvelse - minimum 3\nsaltospring og 2 spring med hel skrue";
     
     
+    [self e2tilbagetillabel];
 }
 
 //Når man vælger 8-moment "mode" så gøres 5-moment knappen grålig og 8-moment kanppen klar blå og alle ting nulstilles og "pickeren" gøres usynlig 
@@ -705,7 +690,7 @@ float CalcRaekke()
     _elitekrav.text = @"￼\nMini og Junior: Øvelse 1: 8 spring - Fri øvelse- minimum 3\nsaltospring.\nSenior: Øvelse 1: 8 spring - Fri øvelse - minimum 3 saltospring - Max en halv skrue.";
     
 
-
+[self e1tilbagetillabel];
 
 }
 
@@ -775,14 +760,15 @@ float CalcRaekke()
     container[c2][2]= @"Whipback ^                           \n0.3";
     container[c2][3] = @"Whipback ^                           \n0.3";
     container[c2][4]= @"Flikflak f                           \n0.2";
-    container[c2][5] = @"Tom                                                                              0.0";
+   // _labelfem.text = @"Tom                                                                              0.0";
     
-    [self c2containertillabel];
+    
+    [self c2tilbagetillabel];
     
     
     //Skal erstattes alt efter hvilke faste spring man har
     
-    fPointRes = CalcRaekke();
+    fPointRes = CalcRaekke(raekke);
     _resultat.text =  [NSString stringWithFormat:@"%.1f",fPointRes];
     
     picker.hidden = YES;
@@ -850,10 +836,10 @@ float CalcRaekke()
     container[c1][2] = @"Flikflak f                           \n0.2";
     container[c1][3] = @"Whipback ^                           \n0.3";
     container[c1][4] = @"Flikflak f                           \n0.2";
-    container[c1][5] = @"Tom                                                                              0.0";
-    [self c1containertillabel];
+    //container[c1][5] = @"Tom                                                                              0.0";
+        [self c1tilbagetillabel];
     
-    fPointRes = CalcRaekke();
+    fPointRes = CalcRaekke(raekke);
     _resultat.text =  [NSString stringWithFormat:@"%.1f",fPointRes];
     
     picker.hidden = YES;
@@ -865,23 +851,89 @@ float CalcRaekke()
 }
 
 
--(void)c1containertillabel{
-    
+
+-(void)c1tilbagetillabel{
     label.text = container[c1][1];
     _labelto.text = container[c1][2];
     _labeltre.text = container[c1][3];
     _labelfire.text = container[c1][4];
-    
+    _labelfem.text = container[c1][5];
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
 }
 
--(void)c2containertillabel{
 
+-(void)c2tilbagetillabel{
     label.text = container[c2][1];
     _labelto.text = container[c2][2];
     _labeltre.text = container[c2][3];
     _labelfire.text = container[c2][4];
-   
+    _labelfem.text = container[c2][5];
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
 }
+
+-(void)b1tilbagetillabel{
+    label.text = container[b1][1];
+    _labelto.text = container[b1][2];
+    _labeltre.text = container[b1][3];
+    _labelfire.text = container[b1][4];
+    _labelfem.text = container[b1][5];
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
+}
+
+-(void)b2tilbagetillabel{
+    label.text = container[b2][1];
+    _labelto.text = container[b2][2];
+    _labeltre.text = container[b2][3];
+    _labelfire.text = container[b2][4];
+    _labelfem.text = container[b2][5];
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+       _samletresultat.text = [NSString stringWithFormat:@"%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
+}
+
+-(void)e1tilbagetillabel{
+    label.text = container[e1][1];
+    _labelto.text = container[e1][2];
+    _labeltre.text = container[e1][3];
+    _labelfire.text = container[e1][4];
+    _labelfem.text = container[e1][5];
+    _labelseks.text = container[e1][6];
+    _labelsyv.text = container[e1][7];
+    _labelotte.text = container[e1][8];
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
+}
+
+-(void)e2tilbagetillabel{
+    label.text = container[e2][1];
+    _labelto.text = container[e2][2];
+    _labeltre.text = container[e2][3];
+    _labelfire.text = container[e2][4];
+    _labelfem.text = container[e2][5];
+    _labelseks.text = container[e2][6];
+    _labelsyv.text = container[e2][7];
+    _labelotte.text = container[e2][8];
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

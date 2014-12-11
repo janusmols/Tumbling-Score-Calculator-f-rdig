@@ -329,6 +329,7 @@
                         <outlet property="press7" destination="X4S-pK-2YG" id="pg8-h2-9hX"/>
                         <outlet property="press8" destination="qK7-0I-csP" id="CGZ-ud-Zt7"/>
                         <outlet property="resultat" destination="877-ww-IJS" id="vHO-62-4Gl"/>
+                        <outlet property="samletresultat" destination="WHF-BX-4Eb" id="unF-IC-DsE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
