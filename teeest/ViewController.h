@@ -32,6 +32,9 @@ NSString *Springarraytext[60];
 @property (weak, nonatomic) IBOutlet UIPickerView *picker;
 
 
+
+
+
 //Vælg knapperne som labels
 
 @property (weak, nonatomic) IBOutlet UIButton *press1;

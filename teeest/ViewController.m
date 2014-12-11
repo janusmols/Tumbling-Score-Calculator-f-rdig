@@ -81,6 +81,7 @@ float FindValue(NSString *mytxt)
     _press8.tintColor = [UIColor blueColor];
     
 
+    raekke = e1;
     
     
     //Den skal starte med at udsenet skal se således ud at 8-moment er klar blå og 5-moment er grålig
@@ -264,39 +265,81 @@ float FindValue(NSString *mytxt)
     
     //From button "Beregn"
     //Her lægger den alle springene sammen og skriver resultatet i resultat labelet
+    //
+    // NSString *Resultat;
+    //float fPoint[10];
+    float fPointRes;
+    
+    //Resultat = label.text;
+    //fPoint[1] = FindValue(Resultat);
+    
+    //Resultat = _labelto.text;
+    //fPoint[2] = FindValue(Resultat);
+    
+    //Resultat = _labeltre.text;
+    //fPoint[3] = FindValue(Resultat);
+    
+    //Resultat = _labelfire.text;
+    //fPoint[4] = FindValue(Resultat);
+    
+    //Resultat = _labelfem.text;
+    //fPoint[5] = FindValue(Resultat);
+    
+    //Resultat = _labelseks.text;
+    //fPoint[6] = FindValue(Resultat);
+    
+    //Resultat = _labelsyv.text;
+    //fPoint[7] = FindValue(Resultat);
+    
+    //Resultat = _labelotte.text;
+    //fPoint[8] = FindValue(Resultat);
+    
+    //fPointRes = fPoint[1]+fPoint[2]+fPoint[3]+fPoint[4]+fPoint[5]+fPoint[6]+fPoint[7]+fPoint[8];
+    fPointRes = CalcRaekke();
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",fPointRes];
+}
+
+
+
+float CalcRaekke()
+{
+    //From button "Beregn"
+    //Her lægger den alle springene sammen og skriver resultatet i resultat labelet
     NSString *Resultat;
     float fPoint[10];
     float fPointRes;
     
-    Resultat = label.text;
+    Resultat = container[raekke][1];
     fPoint[1] = FindValue(Resultat);
     
-    Resultat = _labelto.text;
+    Resultat = container[raekke][2];
     fPoint[2] = FindValue(Resultat);
     
-    Resultat = _labeltre.text;
+    Resultat = container[raekke][3];
     fPoint[3] = FindValue(Resultat);
     
-    Resultat = _labelfire.text;
+    Resultat = container[raekke][4];
     fPoint[4] = FindValue(Resultat);
     
-    Resultat = _labelfem.text;
+    Resultat = container[raekke][5];
     fPoint[5] = FindValue(Resultat);
+    if ((raekke == e1) || (raekke == e2))
+    {
+      Resultat = container[raekke][6];
+      fPoint[6] = FindValue(Resultat);
     
-    Resultat = _labelseks.text;
-    fPoint[6] = FindValue(Resultat);
+      Resultat = container[raekke][7];
+      fPoint[7] = FindValue(Resultat);
     
-    Resultat = _labelsyv.text;
-    fPoint[7] = FindValue(Resultat);
-    
-    Resultat = _labelotte.text;
-    fPoint[8] = FindValue(Resultat);
-    
-    fPointRes = fPoint[1]+fPoint[2]+fPoint[3]+fPoint[4]+fPoint[5]+fPoint[6]+fPoint[7]+fPoint[8];
-    
-    _resultat.text =  [NSString stringWithFormat:@"%.1f",fPointRes];
+      Resultat = container[raekke][8];
+      fPoint[8] = FindValue(Resultat);
+      fPointRes = fPoint[1]+fPoint[2]+fPoint[3]+fPoint[4]+fPoint[5]+fPoint[6]+fPoint[7]+fPoint[8];
+    }
+    else{
+      fPointRes = fPoint[1]+fPoint[2]+fPoint[3]+fPoint[4]+fPoint[5];
+    }
+    return fPointRes;
 }
-
 
 
 
@@ -426,75 +469,7 @@ float FindValue(NSString *mytxt)
 //Her er en kopi af beregneren ovenfor som bare bruges til at beregne 5-moment karakterene sammen og skrive den i resulat labelet og
 //Når man vælger 5-moment "mode" så gøres 5-moment knappen klar blå og 8-moment kanppen grålig og fjerner moment 6-8 og medhørende ting og nulstilles og "pickeren" gøres usynlig
 
-- (IBAction)crækken:(id)sender {
-    
-    NSString *Resultat;
-    float fPoint[10];
-    float fPointRes;
-    
-    raekke = c1;
-    
-    _momentseks.hidden = YES;
-    _momentsyv.hidden = YES;
-    _momentotte.hidden = YES;
-    _labelseks.hidden = YES;
-    _labelsyv.hidden = YES;
-    _labelotte.hidden = YES;
-    _press6.hidden = YES;
-    _press7.hidden = YES;
-    _press8.hidden = YES;
-    _labelseks.text = nil;
-    _labelsyv.text = nil;
-    _labelotte.text = nil;
-    _press1.hidden = YES;
-    _press2.hidden = YES;
-    _press3.hidden = YES;
-    _press4.hidden = YES;
-    _crækkenoutlet.tintColor = [UIColor blueColor];
-    _moment88.tintColor = [UIColor grayColor];
-    _moment55.tintColor = [UIColor grayColor];
-    _crække2outlet.tintColor = [UIColor grayColor];
-    _brække2.tintColor = [UIColor grayColor];
-    _eliterække2.tintColor = [UIColor grayColor];
-    
-    Resultat = label.text;
-    fPoint[1] = FindValue(Resultat);
-    
-    Resultat = _labelto.text;
-    fPoint[2] = FindValue(Resultat);
-    
-    Resultat = _labeltre.text;
-    fPoint[3] = FindValue(Resultat);
-    
-    Resultat = _labelfire.text;
-    fPoint[4] = FindValue(Resultat);
-    
-    Resultat = _labelfem.text;
-    fPoint[5] = FindValue(Resultat);
-    
-    
-    
-    fPointRes = fPoint[1]+fPoint[2]+fPoint[3]+fPoint[4]+fPoint[5];
-    
-    _resultat.text =  [NSString stringWithFormat:@"%.1f",fPointRes];
-    
-    
-    
-    label.text = @"Rondat (                             \n0.2";
-    _labelto.text = @"Flikflak f                           \n0.2";
-    _labeltre.text = @"Whipback ^                           \n0.3";
-    _labelfire.text = @"Flikflak f                           \n0.2";
-    _labelfem.text = @"Tom                                                                              0.0";
-    
-    _resultat.text = @"0.9";
-    
-    picker.hidden = YES;
-    
-    _elitekrav.hidden = YES;
-    _krav.hidden = NO;
-    _krav.text = @"￼\nMikro og mini: Øvelse 1: Rondat - Flik - whip - flik -\n(frit slutspring)\nJunior og senior: Øvelse 1: Rondat - Flik - whip - flik - (frit slutspring) I enten øvelse 1 eller øvelse 2 skal\nslutspringet indeholde mindst en hel skrue)";
 
-}
 
 - (IBAction)brække2:(id)sender {
     
@@ -796,18 +771,116 @@ float FindValue(NSString *mytxt)
     
     
     
-    label.text = @"Rondat (                             \n0.2";
-    _labelto.text = @"Whipback ^                           \n0.3";
-    _labeltre.text = @"Whipback ^                           \n0.3";
-    _labelfire.text = @"Flikflak f                           \n0.2";
-    _labelfem.text = @"Tom                                                                              0.0";
+    container[c2][1] = @"Rondat (                             \n0.2";
+    container[c2][2]= @"Whipback ^                           \n0.3";
+    container[c2][3] = @"Whipback ^                           \n0.3";
+    container[c2][4]= @"Flikflak f                           \n0.2";
+    container[c2][5] = @"Tom                                                                              0.0";
     
-    _resultat.text = @"0.9";
+    [self c2containertillabel];
+    
+    
+    //Skal erstattes alt efter hvilke faste spring man har
+    
+    fPointRes = CalcRaekke();
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",fPointRes];
     
     picker.hidden = YES;
     
 
     
+}
+
+
+- (IBAction)crækken:(id)sender {
+    
+    NSString *Resultat;
+    float fPoint[10];
+    float fPointRes;
+    
+    raekke = c1;
+    
+    _momentseks.hidden = YES;
+    _momentsyv.hidden = YES;
+    _momentotte.hidden = YES;
+    _labelseks.hidden = YES;
+    _labelsyv.hidden = YES;
+    _labelotte.hidden = YES;
+    _press6.hidden = YES;
+    _press7.hidden = YES;
+    _press8.hidden = YES;
+    _labelseks.text = nil;
+    _labelsyv.text = nil;
+    _labelotte.text = nil;
+    _press1.hidden = YES;
+    _press2.hidden = YES;
+    _press3.hidden = YES;
+    _press4.hidden = YES;
+    _crækkenoutlet.tintColor = [UIColor blueColor];
+    _moment88.tintColor = [UIColor grayColor];
+    _moment55.tintColor = [UIColor grayColor];
+    _crække2outlet.tintColor = [UIColor grayColor];
+    _brække2.tintColor = [UIColor grayColor];
+    _eliterække2.tintColor = [UIColor grayColor];
+    
+    Resultat = label.text;
+    fPoint[1] = FindValue(Resultat);
+    
+    Resultat = _labelto.text;
+    fPoint[2] = FindValue(Resultat);
+    
+    Resultat = _labeltre.text;
+    fPoint[3] = FindValue(Resultat);
+    
+    Resultat = _labelfire.text;
+    fPoint[4] = FindValue(Resultat);
+    
+    Resultat = _labelfem.text;
+    fPoint[5] = FindValue(Resultat);
+    
+    
+    
+    fPointRes = fPoint[1]+fPoint[2]+fPoint[3]+fPoint[4]+fPoint[5];
+    
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",fPointRes];
+    
+    
+    
+    container[c1][1] = @"Rondat (                             \n0.2";
+    container[c1][2] = @"Flikflak f                           \n0.2";
+    container[c1][3] = @"Whipback ^                           \n0.3";
+    container[c1][4] = @"Flikflak f                           \n0.2";
+    container[c1][5] = @"Tom                                                                              0.0";
+    [self c1containertillabel];
+    
+    fPointRes = CalcRaekke();
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",fPointRes];
+    
+    picker.hidden = YES;
+    
+    _elitekrav.hidden = YES;
+    _krav.hidden = NO;
+    _krav.text = @"￼\nMikro og mini: Øvelse 1: Rondat - Flik - whip - flik -\n(frit slutspring)\nJunior og senior: Øvelse 1: Rondat - Flik - whip - flik - (frit slutspring) I enten øvelse 1 eller øvelse 2 skal\nslutspringet indeholde mindst en hel skrue)";
+    
+}
+
+
+-(void)c1containertillabel{
+    
+    label.text = container[c1][1];
+    _labelto.text = container[c1][2];
+    _labeltre.text = container[c1][3];
+    _labelfire.text = container[c1][4];
+    
+}
+
+-(void)c2containertillabel{
+
+    label.text = container[c2][1];
+    _labelto.text = container[c2][2];
+    _labeltre.text = container[c2][3];
+    _labelfire.text = container[c2][4];
+   
 }
 
 
