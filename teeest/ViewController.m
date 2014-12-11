@@ -208,55 +208,55 @@ float FindValue(NSString *mytxt)
     switch (g_iWhichLabel) {
         case 1:
             
-            container[e1][1] = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
-            label.text = container[e1][1];
+            container[raekke][1] = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            label.text = container[raekke][1];
             break;
             
         case 2:
            
-            container[e1][2] = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
-            _labelto.text = container[e1][2];
+            container[raekke][2] = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            _labelto.text = container[raekke][2];
             break;
 
         case 3:
-            container[e1][3] = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
-            _labeltre.text = container[e1][3];
+            container[raekke][3] = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            _labeltre.text = container[raekke][3];
             break;
 
         case 4:
            
-            container[e1][4] = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
-            _labelfire.text = container[e1][4];
+            container[raekke][4] = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            _labelfire.text = container[raekke][4];
             break;
 
         case 5:
             
-            container[e1][5] = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
-            _labelfem.text = container[e1][5];
+            container[raekke][5] = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            _labelfem.text = container[raekke][5];
             break;
 
         case 6:
-                       container[e1][6] = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
-            _labelseks.text = container[e1][6];
+                       container[raekke][6] = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            _labelseks.text = container[raekke][6];
             break;
 
         case 7:
           
-            container[e1][7] = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
-            _labelsyv.text = container[e1][7];
+            container[raekke][7] = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            _labelsyv.text = container[raekke][7];
             break;
 
         case 8:
             
-            container[e1][8] = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
-            _labelotte.text = container[e1][8];
+            container[raekke][8] = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            _labelotte.text = container[raekke][8];
             break;
 
             
         default:
             break;
             
-           
+            
             
     }
     
@@ -295,8 +295,10 @@ float FindValue(NSString *mytxt)
     fPointRes = fPoint[1]+fPoint[2]+fPoint[3]+fPoint[4]+fPoint[5]+fPoint[6]+fPoint[7]+fPoint[8];
     
     _resultat.text =  [NSString stringWithFormat:@"%.1f",fPointRes];
-
 }
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -425,6 +427,7 @@ float FindValue(NSString *mytxt)
 //Når man vælger 5-moment "mode" så gøres 5-moment knappen klar blå og 8-moment kanppen grålig og fjerner moment 6-8 og medhørende ting og nulstilles og "pickeren" gøres usynlig
 
 - (IBAction)crækken:(id)sender {
+    
     NSString *Resultat;
     float fPoint[10];
     float fPointRes;

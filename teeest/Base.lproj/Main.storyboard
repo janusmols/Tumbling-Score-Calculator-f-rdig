@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Dal-Fo-mVF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C78c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Dal-Fo-mVF">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -305,7 +305,6 @@
                         <outlet property="crækkenoutlet" destination="hPQ-qy-Ks3" id="Rqp-5W-N46"/>
                         <outlet property="elitekrav" destination="XFS-3e-lUF" id="ntE-O9-7N6"/>
                         <outlet property="eliterække2" destination="WMS-cf-Jkm" id="tRz-2I-pes"/>
-                        <outlet property="elitesamletresultat" destination="WHF-BX-4Eb" id="CTX-nX-qfX"/>
                         <outlet property="krav" destination="Ku7-H1-MFi" id="sTS-TO-BHe"/>
                         <outlet property="label" destination="eOG-co-mk8" id="QaC-TN-SWJ"/>
                         <outlet property="labelfem" destination="Fms-OM-fdE" id="Ben-dG-4vy"/>

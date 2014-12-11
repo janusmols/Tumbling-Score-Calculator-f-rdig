@@ -132,7 +132,7 @@ NSString *Springarraytext[60];
 
 //resultat:
 @property (weak, nonatomic) IBOutlet UILabel *resultat;
-@property (weak, nonatomic) IBOutlet UILabel *elitesamletresultat;
+@property (weak, nonatomic) IBOutlet UILabel *samletresultat;
 
 
 //krav beskrivelsen
