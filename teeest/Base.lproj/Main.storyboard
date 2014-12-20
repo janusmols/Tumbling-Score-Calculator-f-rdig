@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C78c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Dal-Fo-mVF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C81f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Dal-Fo-mVF">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
@@ -183,13 +183,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9oq-Pt-Ism">
-                                <rect key="frame" x="0.0" y="384" width="640" height="162"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="EmW-Ds-tIh"/>
-                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="OWz-GS-ZfP"/>
-                                </connections>
-                            </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="877-ww-IJS">
                                 <rect key="frame" x="232" y="290" width="80" height="21"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -291,8 +284,26 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJH-2w-hoC">
+                                <rect key="frame" x="16" y="304" width="55" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.84264520202020199" green="0.0" blue="0.085610808045551989" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pjE-h1-qhI"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9oq-Pt-Ism">
+                                <rect key="frame" x="0.0" y="364" width="640" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="EmW-Ds-tIh"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="OWz-GS-ZfP"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="JOW-42-Rm1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-11" id="2OE-rL-Cmi"/>
                         </constraints>
@@ -557,7 +568,7 @@
         <image name="cooltext1776802532.png" width="800" height="110"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EtY-N9-9WT"/>
-        <segue reference="Cx2-PX-EIi"/>
+        <segue reference="0Hc-lx-IZi"/>
+        <segue reference="scM-pM-fjc"/>
     </inferredMetricsTieBreakers>
 </document>

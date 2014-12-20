@@ -458,6 +458,8 @@ float CalcRaekke(int raekke)
     float fPointRes;
     raekke = b2;
     
+    crækkenpressed = false;
+    
     _momentseks.hidden = YES;
     _momentsyv.hidden = YES;
     _momentotte.hidden = YES;
@@ -527,6 +529,8 @@ float CalcRaekke(int raekke)
     float fPoint[10];
     float fPointRes;
     raekke = b1;
+    
+    crækkenpressed = false;
     
     _momentseks.hidden = YES;
     _momentsyv.hidden = YES;
@@ -610,7 +614,7 @@ float CalcRaekke(int raekke)
     _press3.hidden = NO;
     _press4.hidden = NO;
     
-    
+    crækkenpressed = false;
     
     label.text = @"Tom                                                                              0.0";
     _labelto.text = @"Tom                                                                              0.0";
@@ -647,6 +651,8 @@ float CalcRaekke(int raekke)
 - (IBAction)moment8:(id)sender {
     
     raekke = e1;
+    
+     crækkenpressed = false;
     
     _momentseks.hidden = NO;
     _momentsyv.hidden = NO;
@@ -701,6 +707,8 @@ float CalcRaekke(int raekke)
 - (IBAction)crække2:(id)sender {
     
     raekke = c2;
+    
+     crækkenpressed = true;
     
     NSString *Resultat;
     float fPoint[10];
@@ -785,6 +793,8 @@ float CalcRaekke(int raekke)
     float fPointRes;
     
     raekke = c1;
+    
+    crækkenpressed = true;
     
     _momentseks.hidden = YES;
     _momentsyv.hidden = YES;
@@ -921,13 +931,101 @@ float CalcRaekke(int raekke)
 }
 
 
+- (IBAction)reset:(id)sender {
+    
+    
+    
+
+    
+    
+    if (crækkenpressed == true) {
+        _labelfem.text = @"                                                                                 0.0";
+        _labelseks.text = @"                                                                                 0.0";
+        _labelsyv.text = @"                                                                                 0.0";
+        _labelotte.text = @"                                                                                 0.0";
+
+        
+        container[c1][5] = _labelfem.text;
+        container[c1][6] = _labelseks.text;
+        container[c1][7] = _labelsyv.text;
+        container[c1][8] = _labelotte.text;
+        
+        
+        container[c2][5] = _labelfem.text;
+        container[c2][6] = _labelseks.text;
+        container[c2][7] = _labelsyv.text;
+        container[c2][8] = _labelotte.text;
+        
+        
+        _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+        _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
+    }
+    else{
+    
+    label.text = @"                                                                                 0.0";
+    _labelto.text = @"                                                                                 0.0";
+    _labeltre.text = @"                                                                                 0.0";
+    _labelfire.text = @"                                                                                 0.0";
+    _labelfem.text = @"                                                                                 0.0";
+    _labelseks.text = @"                                                                                 0.0";
+    _labelsyv.text = @"                                                                                 0.0";
+    _labelotte.text = @"                                                                                 0.0";
+    
+    
+    container[e1][1] = label.text;
+    container[e1][2] = _labelto.text;
+    container[e1][3] = _labeltre.text;
+    container[e1][4] = _labelfire.text;
+    container[e1][5] = _labelfem.text;
+    container[e1][6] = _labelseks.text;
+    container[e1][7] = _labelsyv.text;
+    container[e1][8] = _labelotte.text;
+    
+    container[e2][1] = label.text;
+    container[e2][2] = _labelto.text;
+    container[e2][3] = _labeltre.text;
+    container[e2][4] = _labelfire.text;
+    container[e2][5] = _labelfem.text;
+    container[e2][6] = _labelseks.text;
+    container[e2][7] = _labelsyv.text;
+    container[e2][8] = _labelotte.text;
+    
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
 
 
+    
+    
+    container[b1][1] = label.text;
+    container[b1][2] = _labelto.text;
+    container[b1][3] = _labeltre.text;
+    container[b1][4] = _labelfire.text;
+    container[b1][5] = _labelfem.text;
+    container[b1][6] = _labelseks.text;
+    container[b1][7] = _labelsyv.text;
+    container[b1][8] = _labelotte.text;
+    
+    container[b2][1] = label.text;
+    container[b2][2] = _labelto.text;
+    container[b2][3] = _labeltre.text;
+    container[b2][4] = _labelfire.text;
+    container[b2][5] = _labelfem.text;
+    container[b2][6] = _labelseks.text;
+    container[b2][7] = _labelsyv.text;
+    container[b2][8] = _labelotte.text;
+    
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
+    
+    
+    
+    
+    }
 
 
-
-
-
+    
+    
+}
 
 
 

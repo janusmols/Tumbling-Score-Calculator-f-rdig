@@ -17,7 +17,7 @@
 
 int raekke;
 
-
+BOOL crækkenpressed;
 
 int g_iWhichLabel;
 
@@ -142,6 +142,10 @@ NSString *Springarraytext[60];
 //krav beskrivelsen
 @property (weak, nonatomic) IBOutlet UILabel *krav;
 @property (weak, nonatomic) IBOutlet UILabel *elitekrav;
+
+
+//reset button
+- (IBAction)reset:(id)sender;
 
 @end
 
