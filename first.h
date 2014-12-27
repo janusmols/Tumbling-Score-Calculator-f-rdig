@@ -10,5 +10,6 @@
 #import <iAd/iAd.h>
 
 @interface first : UIViewController <ADBannerViewDelegate>
+- (IBAction)kalender:(id)sender;
 
 @end

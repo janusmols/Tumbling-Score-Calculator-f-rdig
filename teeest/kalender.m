@@ -1,26 +1,32 @@
 //
-//  first.m
+//  kalender.m
 //  TumblingSC
 //
-//  Created by Janus Broch Mols on 30/11/14.
+//  Created by Janus Broch Mols on 27/12/14.
 //  Copyright (c) 2014 Janus Broch Mols. All rights reserved.
 //
 
-#import "first.h"
-
-@interface first ()
+#import "kalender.h"
+#import "ViewControllerinfo.h"
+@interface kalender ()
 
 @end
 
-@implementation first{
-
-    ADBannerView *_bannerView;
-    
-}
+@implementation kalender
+@synthesize webView;
 
 - (void)viewDidLoad {
+    
+    //http://www.gymdanmark.dk/konkurrence/kalender.asp?Num=282&Menu=900
+  
+    NSURL *url = [NSURL URLWithString:@"http://pdf.dgf.dk/download/Tumbling%20Reglement%202013-2017%20-%20Final%20version%20(2012-01-12).pdf"]; NSURLRequest *requestURL = [NSURLRequest requestWithURL:url]; [webView loadRequest:requestURL];
+    webView.scalesPageToFit = YES;
+    
+    
+    
+    
     [super viewDidLoad];
-    [self.view addSubview:_bannerView];
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,6 +44,4 @@
 }
 */
 
-- (IBAction)kalender:(id)sender {
-}
 @end

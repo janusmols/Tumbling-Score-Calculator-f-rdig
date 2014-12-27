@@ -44,6 +44,14 @@
 */
 //åbner link (sender dig videre til gymdanmarks tumbling reglement)
 - (IBAction)visreglement:(id)sender {
-    [[UIApplication sharedApplication] openURL:[	NSURL URLWithString:@"http://pdf.dgf.dk/download/Tumbling%20Reglement%202013-2017%20-%20Final%20version%20(2012-01-12).pdf"]];
+    //[[UIApplication sharedApplication] openURL:[	NSURL URLWithString:@"http://pdf.dgf.dk/download/Tumbling%20Reglement%202013-2017%20-%20Final%20version%20(2012-01-12).pdf"]];
+    
+    
+    kalender = false;
+    
+    
+    
+    
+    
 }
 @end

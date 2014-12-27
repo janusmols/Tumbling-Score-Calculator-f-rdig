@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+BOOL kalender;
 @interface ViewControllerinfo : UIViewController{}
 
 
