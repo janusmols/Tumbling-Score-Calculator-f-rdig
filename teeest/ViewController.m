@@ -64,6 +64,18 @@ float FindValue(NSString *mytxt)
     
     
     
+    label.text = @"                                                                                 0.0";
+    _labelto.text = @"                                                                                 0.0";
+    _labeltre.text = @"                                                                                 0.0";
+    _labelfire.text = @"                                                                                 0.0";
+    _labelfem.text = @"                                                                                 0.0";
+    _labelseks.text = @"                                                                                 0.0";
+    _labelsyv.text = @"                                                                                 0.0";
+    _labelotte.text = @"                                                                                 0.0";
+
+    
+    
+    
     
    //Vælg knappernes farve er blå
     raekke = e1;

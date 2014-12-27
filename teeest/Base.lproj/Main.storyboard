@@ -284,8 +284,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9oq-Pt-Ism">
+                                <rect key="frame" x="0.0" y="364" width="640" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="EmW-Ds-tIh"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="OWz-GS-ZfP"/>
+                                </connections>
+                            </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJH-2w-hoC">
-                                <rect key="frame" x="16" y="304" width="55" height="17"/>
+                                <rect key="frame" x="0.0" y="288" width="71" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Reset">
                                     <color key="titleColor" red="0.84264520202020199" green="0.0" blue="0.085610808045551989" alpha="1" colorSpace="calibratedRGB"/>
@@ -295,13 +302,6 @@
                                     <action selector="reset:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pjE-h1-qhI"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9oq-Pt-Ism">
-                                <rect key="frame" x="0.0" y="364" width="640" height="162"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="EmW-Ds-tIh"/>
-                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="OWz-GS-ZfP"/>
-                                </connections>
-                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
