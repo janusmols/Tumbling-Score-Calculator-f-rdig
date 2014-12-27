@@ -369,15 +369,27 @@ float CalcRaekke(int raekke)
     _press6.tintColor = [UIColor grayColor];
     _press7.tintColor = [UIColor grayColor];
     _press8.tintColor = [UIColor grayColor];
+    
     label.text = @"Rondat (                             \n0.2";
     container[raekke][1] = label.text;
+    
     _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
-    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
-    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
-    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
-    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
-    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
+    
+    if ((raekke == e1) || (raekke == e2)){
+        _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
+    }
+    
+    
+    if ((raekke == c1) || (raekke == c2)){
+        _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
+    }
+    
+    if ((raekke == b1) || (raekke == b2)){
+        _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
+    }
 }
+
+
 
 - (IBAction)pressto:(id)sender {
     g_iWhichLabel=2;
@@ -390,16 +402,25 @@ float CalcRaekke(int raekke)
     _press6.tintColor = [UIColor grayColor];
     _press7.tintColor = [UIColor grayColor];
     _press8.tintColor = [UIColor grayColor];
+    
     _labelto.text = lastselected;
     container[raekke][2] = _labelto.text;
     _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
-    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
-    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
-    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
-    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
-    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
     
+    if ((raekke == e1) || (raekke == e2)){
+        _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
+    }
+    
+    
+    if ((raekke == c1) || (raekke == c2)){
+        _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
+    }
+    
+    if ((raekke == b1) || (raekke == b2)){
+        _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
+    }
 }
+
 
 - (IBAction)presstre:(id)sender {
     g_iWhichLabel=3;
@@ -415,15 +436,23 @@ float CalcRaekke(int raekke)
     _labeltre.text = lastselected;
     container[raekke][3] = _labeltre.text;
     _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
-    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
-    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
-    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
-    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
-    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
     
+    if ((raekke == e1) || (raekke == e2)){
+        _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
+    }
+    
+    
+    if ((raekke == c1) || (raekke == c2)){
+        _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
+    }
+    
+    if ((raekke == b1) || (raekke == b2)){
+        _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
+    }
+}
 
     
-}
+
 
 - (IBAction)pressfire:(id)sender {
     g_iWhichLabel=4;
@@ -439,13 +468,21 @@ float CalcRaekke(int raekke)
     _labelfire.text = lastselected;
     container[raekke][4] = _labelfire.text;
     _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
-    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
-    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
-    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
-    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
-    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
-
+    
+    if ((raekke == e1) || (raekke == e2)){
+        _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
+    }
+    
+    
+    if ((raekke == c1) || (raekke == c2)){
+        _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
+    }
+    
+    if ((raekke == b1) || (raekke == b2)){
+        _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
+    }
 }
+
 
 - (IBAction)pressfem:(id)sender {
     g_iWhichLabel=5;
@@ -461,13 +498,22 @@ float CalcRaekke(int raekke)
     _labelfem.text = lastselected;
     container[raekke][5] = _labelfem.text;
     _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
-    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
-    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
-    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
-    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
-    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
-
+    
+    if ((raekke == e1) || (raekke == e2)){
+        _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
+    }
+    
+    
+    if ((raekke == c1) || (raekke == c2)){
+        _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
+    }
+    
+    if ((raekke == b1) || (raekke == b2)){
+        _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
+    }
 }
+
+
 
 
 - (IBAction)pressseks:(id)sender {
@@ -484,13 +530,22 @@ float CalcRaekke(int raekke)
     _labelseks.text = lastselected;
     container[raekke][6] = _labelseks.text;
     _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
-    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
-    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
-    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
-    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
-    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
-
+    
+    if ((raekke == e1) || (raekke == e2)){
+        _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
+    }
+    
+    
+    if ((raekke == c1) || (raekke == c2)){
+        _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
+    }
+    
+    if ((raekke == b1) || (raekke == b2)){
+        _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
+    }
 }
+
+
 
 - (IBAction)presssyv:(id)sender {
     g_iWhichLabel=7;
@@ -506,12 +561,22 @@ float CalcRaekke(int raekke)
     _labelsyv.text = lastselected;
     container[raekke][7] = _labelsyv.text;
     _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
-    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
-    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
-    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
-    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
-    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
+    
+    if ((raekke == e1) || (raekke == e2)){
+        _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
+    }
+    
+    
+    if ((raekke == c1) || (raekke == c2)){
+        _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
+    }
+    
+    if ((raekke == b1) || (raekke == b2)){
+        _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
+    }
 }
+
+
 
 - (IBAction)pressotte:(id)sender {
     g_iWhichLabel=8;
@@ -527,13 +592,23 @@ float CalcRaekke(int raekke)
     _labelotte.text = lastselected;
     container[raekke][8] = _labelotte.text;
     _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
-    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
-    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
-    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
-    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
-    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
-
+    
+    if ((raekke == e1) || (raekke == e2)){
+        _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
+    }
+    
+    
+    if ((raekke == c1) || (raekke == c2)){
+        _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
+    }
+    
+    if ((raekke == b1) || (raekke == b2)){
+        _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
+    }
 }
+
+
+
 
 //Her er en kopi af beregneren ovenfor som bare bruges til at beregne 5-moment karakterene sammen og skrive den i resulat labelet og
 //Når man vælger 5-moment "mode" så gøres 5-moment knappen klar blå og 8-moment kanppen grålig og fjerner moment 6-8 og medhørende ting og nulstilles og "pickeren" gøres usynlig
