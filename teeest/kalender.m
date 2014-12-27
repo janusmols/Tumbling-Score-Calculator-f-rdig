@@ -8,6 +8,8 @@
 
 #import "kalender.h"
 #import "ViewControllerinfo.h"
+#import "first.h"
+BOOL k;
 @interface kalender ()
 
 @end
@@ -16,15 +18,11 @@
 @synthesize webView;
 
 - (void)viewDidLoad {
+   
+       NSURL *url = [NSURL URLWithString:@"http://www.gymdanmark.dk/konkurrence/kalender.asp?Num=282&Menu=900"]; NSURLRequest *requestURL = [NSURLRequest requestWithURL:url]; [webView loadRequest:requestURL];
+        webView.scalesPageToFit = YES;
     
-    //http://www.gymdanmark.dk/konkurrence/kalender.asp?Num=282&Menu=900
-  
-    NSURL *url = [NSURL URLWithString:@"http://pdf.dgf.dk/download/Tumbling%20Reglement%202013-2017%20-%20Final%20version%20(2012-01-12).pdf"]; NSURLRequest *requestURL = [NSURLRequest requestWithURL:url]; [webView loadRequest:requestURL];
-    webView.scalesPageToFit = YES;
-    
-    
-    
-    
+
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }

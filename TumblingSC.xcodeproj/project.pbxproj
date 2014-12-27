@@ -12,6 +12,7 @@
 		611DEA051A101E24002F9751 /* ViewControllerinfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 611DEA041A101E24002F9751 /* ViewControllerinfo.m */; };
 		611DEA071A10221C002F9751 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 611DEA061A10221B002F9751 /* LaunchScreen.xib */; };
 		6156BDE01A4F35C700479DEE /* kalender.m in Sources */ = {isa = PBXBuildFile; fileRef = 6156BDDF1A4F35C700479DEE /* kalender.m */; };
+		6156BDE31A4F4EE400479DEE /* reglementweb.m in Sources */ = {isa = PBXBuildFile; fileRef = 6156BDE21A4F4EE400479DEE /* reglementweb.m */; };
 		616662C21A0E779E00445753 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 616662C11A0E779E00445753 /* main.m */; };
 		616662C51A0E779E00445753 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 616662C41A0E779E00445753 /* AppDelegate.m */; };
 		616662C81A0E779E00445753 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 616662C71A0E779E00445753 /* ViewController.m */; };
@@ -39,6 +40,8 @@
 		611DEA061A10221B002F9751 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		6156BDDE1A4F35C700479DEE /* kalender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kalender.h; sourceTree = "<group>"; };
 		6156BDDF1A4F35C700479DEE /* kalender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kalender.m; sourceTree = "<group>"; };
+		6156BDE11A4F4EE400479DEE /* reglementweb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reglementweb.h; sourceTree = "<group>"; };
+		6156BDE21A4F4EE400479DEE /* reglementweb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = reglementweb.m; sourceTree = "<group>"; };
 		616662BC1A0E779E00445753 /* TumblingSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TumblingSC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		616662C01A0E779E00445753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		616662C11A0E779E00445753 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -102,6 +105,8 @@
 				616662C71A0E779E00445753 /* ViewController.m */,
 				6156BDDE1A4F35C700479DEE /* kalender.h */,
 				6156BDDF1A4F35C700479DEE /* kalender.m */,
+				6156BDE11A4F4EE400479DEE /* reglementweb.h */,
+				6156BDE21A4F4EE400479DEE /* reglementweb.m */,
 				616662C91A0E779E00445753 /* Main.storyboard */,
 				611DEA031A101E24002F9751 /* ViewControllerinfo.h */,
 				611DEA041A101E24002F9751 /* ViewControllerinfo.m */,
@@ -247,6 +252,7 @@
 				616662C81A0E779E00445753 /* ViewController.m in Sources */,
 				616662C51A0E779E00445753 /* AppDelegate.m in Sources */,
 				611DEA051A101E24002F9751 /* ViewControllerinfo.m in Sources */,
+				6156BDE31A4F4EE400479DEE /* reglementweb.m in Sources */,
 				6156BDE01A4F35C700479DEE /* kalender.m in Sources */,
 				61FB1F5C1A2B638B0032AC69 /* first.m in Sources */,
 				616662C21A0E779E00445753 /* main.m in Sources */,

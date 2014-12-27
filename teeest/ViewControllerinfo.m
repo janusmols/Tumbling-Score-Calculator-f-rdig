@@ -7,7 +7,9 @@
 //
 
 #import "ViewControllerinfo.h"
-
+#import "kalender.h"
+#import "first.h"
+BOOL r;
 @interface ViewControllerinfo ()
 
 @end
@@ -46,12 +48,6 @@
 - (IBAction)visreglement:(id)sender {
     //[[UIApplication sharedApplication] openURL:[	NSURL URLWithString:@"http://pdf.dgf.dk/download/Tumbling%20Reglement%202013-2017%20-%20Final%20version%20(2012-01-12).pdf"]];
     
-    
-    kalender = false;
-    
-    
-    
-    
-    
+    k=false;
 }
 @end

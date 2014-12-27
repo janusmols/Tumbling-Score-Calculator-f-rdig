@@ -60,8 +60,19 @@ float FindValue(NSString *mytxt)
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
-    
+    container[c1][1] = @"Rondat (                             \n0.2";
+    container[c1][2] = @"Flikflak f                           \n0.2";
+    container[c1][3] = @"Whipback ^                           \n0.3";
+    container[c1][4] = @"Flikflak f                           \n0.2";
+    container[c2][1] = @"Rondat (                             \n0.2";
+    container[c2][2]= @"Whipback ^                           \n0.3";
+    container[c2][3] = @"Whipback ^                           \n0.3";
+    container[c2][4]= @"Flikflak f                           \n0.2";
+
+    [self c2tilbagetillabel];
+    [self c1tilbagetillabel];
+     _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
     
     
     label.text = @"                                                                                 0.0";
@@ -273,6 +284,8 @@ float FindValue(NSString *mytxt)
             
     }
     
+    lastselected = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+    
         picker.hidden = NO;
     
     _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
@@ -356,6 +369,14 @@ float CalcRaekke(int raekke)
     _press6.tintColor = [UIColor grayColor];
     _press7.tintColor = [UIColor grayColor];
     _press8.tintColor = [UIColor grayColor];
+    label.text = @"Rondat (                             \n0.2";
+    container[raekke][1] = label.text;
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
 }
 
 - (IBAction)pressto:(id)sender {
@@ -369,7 +390,15 @@ float CalcRaekke(int raekke)
     _press6.tintColor = [UIColor grayColor];
     _press7.tintColor = [UIColor grayColor];
     _press8.tintColor = [UIColor grayColor];
-
+    _labelto.text = lastselected;
+    container[raekke][2] = _labelto.text;
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
+    
 }
 
 - (IBAction)presstre:(id)sender {
@@ -383,6 +412,15 @@ float CalcRaekke(int raekke)
     _press6.tintColor = [UIColor grayColor];
     _press7.tintColor = [UIColor grayColor];
     _press8.tintColor = [UIColor grayColor];
+    _labeltre.text = lastselected;
+    container[raekke][3] = _labeltre.text;
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
+    
 
     
 }
@@ -398,6 +436,14 @@ float CalcRaekke(int raekke)
     _press6.tintColor = [UIColor grayColor];
     _press7.tintColor = [UIColor grayColor];
     _press8.tintColor = [UIColor grayColor];
+    _labelfire.text = lastselected;
+    container[raekke][4] = _labelfire.text;
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
 
 }
 
@@ -412,6 +458,14 @@ float CalcRaekke(int raekke)
     _press6.tintColor = [UIColor grayColor];
     _press7.tintColor = [UIColor grayColor];
     _press8.tintColor = [UIColor grayColor];
+    _labelfem.text = lastselected;
+    container[raekke][5] = _labelfem.text;
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
 
 }
 
@@ -427,6 +481,14 @@ float CalcRaekke(int raekke)
     _press1.tintColor = [UIColor grayColor];
     _press7.tintColor = [UIColor grayColor];
     _press8.tintColor = [UIColor grayColor];
+    _labelseks.text = lastselected;
+    container[raekke][6] = _labelseks.text;
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
 
 }
 
@@ -441,7 +503,14 @@ float CalcRaekke(int raekke)
     _press6.tintColor = [UIColor grayColor];
     _press1.tintColor = [UIColor grayColor];
     _press8.tintColor = [UIColor grayColor];
-
+    _labelsyv.text = lastselected;
+    container[raekke][7] = _labelsyv.text;
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
 }
 
 - (IBAction)pressotte:(id)sender {
@@ -455,6 +524,14 @@ float CalcRaekke(int raekke)
     _press6.tintColor = [UIColor grayColor];
     _press7.tintColor = [UIColor grayColor];
     _press1.tintColor = [UIColor grayColor];
+    _labelotte.text = lastselected;
+    container[raekke][8] = _labelotte.text;
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(e1)+CalcRaekke(e2)];
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
+    _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(b1)+CalcRaekke(b2)];
 
 }
 
@@ -790,7 +867,7 @@ float CalcRaekke(int raekke)
     
     fPointRes = CalcRaekke(raekke);
     _resultat.text =  [NSString stringWithFormat:@"%.1f",fPointRes];
-    
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
     picker.hidden = YES;
     
 
@@ -863,7 +940,7 @@ float CalcRaekke(int raekke)
     
     fPointRes = CalcRaekke(raekke);
     _resultat.text =  [NSString stringWithFormat:@"%.1f",fPointRes];
-    
+    _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
     picker.hidden = YES;
     
     _elitekrav.hidden = YES;

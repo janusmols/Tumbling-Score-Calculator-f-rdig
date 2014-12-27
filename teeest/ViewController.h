@@ -15,6 +15,8 @@
 #define e1 5
 #define e2 6
 
+NSString *lastselected;
+
 int raekke;
 
 BOOL crækkenpressed;
