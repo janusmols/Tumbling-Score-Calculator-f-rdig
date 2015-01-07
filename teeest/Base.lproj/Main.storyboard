@@ -491,7 +491,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="45s-PR-CDU" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-841" y="295"/>
+            <point key="canvasLocation" x="-1164" y="216.75"/>
         </scene>
         <!--Reglementweb-->
         <scene sceneID="DCI-nI-jZh">
@@ -690,7 +690,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sL8-Dr-7M4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-493" y="339"/>
+            <point key="canvasLocation" x="-606" y="216.75"/>
         </scene>
     </scenes>
     <resources>
@@ -698,7 +698,7 @@
         <image name="cooltext1776802532.png" width="800" height="110"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Cx2-PX-EIi"/>
-        <segue reference="scM-pM-fjc"/>
+        <segue reference="EtY-N9-9WT"/>
+        <segue reference="0Hc-lx-IZi"/>
     </inferredMetricsTieBreakers>
 </document>
