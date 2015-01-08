@@ -51,7 +51,7 @@ float FindValue(NSString *mytxt)
     pickerViewLabel.text = Springarraytext[row]; // where therapyTypes[row] is a specific example from my cod2
     
     //Skriftype og størelse på teksten i ""pickeren"
-    pickerViewLabel.font = [UIFont fontWithName:@"ChalkboardSE-Regular" size:12];
+    pickerViewLabel.font = [UIFont fontWithName:@"ChalkboardSE-Regular" size:35];
    
  
     return pickerViewLabel;

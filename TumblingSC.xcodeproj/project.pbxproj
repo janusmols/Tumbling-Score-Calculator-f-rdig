@@ -382,7 +382,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = TumblingSC;
 				PROVISIONING_PROFILE = "7b61933b-d415-4e9a-a30f-e09fa4b10c43";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -398,7 +398,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = TumblingSC;
 				PROVISIONING_PROFILE = "7b61933b-d415-4e9a-a30f-e09fa4b10c43";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -491,7 +491,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = TumblingSC;
 				PROVISIONING_PROFILE = "7b61933b-d415-4e9a-a30f-e09fa4b10c43";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Distribution;
 		};
