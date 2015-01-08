@@ -50,8 +50,19 @@ float FindValue(NSString *mytxt)
     pickerViewLabel.backgroundColor = [UIColor clearColor];
     pickerViewLabel.text = Springarraytext[row]; // where therapyTypes[row] is a specific example from my cod2
     
-    //Skriftype og størelse på teksten i ""pickeren"
-    pickerViewLabel.font = [UIFont fontWithName:@"ChalkboardSE-Regular" size:35];
+    
+    if (UI_USER_INTERFACE_IDIOM()== UIUserInterfaceIdiomPad) {
+        CGSize result = [[UIScreen mainScreen] bounds].size;
+        if (result.height == 1024) {
+         //Skriftype og størelse på teksten i ""pickeren"
+    pickerViewLabel.font = [UIFont fontWithName:@"ChalkboardSE-Regular" size:35];    
+        }
+    }
+        else{
+            //Skriftype og størelse på teksten i ""pickeren"
+            pickerViewLabel.font = [UIFont fontWithName:@"ChalkboardSE-Regular" size:20];
+        
+        }
    
  
     return pickerViewLabel;
@@ -75,14 +86,15 @@ float FindValue(NSString *mytxt)
     _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
     
     
-    label.text = @"                                                                                 0.0";
-    _labelto.text = @"                                                                                 0.0";
-    _labeltre.text = @"                                                                                 0.0";
-    _labelfire.text = @"                                                                                 0.0";
-    _labelfem.text = @"                                                                                 0.0";
-    _labelseks.text = @"                                                                                 0.0";
-    _labelsyv.text = @"                                                                                 0.0";
-    _labelotte.text = @"                                                                                 0.0";
+    label.text = @"                                                                                                                       ";
+    
+    _labelto.text = @"                                                                                  ";
+    _labeltre.text = @"                                                                                 ";
+    _labelfire.text = @"                                                                                 ";
+    _labelfem.text = @"                                                                                 ";
+    _labelseks.text = @"                                                                                 ";
+    _labelsyv.text = @"                                                                                 ";
+    _labelotte.text = @"                                                                                 ";
 
     
     
