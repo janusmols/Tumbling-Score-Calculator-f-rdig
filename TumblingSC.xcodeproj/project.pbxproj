@@ -420,7 +420,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = TumblingSCTests;
 				PROVISIONING_PROFILE = "";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/teeest.app/teeest";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TumblingSC.app/TumblingSC";
 			};
 			name = Debug;
 		};
@@ -438,7 +438,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = TumblingSCTests;
 				PROVISIONING_PROFILE = "";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/teeest.app/teeest";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TumblingSC.app/TumblingSC";
 			};
 			name = Release;
 		};
@@ -509,7 +509,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = TumblingSCTests;
 				PROVISIONING_PROFILE = "";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/teeest.app/teeest";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TumblingSC.app/TumblingSC";
 			};
 			name = Distribution;
 		};
