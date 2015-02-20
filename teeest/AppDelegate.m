@@ -67,4 +67,5 @@
         [[Pushbots getInstance] resetBadgeCount];
     }
 }
+
 @end
