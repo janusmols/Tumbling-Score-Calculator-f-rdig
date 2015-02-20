@@ -17,16 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [Pushbots getInstance];
-    NSDictionary * userInfo = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
-    if(userInfo) {
-        // Notification Message
-        NSString* notificationMsg = [userInfo valueForKey:@"message"];
-        // Custom Field
-        NSString* title = [userInfo valueForKey:@"title"];
-        NSLog(@"Notification Msg is %@ and Custom field title = %@", notificationMsg , title);
-    }
-
+    
     return YES;
 }
 
@@ -51,21 +42,6 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
--(void)onReceivePushNotification:(NSDictionary *) pushDict andPayload:(NSDictionary *)payload {
-    [payload valueForKey:@"title"];
-    UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"New Alert !" message:[pushDict valueForKey:@"alert"] delegate:self cancelButtonTitle:@"Thanks !" otherButtonTitles: @"Open",nil];
-    [message show];
-}
--(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    NSString *title = [alertView buttonTitleAtIndex:buttonIndex];
-    if([title isEqualToString:@"Open"]) {
-        [[Pushbots getInstance] OpenedNotification];
-        // set Badge to 0
-        [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
-        // reset badge on the server
-        [[Pushbots getInstance] resetBadgeCount];
-    }
-}
+
 
 @end
