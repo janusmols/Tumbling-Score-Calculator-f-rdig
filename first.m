@@ -42,4 +42,8 @@
 - (IBAction)kalender:(id)sender {
     k = true;
 }
+
+- (IBAction)banner:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/dk/app/real-trampoline/id965535834?mt=8&ign-mpt=uo%3D2"]];
+}
 @end

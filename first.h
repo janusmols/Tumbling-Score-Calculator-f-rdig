@@ -12,4 +12,6 @@ BOOL k;
 @interface first : UIViewController 
 - (IBAction)kalender:(id)sender;
 
+- (IBAction)banner:(id)sender;
+
 @end
