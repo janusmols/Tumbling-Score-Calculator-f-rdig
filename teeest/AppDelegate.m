@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import <Pushbots/Pushbots.h>
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [Pushbots getInstance];
+    NSDictionary * userInfo = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
+    if(userInfo) {
+        // Notification Message
+        NSString* notificationMsg = [userInfo valueForKey:@"message"];
+        // Custom Field
+        NSString* title = [userInfo valueForKey:@"title"];
+        NSLog(@"Notification Msg is %@ and Custom field title = %@", notificationMsg , title);
+    }
+
     return YES;
 }
 
