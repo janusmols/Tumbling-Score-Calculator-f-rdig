@@ -19,6 +19,12 @@
 		616662CB1A0E779E00445753 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 616662C91A0E779E00445753 /* Main.storyboard */; };
 		616662CD1A0E779E00445753 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 616662CC1A0E779E00445753 /* Images.xcassets */; };
 		616662DC1A0E779E00445753 /* teeestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 616662DB1A0E779E00445753 /* teeestTests.m */; };
+		618A09971A9777F8004170E6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618A09961A9777F8004170E6 /* CoreLocation.framework */; };
+		618A09991A977804004170E6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618A09981A977804004170E6 /* SystemConfiguration.framework */; };
+		618A099B1A977810004170E6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618A099A1A977810004170E6 /* MobileCoreServices.framework */; };
+		618A099D1A97781B004170E6 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618A099C1A97781B004170E6 /* CoreTelephony.framework */; };
+		618A099F1A97782E004170E6 /* Pushbots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618A099E1A97782E004170E6 /* Pushbots.framework */; };
+		618A09A11A97784F004170E6 /* Pushbots.plist in Resources */ = {isa = PBXBuildFile; fileRef = 618A09A01A97784F004170E6 /* Pushbots.plist */; };
 		61FB1F5C1A2B638B0032AC69 /* first.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FB1F5B1A2B638B0032AC69 /* first.m */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +60,12 @@
 		616662D51A0E779E00445753 /* TumblingSCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TumblingSCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		616662DA1A0E779E00445753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		616662DB1A0E779E00445753 /* teeestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = teeestTests.m; sourceTree = "<group>"; };
+		618A09961A9777F8004170E6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		618A09981A977804004170E6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		618A099A1A977810004170E6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		618A099C1A97781B004170E6 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		618A099E1A97782E004170E6 /* Pushbots.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pushbots.framework; sourceTree = "<group>"; };
+		618A09A01A97784F004170E6 /* Pushbots.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Pushbots.plist; path = ../Pushbots.plist; sourceTree = "<group>"; };
 		61FB1F5A1A2B638B0032AC69 /* first.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = first.h; path = ../first.h; sourceTree = "<group>"; };
 		61FB1F5B1A2B638B0032AC69 /* first.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = first.m; path = ../first.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +75,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				618A099F1A97782E004170E6 /* Pushbots.framework in Frameworks */,
+				618A099D1A97781B004170E6 /* CoreTelephony.framework in Frameworks */,
+				618A099B1A977810004170E6 /* MobileCoreServices.framework in Frameworks */,
+				618A09991A977804004170E6 /* SystemConfiguration.framework in Frameworks */,
+				618A09971A9777F8004170E6 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +96,11 @@
 		616662B31A0E779E00445753 = {
 			isa = PBXGroup;
 			children = (
+				618A099E1A97782E004170E6 /* Pushbots.framework */,
+				618A099C1A97781B004170E6 /* CoreTelephony.framework */,
+				618A099A1A977810004170E6 /* MobileCoreServices.framework */,
+				618A09981A977804004170E6 /* SystemConfiguration.framework */,
+				618A09961A9777F8004170E6 /* CoreLocation.framework */,
 				616662BE1A0E779E00445753 /* teeest */,
 				616662D81A0E779E00445753 /* teeestTests */,
 				616662BD1A0E779E00445753 /* Products */,
@@ -123,6 +145,7 @@
 				611DE9FF1A1019DE002F9751 /* cooltext1776802532.png */,
 				611DEA001A1019DE002F9751 /* 41590_23656642917_1773_n.jpg */,
 				616662C01A0E779E00445753 /* Info.plist */,
+				618A09A01A97784F004170E6 /* Pushbots.plist */,
 				616662C11A0E779E00445753 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -231,6 +254,7 @@
 				616662CB1A0E779E00445753 /* Main.storyboard in Resources */,
 				611DEA021A1019DE002F9751 /* 41590_23656642917_1773_n.jpg in Resources */,
 				611DEA071A10221C002F9751 /* LaunchScreen.xib in Resources */,
+				618A09A11A97784F004170E6 /* Pushbots.plist in Resources */,
 				616662CD1A0E779E00445753 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,12 +400,16 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = teeest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = TumblingSC;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "fc75368e-ac2b-4c29-86f4-0d263af026e3";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -393,11 +421,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = teeest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = TumblingSC;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "fc75368e-ac2b-4c29-86f4-0d263af026e3";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -486,11 +518,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = teeest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = TumblingSC;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "fc75368e-ac2b-4c29-86f4-0d263af026e3";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Distribution;
