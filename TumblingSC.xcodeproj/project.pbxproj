@@ -25,6 +25,7 @@
 		618A099D1A97781B004170E6 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618A099C1A97781B004170E6 /* CoreTelephony.framework */; };
 		618A099F1A97782E004170E6 /* Pushbots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618A099E1A97782E004170E6 /* Pushbots.framework */; };
 		618A09A11A97784F004170E6 /* Pushbots.plist in Resources */ = {isa = PBXBuildFile; fileRef = 618A09A01A97784F004170E6 /* Pushbots.plist */; };
+		618A09A31A98FC18004170E6 /* Arrows-Back-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 618A09A21A98FC18004170E6 /* Arrows-Back-icon.png */; };
 		61FB1F5C1A2B638B0032AC69 /* first.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FB1F5B1A2B638B0032AC69 /* first.m */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		618A099C1A97781B004170E6 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		618A099E1A97782E004170E6 /* Pushbots.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pushbots.framework; sourceTree = "<group>"; };
 		618A09A01A97784F004170E6 /* Pushbots.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Pushbots.plist; path = ../Pushbots.plist; sourceTree = "<group>"; };
+		618A09A21A98FC18004170E6 /* Arrows-Back-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Arrows-Back-icon.png"; sourceTree = "<group>"; };
 		61FB1F5A1A2B638B0032AC69 /* first.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = first.h; path = ../first.h; sourceTree = "<group>"; };
 		61FB1F5B1A2B638B0032AC69 /* first.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = first.m; path = ../first.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +144,7 @@
 		616662BF1A0E779E00445753 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				618A09A21A98FC18004170E6 /* Arrows-Back-icon.png */,
 				611DE9FF1A1019DE002F9751 /* cooltext1776802532.png */,
 				611DEA001A1019DE002F9751 /* 41590_23656642917_1773_n.jpg */,
 				616662C01A0E779E00445753 /* Info.plist */,
@@ -256,6 +259,7 @@
 				611DEA071A10221C002F9751 /* LaunchScreen.xib in Resources */,
 				618A09A11A97784F004170E6 /* Pushbots.plist in Resources */,
 				616662CD1A0E779E00445753 /* Images.xcassets in Resources */,
+				618A09A31A98FC18004170E6 /* Arrows-Back-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
