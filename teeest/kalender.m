@@ -18,7 +18,7 @@ BOOL k;
 @synthesize webView;
 
 - (void)viewDidLoad {
-   
+   //open gymdanmark kalender link
        NSURL *url = [NSURL URLWithString:@"http://www.gymdanmark.dk/konkurrence/kalender.asp?Num=282&Menu=900"]; NSURLRequest *requestURL = [NSURLRequest requestWithURL:url]; [webView loadRequest:requestURL];
         webView.scalesPageToFit = YES;
     
