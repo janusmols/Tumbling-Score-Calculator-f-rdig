@@ -371,6 +371,9 @@ float CalcRaekke(int raekke)
 //når du trykker på en "vælg" knap så gøres de andre vælg knapper grå
 
 - (IBAction)press:(id)sender {
+    
+    [self performSegueWithIdentifier:@"PushToChooseTable" sender:self];
+    
     g_iWhichLabel=1;
     picker.hidden = NO;
     _press1.tintColor = [UIColor blueColor];
@@ -404,6 +407,9 @@ float CalcRaekke(int raekke)
 
 
 - (IBAction)pressto:(id)sender {
+    
+    [self performSegueWithIdentifier:@"PushToChooseTable" sender:self];
+    
     g_iWhichLabel=2;
     picker.hidden = NO;
     _press2.tintColor = [UIColor blueColor];
@@ -435,6 +441,9 @@ float CalcRaekke(int raekke)
 
 
 - (IBAction)presstre:(id)sender {
+    
+    [self performSegueWithIdentifier:@"PushToChooseTable" sender:self];
+    
     g_iWhichLabel=3;
     picker.hidden = NO;
     _press3.tintColor = [UIColor blueColor];
@@ -467,6 +476,9 @@ float CalcRaekke(int raekke)
 
 
 - (IBAction)pressfire:(id)sender {
+    
+    [self performSegueWithIdentifier:@"PushToChooseTable" sender:self];
+    
     g_iWhichLabel=4;
     picker.hidden = NO;
     _press4.tintColor = [UIColor blueColor];
@@ -497,6 +509,9 @@ float CalcRaekke(int raekke)
 
 
 - (IBAction)pressfem:(id)sender {
+    
+    [self performSegueWithIdentifier:@"PushToChooseTable" sender:self];
+    
     g_iWhichLabel=5;
         picker.hidden = NO;
     _press5.tintColor = [UIColor blueColor];
@@ -529,6 +544,9 @@ float CalcRaekke(int raekke)
 
 
 - (IBAction)pressseks:(id)sender {
+    
+    [self performSegueWithIdentifier:@"PushToChooseTable" sender:self];
+    
     g_iWhichLabel=6;
     picker.hidden = NO;
     _press6.tintColor = [UIColor blueColor];
@@ -560,6 +578,9 @@ float CalcRaekke(int raekke)
 
 
 - (IBAction)presssyv:(id)sender {
+    
+    [self performSegueWithIdentifier:@"PushToChooseTable" sender:self];
+    
     g_iWhichLabel=7;
     picker.hidden = NO;
     _press7.tintColor = [UIColor blueColor];
@@ -591,6 +612,9 @@ float CalcRaekke(int raekke)
 
 
 - (IBAction)pressotte:(id)sender {
+    
+    [self performSegueWithIdentifier:@"PushToChooseTable" sender:self];
+    
     g_iWhichLabel=8;
     picker.hidden = NO;
     _press8.tintColor = [UIColor blueColor];

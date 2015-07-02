@@ -1899,11 +1899,32 @@
                         <outlet property="press8" destination="qK7-0I-csP" id="CGZ-ud-Zt7"/>
                         <outlet property="resultat" destination="877-ww-IJS" id="vHO-62-4Gl"/>
                         <outlet property="samletresultat" destination="WHF-BX-4Eb" id="unF-IC-DsE"/>
+                        <segue destination="bh5-6I-1mi" kind="show" identifier="PushToChooseTable" id="JYV-p4-jeQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-702" y="-618.75"/>
+        </scene>
+        <!--Vælg moment-->
+        <scene sceneID="3N3-e7-ZWZ">
+            <objects>
+                <viewController title="Vælg moment" id="bh5-6I-1mi" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h0E-Q7-EnR"/>
+                        <viewControllerLayoutGuide type="bottom" id="JpN-7q-xW6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Q5-Jw-KQw">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dzh-Dq-ai0"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pjo-SS-cku" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4.5" y="-618.75"/>
         </scene>
         <!--Kalender-->
         <scene sceneID="Fkj-zd-9DG">
