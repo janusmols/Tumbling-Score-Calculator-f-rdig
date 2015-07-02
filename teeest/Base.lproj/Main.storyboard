@@ -1903,7 +1903,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-642" y="125.25"/>
+            <point key="canvasLocation" x="-702" y="-618.75"/>
         </scene>
         <!--Kalender-->
         <scene sceneID="Fkj-zd-9DG">
@@ -2017,7 +2017,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oTb-UI-M58" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1191" y="586.5"/>
+            <point key="canvasLocation" x="-1395" y="4.5"/>
         </scene>
         <!--Tumbling Score Calculator-->
         <scene sceneID="YOq-AO-YcI">
@@ -2447,12 +2447,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="45s-PR-CDU" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1368" y="-951"/>
+            <point key="canvasLocation" x="-1368.75" y="-591.375"/>
         </scene>
-        <!--Reglementweb-->
+        <!--Reglement-->
         <scene sceneID="DCI-nI-jZh">
             <objects>
-                <viewController id="rE2-2e-HSL" customClass="reglementweb" sceneMemberID="viewController">
+                <viewController title="Reglement" id="rE2-2e-HSL" customClass="reglementweb" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bes-I8-umx"/>
                         <viewControllerLayoutGuide type="bottom" id="bfd-W4-XsD"/>
@@ -2466,38 +2466,15 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GUA-V2-NTy">
-                                <rect key="frame" x="-5" y="436" width="325" height="44"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="V34-j2-Cgl"/>
-                                </constraints>
-                                <items>
-                                    <barButtonItem title="Tilbage til startsiden" id="6vs-AX-mRP">
-                                        <connections>
-                                            <segue destination="B16-4g-TGg" kind="modal" modalTransitionStyle="crossDissolve" id="qfX-e1-a6C"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="jO3-Ra-xgZ"/>
-                                </items>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="-5" y="436" width="325" height="44"/>
-                                </variation>
-                            </toolbar>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="GUA-V2-NTy" firstAttribute="leading" secondItem="IZh-D7-Ps0" secondAttribute="leadingMargin" constant="-16" id="3zK-YW-WEq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZsV-IH-xiU" secondAttribute="trailing" constant="-16" id="5iH-9a-bcg"/>
                             <constraint firstItem="ZsV-IH-xiU" firstAttribute="leading" secondItem="IZh-D7-Ps0" secondAttribute="leadingMargin" constant="-16" id="8bq-sc-Hek"/>
-                            <constraint firstItem="GUA-V2-NTy" firstAttribute="leading" secondItem="IZh-D7-Ps0" secondAttribute="leadingMargin" constant="-16" id="DX6-ly-W40"/>
                             <constraint firstItem="bfd-W4-XsD" firstAttribute="top" secondItem="ZsV-IH-xiU" secondAttribute="bottom" id="JP1-P1-BGW"/>
                             <constraint firstItem="ZsV-IH-xiU" firstAttribute="leading" secondItem="IZh-D7-Ps0" secondAttribute="leadingMargin" constant="-16" id="SQC-Sq-eG9"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="GUA-V2-NTy" secondAttribute="trailing" constant="-16" id="V3m-cQ-77n"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="GUA-V2-NTy" secondAttribute="trailing" constant="-16" id="bMo-Dx-9bT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZsV-IH-xiU" secondAttribute="trailing" constant="-16" id="fC2-p0-Ogd"/>
-                            <constraint firstItem="bfd-W4-XsD" firstAttribute="top" secondItem="GUA-V2-NTy" secondAttribute="bottom" id="gVN-Bb-o5G"/>
                             <constraint firstItem="ZsV-IH-xiU" firstAttribute="top" secondItem="bes-I8-umx" secondAttribute="bottom" id="xnx-9Q-ilD"/>
                         </constraints>
                         <variation key="default">
@@ -2506,26 +2483,18 @@
                                 <exclude reference="8bq-sc-Hek"/>
                                 <exclude reference="SQC-Sq-eG9"/>
                                 <exclude reference="fC2-p0-Ogd"/>
-                                <exclude reference="3zK-YW-WEq"/>
-                                <exclude reference="DX6-ly-W40"/>
-                                <exclude reference="V3m-cQ-77n"/>
-                                <exclude reference="bMo-Dx-9bT"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
                                 <include reference="SQC-Sq-eG9"/>
                                 <include reference="fC2-p0-Ogd"/>
-                                <include reference="3zK-YW-WEq"/>
-                                <include reference="bMo-Dx-9bT"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="constraints">
                                 <include reference="5iH-9a-bcg"/>
                                 <include reference="8bq-sc-Hek"/>
-                                <include reference="DX6-ly-W40"/>
-                                <include reference="V3m-cQ-77n"/>
                             </mask>
                         </variation>
                     </view>
@@ -2536,7 +2505,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g3o-ul-3ek" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2484" y="297.75"/>
+            <point key="canvasLocation" x="-1926" y="-239.25"/>
         </scene>
         <!--Info-->
         <scene sceneID="4Mx-D3-ott">
@@ -2704,7 +2673,6 @@
                                 </variation>
                                 <connections>
                                     <action selector="visreglement:" destination="4mT-lp-Gnk" eventType="touchUpInside" id="fg8-HQ-IY7"/>
-                                    <segue destination="rE2-2e-HSL" kind="modal" modalTransitionStyle="crossDissolve" id="Fx4-De-cN1"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Beregningssystemet er baseret på:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzd-qp-qvd">
@@ -2761,6 +2729,17 @@ GymDanmarks Power Tumbling Reglement 2013-2017</string>
                                     <segue destination="rE2-2e-HSL" kind="show" id="bFc-f6-YNq"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJd-eC-LJb">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Beregn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="fOQ-lk-lt3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2778,6 +2757,7 @@ GymDanmarks Power Tumbling Reglement 2013-2017</string>
                             <constraint firstItem="1Cs-Sh-V1r" firstAttribute="leading" secondItem="LMH-lK-bI3" secondAttribute="leadingMargin" id="TMw-am-yet"/>
                             <constraint firstItem="G1e-Cv-KaA" firstAttribute="top" secondItem="pzd-qp-qvd" secondAttribute="bottom" constant="8" symbolic="YES" id="UdE-we-8tI"/>
                             <constraint firstItem="Q7F-g5-Mna" firstAttribute="top" secondItem="1Cs-Sh-V1r" secondAttribute="bottom" constant="8" id="Up0-gA-JCi"/>
+                            <constraint firstAttribute="centerY" secondItem="dJd-eC-LJb" secondAttribute="centerY" constant="-157" id="WY8-Mb-9DC"/>
                             <constraint firstItem="1Cs-Sh-V1r" firstAttribute="top" secondItem="L3W-Oa-HkU" secondAttribute="bottom" constant="8" id="XRx-Mf-vRg"/>
                             <constraint firstAttribute="centerX" secondItem="Q7F-g5-Mna" secondAttribute="centerX" id="bSB-2V-My6"/>
                             <constraint firstItem="GkA-4p-EvY" firstAttribute="trailing" secondItem="LMH-lK-bI3" secondAttribute="trailingMargin" id="ciP-Z1-uiz"/>
@@ -2787,6 +2767,7 @@ GymDanmarks Power Tumbling Reglement 2013-2017</string>
                             <constraint firstAttribute="centerY" secondItem="Q7F-g5-Mna" secondAttribute="centerY" constant="35.5" id="pPa-M1-l6Y"/>
                             <constraint firstAttribute="centerX" secondItem="s0H-UA-vva" secondAttribute="centerX" id="rBq-QU-twV"/>
                             <constraint firstItem="1O2-lF-8Vv" firstAttribute="centerX" secondItem="pzd-qp-qvd" secondAttribute="centerX" id="rs8-px-Ip5"/>
+                            <constraint firstAttribute="centerX" secondItem="dJd-eC-LJb" secondAttribute="centerX" constant="0.5" id="vd3-a0-5Yn"/>
                             <constraint firstAttribute="centerY" secondItem="pzd-qp-qvd" secondAttribute="centerY" constant="138.5" id="w0Q-Lr-c1f"/>
                         </constraints>
                         <variation key="default">
@@ -2800,6 +2781,7 @@ GymDanmarks Power Tumbling Reglement 2013-2017</string>
                                 <exclude reference="pzd-qp-qvd"/>
                                 <exclude reference="1Cs-Sh-V1r"/>
                                 <exclude reference="Q7F-g5-Mna"/>
+                                <exclude reference="dJd-eC-LJb"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="f3g-82-xWU"/>
@@ -2823,12 +2805,15 @@ GymDanmarks Power Tumbling Reglement 2013-2017</string>
                                 <exclude reference="Up0-gA-JCi"/>
                                 <exclude reference="bSB-2V-My6"/>
                                 <exclude reference="pPa-M1-l6Y"/>
+                                <exclude reference="WY8-Mb-9DC"/>
+                                <exclude reference="vd3-a0-5Yn"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="1Cs-Sh-V1r"/>
                                 <include reference="Q7F-g5-Mna"/>
+                                <include reference="dJd-eC-LJb"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="JiL-ix-M3E"/>
@@ -2840,6 +2825,8 @@ GymDanmarks Power Tumbling Reglement 2013-2017</string>
                                 <include reference="Up0-gA-JCi"/>
                                 <include reference="bSB-2V-My6"/>
                                 <exclude reference="pPa-M1-l6Y"/>
+                                <include reference="WY8-Mb-9DC"/>
+                                <include reference="vd3-a0-5Yn"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -2871,7 +2858,7 @@ GymDanmarks Power Tumbling Reglement 2013-2017</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sL8-Dr-7M4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3098.25" y="-41.625"/>
+            <point key="canvasLocation" x="-716.25" y="-36.375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="moo-Er-w3P">
@@ -2890,7 +2877,7 @@ GymDanmarks Power Tumbling Reglement 2013-2017</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ayg-XB-JKq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2730" y="-1134"/>
+            <point key="canvasLocation" x="-1455" y="-1205.25"/>
         </scene>
     </scenes>
     <resources>
@@ -2899,8 +2886,6 @@ GymDanmarks Power Tumbling Reglement 2013-2017</string>
         <image name="cooltext1776802532.png" width="800" height="110"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qfX-e1-a6C"/>
-        <segue reference="bFc-f6-YNq"/>
         <segue reference="Fc2-SL-jOb"/>
     </inferredMetricsTieBreakers>
 </document>
