@@ -71,6 +71,8 @@ float FindValue(NSString *mytxt)
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
     container[c1][1] = @"Rondat (                             \n0.2";
     container[c1][2] = @"Flikflak f                           \n0.2";
     container[c1][3] = @"Whipback ^                           \n0.3";
@@ -84,6 +86,7 @@ float FindValue(NSString *mytxt)
     [self c1tilbagetillabel];
      _resultat.text =  [NSString stringWithFormat:@"%.1f",CalcRaekke(raekke)];
     _samletresultat.text = [NSString stringWithFormat:@"Σ%.1f",CalcRaekke(c1)+CalcRaekke(c2)];
+    
     
     
     label.text = @"                                                                                                                       ";

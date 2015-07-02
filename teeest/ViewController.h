@@ -34,7 +34,7 @@ NSString *Springarraytext[60];
 @property (weak, nonatomic) IBOutlet UIPickerView *picker;
 
 
-
+@property (nonatomic,strong) NSArray *momenter;
 
 
 //Vælg knapperne som labels
