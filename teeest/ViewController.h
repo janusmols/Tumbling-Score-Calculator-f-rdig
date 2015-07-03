@@ -36,7 +36,6 @@ NSString *Springarraytext[60];
 
 @property (nonatomic,strong) NSArray *momenter;
 
-
 //Vælg knapperne som labels
 
 @property (weak, nonatomic) IBOutlet UIButton *press1;

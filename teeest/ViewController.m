@@ -12,8 +12,6 @@
 
 
 
-
-
 @interface ViewController ()
 {
    
@@ -243,11 +241,11 @@ float FindValue(NSString *mytxt)
 
 //Her finder den ud af at hvis man f.eks har trykket på "vælg" ud for moment 3 at den så også skriver springet man har valgt i labeled ud for moment 3
 
--(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+-(void) pasteMomentInLabels: (NSString *) momentSelected{
     switch (g_iWhichLabel) {
         case 1:
             
-            container[raekke][1] = [NSString stringWithFormat:@"%@",[springArray objectAtIndex:[picker selectedRowInComponent:0]]];
+            container[raekke][1] = momentSelected;
             label.text = container[raekke][1];
             break;
             
