@@ -22,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:_bannerView];
+    self.navigationItem.hidesBackButton = true;
 }
 
 - (void)didReceiveMemoryWarning {

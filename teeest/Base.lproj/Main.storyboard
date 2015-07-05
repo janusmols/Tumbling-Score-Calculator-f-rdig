@@ -10,7 +10,7 @@
         <!--Beregner-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="Beregner" customModule="TumblingSC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Beregner" id="vXZ-lx-hvc" customClass="Beregner" customModule="TumblingSC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -814,40 +814,6 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlJ-ah-T6b">
-                                <rect key="frame" x="144" y="20" width="72" height="25"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="72" id="0Jt-eB-Twx"/>
-                                    <constraint firstAttribute="width" constant="198" id="ZiI-yG-jur"/>
-                                    <constraint firstAttribute="height" constant="25" id="eyH-4a-hk7"/>
-                                    <constraint firstAttribute="height" constant="25" id="k38-MC-fo5"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="B-række 1">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="0Jt-eB-Twx"/>
-                                        <exclude reference="ZiI-yG-jur"/>
-                                        <exclude reference="eyH-4a-hk7"/>
-                                        <exclude reference="k38-MC-fo5"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="0Jt-eB-Twx"/>
-                                        <include reference="k38-MC-fo5"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <mask key="constraints">
-                                        <include reference="ZiI-yG-jur"/>
-                                        <include reference="eyH-4a-hk7"/>
-                                    </mask>
-                                </variation>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnG-E1-vch">
                                 <rect key="frame" x="224" y="20" width="91" height="25"/>
                                 <animations/>
@@ -881,6 +847,9 @@
                                         <include reference="rp2-6R-rsz"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="EliteRækkeOne:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="394-Bq-PLT"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hi4-EE-Lgw">
                                 <rect key="frame" x="124" y="273" width="400" height="30"/>
@@ -950,6 +919,9 @@
                                         <include reference="jU1-mP-ldq"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="CRækkeOne:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2UT-am-qsG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVG-As-uLt">
                                 <rect key="frame" x="63" y="46" width="73" height="25"/>
@@ -984,6 +956,9 @@
                                         <include reference="b0a-6B-skG"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="CRækkeTwo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="g15-Ga-9g0"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="hhu" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ku7-H1-MFi">
                                 <rect key="frame" x="4" y="166" width="300" height="161"/>
@@ -1016,6 +991,50 @@
                                     <mask key="constraints">
                                         <include reference="O1J-5b-ynZ"/>
                                         <include reference="itv-OV-2qQ"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFS-3e-lUF">
+                                <rect key="frame" x="4" y="283" width="309" height="119"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="8Da-0y-gAf"/>
+                                    <constraint firstAttribute="width" constant="309" id="Ar3-El-mEu"/>
+                                    <constraint firstAttribute="height" constant="119" id="LBe-3R-Vap"/>
+                                    <constraint firstAttribute="width" constant="309" id="Ptd-V5-0Pu"/>
+                                    <constraint firstAttribute="width" constant="309" id="Vyx-d2-4ad"/>
+                                    <constraint firstAttribute="width" constant="400" id="WUg-F0-yag"/>
+                                    <constraint firstAttribute="height" constant="300" id="ih5-2G-FRU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8Da-0y-gAf"/>
+                                        <exclude reference="Ar3-El-mEu"/>
+                                        <exclude reference="LBe-3R-Vap"/>
+                                        <exclude reference="Ptd-V5-0Pu"/>
+                                        <exclude reference="Vyx-d2-4ad"/>
+                                        <exclude reference="WUg-F0-yag"/>
+                                        <exclude reference="ih5-2G-FRU"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="278" width="309" height="119"/>
+                                    <mask key="constraints">
+                                        <include reference="LBe-3R-Vap"/>
+                                        <include reference="Ptd-V5-0Pu"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="67" y="534" width="400" height="300"/>
+                                    <mask key="constraints">
+                                        <include reference="8Da-0y-gAf"/>
+                                        <exclude reference="Ar3-El-mEu"/>
+                                        <exclude reference="Vyx-d2-4ad"/>
+                                        <include reference="WUg-F0-yag"/>
+                                        <exclude reference="ih5-2G-FRU"/>
                                     </mask>
                                 </variation>
                             </label>
@@ -1052,6 +1071,9 @@
                                         <include reference="Mcy-pl-Hn0"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="BRækkeTwo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qLh-Xc-LXO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMS-cf-Jkm">
                                 <rect key="frame" x="224" y="46" width="91" height="25"/>
@@ -1086,6 +1108,9 @@
                                         <include reference="uXS-yE-iUN"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="EliteRækkeTwo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yLK-En-bmz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJH-2w-hoC">
                                 <rect key="frame" x="0.0" y="288" width="71" height="40"/>
@@ -1240,50 +1265,43 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFS-3e-lUF">
-                                <rect key="frame" x="4" y="283" width="309" height="119"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlJ-ah-T6b">
+                                <rect key="frame" x="144" y="20" width="72" height="25"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="8Da-0y-gAf"/>
-                                    <constraint firstAttribute="width" constant="309" id="Ar3-El-mEu"/>
-                                    <constraint firstAttribute="height" constant="119" id="LBe-3R-Vap"/>
-                                    <constraint firstAttribute="width" constant="309" id="Ptd-V5-0Pu"/>
-                                    <constraint firstAttribute="width" constant="309" id="Vyx-d2-4ad"/>
-                                    <constraint firstAttribute="width" constant="400" id="WUg-F0-yag"/>
-                                    <constraint firstAttribute="height" constant="300" id="ih5-2G-FRU"/>
+                                    <constraint firstAttribute="width" constant="72" id="0Jt-eB-Twx"/>
+                                    <constraint firstAttribute="width" constant="198" id="ZiI-yG-jur"/>
+                                    <constraint firstAttribute="height" constant="25" id="eyH-4a-hk7"/>
+                                    <constraint firstAttribute="height" constant="25" id="k38-MC-fo5"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="B-række 1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="8Da-0y-gAf"/>
-                                        <exclude reference="Ar3-El-mEu"/>
-                                        <exclude reference="LBe-3R-Vap"/>
-                                        <exclude reference="Ptd-V5-0Pu"/>
-                                        <exclude reference="Vyx-d2-4ad"/>
-                                        <exclude reference="WUg-F0-yag"/>
-                                        <exclude reference="ih5-2G-FRU"/>
+                                        <exclude reference="0Jt-eB-Twx"/>
+                                        <exclude reference="ZiI-yG-jur"/>
+                                        <exclude reference="eyH-4a-hk7"/>
+                                        <exclude reference="k38-MC-fo5"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="278" width="309" height="119"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="LBe-3R-Vap"/>
-                                        <include reference="Ptd-V5-0Pu"/>
+                                        <include reference="0Jt-eB-Twx"/>
+                                        <include reference="k38-MC-fo5"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="67" y="534" width="400" height="300"/>
+                                <variation key="heightClass=regular-widthClass=regular">
                                     <mask key="constraints">
-                                        <include reference="8Da-0y-gAf"/>
-                                        <exclude reference="Ar3-El-mEu"/>
-                                        <exclude reference="Vyx-d2-4ad"/>
-                                        <include reference="WUg-F0-yag"/>
-                                        <exclude reference="ih5-2G-FRU"/>
+                                        <include reference="ZiI-yG-jur"/>
+                                        <include reference="eyH-4a-hk7"/>
                                     </mask>
                                 </variation>
-                            </label>
+                                <connections>
+                                    <action selector="BRækkeOne:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OUL-gw-JJU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1779,6 +1797,20 @@
                     <navigationItem key="navigationItem" title="Beregner" id="9jd-f6-aLq"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="BRækkeOne" destination="dlJ-ah-T6b" id="KIZ-kE-PKm"/>
+                        <outlet property="BRækkeTwo" destination="bzu-ww-ALZ" id="yf2-xj-o3t"/>
+                        <outlet property="BegynderKrav" destination="Ku7-H1-MFi" id="kcW-Bo-TXC"/>
+                        <outlet property="CRækkeOne" destination="hPQ-qy-Ks3" id="SUW-GS-SAQ"/>
+                        <outlet property="CRækkeTwo" destination="dVG-As-uLt" id="r3m-oE-w9h"/>
+                        <outlet property="ChooseEight" destination="qK7-0I-csP" id="n0g-BT-dgY"/>
+                        <outlet property="ChooseSeven" destination="X4S-pK-2YG" id="SBz-TU-aTL"/>
+                        <outlet property="ChooseSix" destination="Uie-cc-947" id="QEQ-HZ-b3O"/>
+                        <outlet property="EliteKrav" destination="XFS-3e-lUF" id="PgY-CV-dcD"/>
+                        <outlet property="EliteRækkeOne" destination="nnG-E1-vch" id="2kn-AP-cws"/>
+                        <outlet property="EliteRækkeTwo" destination="WMS-cf-Jkm" id="XZy-jo-6EN"/>
+                        <outlet property="MomentEight" destination="TkP-E1-Z8o" id="p24-bD-o0y"/>
+                        <outlet property="MomentSeven" destination="xxV-iD-oQI" id="0HP-U8-qtf"/>
+                        <outlet property="MomentSix" destination="WLe-D7-jg0" id="mzH-Um-OMk"/>
                         <outlet property="Result" destination="877-ww-IJS" id="0ZH-6f-ZD0"/>
                         <outlet property="momentTitleEight" destination="Hi4-EE-Lgw" id="bie-TC-J0J"/>
                         <outlet property="momentTitleFive" destination="Fms-OM-fdE" id="a7s-jL-2xd"/>
@@ -1790,6 +1822,7 @@
                         <outlet property="momentTitleTwo" destination="9qJ-tv-E0a" id="t4X-nb-KSs"/>
                         <outlet property="samletResult" destination="WHF-BX-4Eb" id="kqW-tH-Vna"/>
                         <segue destination="nkD-Hc-CLQ" kind="show" identifier="PushToChooseTable" id="hIz-5B-exe"/>
+                        <segue destination="Dal-Fo-mVF" kind="show" identifier="PushToHome" id="9jP-a8-abz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -2828,6 +2861,7 @@ GymDanmarks Power Tumbling Reglement 2013-2017</string>
         <image name="cooltext1776802532.png" width="800" height="110"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="9jP-a8-abz"/>
         <segue reference="Fc2-SL-jOb"/>
     </inferredMetricsTieBreakers>
 </document>
