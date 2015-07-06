@@ -9,13 +9,13 @@
 import UIKit
 
 var g_Choose : Int = 1
-var g_SelectedMoment : String = "Tom"
+var g_SelectedMoment : String = "Tom                                  \n0.0"
 var ræekke : Int!
-var container: [[[[[[String]]]]]] = [[[[[["Tom                                                                                                                                       0.0","Tom","Tom","Tom","Tom","Tom","Tom","Tom"],["Tom","Tom","Tom","Tom","Tom","Tom","Tom","Tom"],["Tom","Tom","Tom","Tom","Tom","Tom","Tom","Tom"],["Tom","Tom","Tom","Tom","Tom","Tom","Tom","Tom"],["Tom","Tom","Tom","Tom","Tom","Tom","Tom","Tom"],["Tom","Tom","Tom","Tom","Tom","Tom","Tom","Tom"]]]]]]
+var container: [[[[[[String]]]]]] = [[[[[["Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0"],["Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0"],["Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0"],["Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0"],["Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0"],["Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0","Tom                                  \n0.0"]]]]]]
 
 class Beregner: UIViewController {
     
-    
+    var tom = "Tom                                  \n0.0"
     
     var c1 = 0
     var c2 = 1
@@ -405,7 +405,33 @@ class Beregner: UIViewController {
     
     
     @IBAction func Reset(sender: AnyObject) {
+        container[0][0][0][0][ræekke][0] = tom
+        container[0][0][0][0][ræekke][1] = tom
+        container[0][0][0][0][ræekke][2] = tom
+        container[0][0][0][0][ræekke][3] = tom
+        container[0][0][0][0][ræekke][4] = tom
+        container[0][0][0][0][ræekke][5] = tom
+        container[0][0][0][0][ræekke][6] = tom
+        container[0][0][0][0][ræekke][7] = tom
+        
+        if ((ræekke == 0)||(ræekke == 1)){
+            
+            momentTitleFive.text = container[0][0][0][0][ræekke][4]
+            momentTitleSix.text = container[0][0][0][0][ræekke][5]
+            momentTitleSeven.text = container[0][0][0][0][ræekke][6]
+            momentTitleEight.text = container[0][0][0][0][ræekke][7]
+        }
+        else {
+            momentTitleOne.text = container[0][0][0][0][ræekke][0]
+            momentTitleTwo.text = container[0][0][0][0][ræekke][1]
+            momentTitleThree.text = container[0][0][0][0][ræekke][2]
+            momentTitleFour.text = container[0][0][0][0][ræekke][3]
+            momentTitleFive.text = container[0][0][0][0][ræekke][4]
+            momentTitleSix.text = container[0][0][0][0][ræekke][5]
+            momentTitleSeven.text = container[0][0][0][0][ræekke][6]
+            momentTitleEight.text = container[0][0][0][0][ræekke][7]
+        
+        }
     }
-
 
 }
