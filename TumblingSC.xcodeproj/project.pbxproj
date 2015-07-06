@@ -51,6 +51,7 @@
 		614FF8CF1B45E1C600DEBACE /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		614FF8D11B45E86500DEBACE /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		614FF8D41B471AD000DEBACE /* Beregner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beregner.swift; sourceTree = "<group>"; };
+		614FF8D61B4A9CE700DEBACE /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		6156BDDE1A4F35C700479DEE /* kalender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kalender.h; sourceTree = "<group>"; };
 		6156BDDF1A4F35C700479DEE /* kalender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kalender.m; sourceTree = "<group>"; };
 		6156BDE11A4F4EE400479DEE /* reglementweb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reglementweb.h; sourceTree = "<group>"; };
@@ -134,6 +135,7 @@
 				616662C61A0E779E00445753 /* ViewController.h */,
 				616662C71A0E779E00445753 /* ViewController.m */,
 				614FF8D41B471AD000DEBACE /* Beregner.swift */,
+				614FF8D61B4A9CE700DEBACE /* MyPlayground.playground */,
 				614FF8D11B45E86500DEBACE /* TableViewController.swift */,
 				614FF8CF1B45E1C600DEBACE /* TableViewCell.swift */,
 				6156BDDE1A4F35C700479DEE /* kalender.h */,

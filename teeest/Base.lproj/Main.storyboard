@@ -599,11 +599,11 @@
                                     <action selector="ChooseSeven:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="N4n-7m-wwK"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDZ-bz-7z0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDZ-bz-7z0">
                                 <rect key="frame" x="124" y="157" width="400" height="30"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="530" id="Qh3-1s-hkj"/>
+                                    <constraint firstAttribute="width" constant="450" id="Qh3-1s-hkj"/>
                                     <constraint firstAttribute="height" constant="60" id="cQx-4N-1Tz"/>
                                     <constraint firstAttribute="height" constant="30" id="fHX-Y2-zwc"/>
                                     <constraint firstAttribute="width" constant="1000" id="fu9-fB-lv0"/>
@@ -634,14 +634,14 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fms-OM-fdE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fms-OM-fdE">
                                 <rect key="frame" x="124" y="186" width="400" height="30"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Wo7-jf-fGK"/>
                                     <constraint firstAttribute="height" constant="30" id="aej-sD-WsJ"/>
                                     <constraint firstAttribute="width" constant="1000" id="cxO-te-hE9"/>
-                                    <constraint firstAttribute="width" constant="530" id="liM-GM-rcy"/>
+                                    <constraint firstAttribute="width" constant="450" id="liM-GM-rcy"/>
                                 </constraints>
                                 <string key="text">Tom                                                                                                                                   0.0</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
@@ -669,11 +669,11 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2s-hI-zh3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2s-hI-zh3">
                                 <rect key="frame" x="124" y="244" width="400" height="30"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="530" id="3CA-eJ-lwV"/>
+                                    <constraint firstAttribute="width" constant="450" id="3CA-eJ-lwV"/>
                                     <constraint firstAttribute="height" constant="30" id="Fuv-KJ-z8C"/>
                                     <constraint firstAttribute="height" constant="60" id="vib-A1-duh"/>
                                     <constraint firstAttribute="width" constant="1000" id="zbA-vx-uSW"/>
@@ -704,13 +704,13 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cb6-8f-PWY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cb6-8f-PWY">
                                 <rect key="frame" x="124" y="128" width="400" height="30"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="8MU-3C-Xq2"/>
                                     <constraint firstAttribute="width" constant="1000" id="Esz-zA-muQ"/>
-                                    <constraint firstAttribute="width" constant="530" id="FWt-AA-rMr"/>
+                                    <constraint firstAttribute="width" constant="450" id="FWt-AA-rMr"/>
                                     <constraint firstAttribute="height" constant="30" id="l8X-EP-OqT"/>
                                 </constraints>
                                 <string key="text">Tom                                                                                                                               0.0</string>
@@ -779,14 +779,14 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lit-VJ-q9r">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lit-VJ-q9r">
                                 <rect key="frame" x="124" y="215" width="400" height="30"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Psd-Lb-lxN"/>
                                     <constraint firstAttribute="height" constant="60" id="VSC-tM-MmL"/>
                                     <constraint firstAttribute="width" constant="1000" id="fdu-7n-96I"/>
-                                    <constraint firstAttribute="width" constant="530" id="gKi-bC-OVF"/>
+                                    <constraint firstAttribute="width" constant="450" id="gKi-bC-OVF"/>
                                 </constraints>
                                 <string key="text">Tom                                                                                                                                0.0</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
@@ -814,6 +814,43 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlJ-ah-T6b">
+                                <rect key="frame" x="144" y="20" width="72" height="25"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="0Jt-eB-Twx"/>
+                                    <constraint firstAttribute="width" constant="198" id="ZiI-yG-jur"/>
+                                    <constraint firstAttribute="height" constant="25" id="eyH-4a-hk7"/>
+                                    <constraint firstAttribute="height" constant="25" id="k38-MC-fo5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="B-række 1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0Jt-eB-Twx"/>
+                                        <exclude reference="ZiI-yG-jur"/>
+                                        <exclude reference="eyH-4a-hk7"/>
+                                        <exclude reference="k38-MC-fo5"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="0Jt-eB-Twx"/>
+                                        <include reference="k38-MC-fo5"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="ZiI-yG-jur"/>
+                                        <include reference="eyH-4a-hk7"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="BRækkeOne:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OUL-gw-JJU"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnG-E1-vch">
                                 <rect key="frame" x="224" y="20" width="91" height="25"/>
                                 <animations/>
@@ -851,12 +888,12 @@
                                     <action selector="EliteRækkeOne:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="394-Bq-PLT"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hi4-EE-Lgw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hi4-EE-Lgw">
                                 <rect key="frame" x="124" y="273" width="400" height="30"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="OWf-cj-UG4"/>
-                                    <constraint firstAttribute="width" constant="530" id="RGS-0p-2Yi"/>
+                                    <constraint firstAttribute="width" constant="450" id="RGS-0p-2Yi"/>
                                     <constraint firstAttribute="width" constant="1000" id="XGr-Op-ASk"/>
                                     <constraint firstAttribute="height" constant="30" id="YUW-60-1Dt"/>
                                 </constraints>
@@ -960,40 +997,6 @@
                                     <action selector="CRækkeTwo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="g15-Ga-9g0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="hhu" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ku7-H1-MFi">
-                                <rect key="frame" x="4" y="166" width="300" height="161"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="7V5-Sg-NCh"/>
-                                    <constraint firstAttribute="width" constant="300" id="O1J-5b-ynZ"/>
-                                    <constraint firstAttribute="height" constant="161" id="itv-OV-2qQ"/>
-                                    <constraint firstAttribute="height" constant="161" id="pcc-pr-yp0"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="7V5-Sg-NCh"/>
-                                        <exclude reference="O1J-5b-ynZ"/>
-                                        <exclude reference="itv-OV-2qQ"/>
-                                        <exclude reference="pcc-pr-yp0"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="7V5-Sg-NCh"/>
-                                        <include reference="pcc-pr-yp0"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="67" y="417" width="300" height="161"/>
-                                    <mask key="constraints">
-                                        <include reference="O1J-5b-ynZ"/>
-                                        <include reference="itv-OV-2qQ"/>
-                                    </mask>
-                                </variation>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFS-3e-lUF">
                                 <rect key="frame" x="4" y="283" width="309" height="119"/>
                                 <animations/>
@@ -1020,8 +1023,7 @@
                                         <exclude reference="ih5-2G-FRU"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="278" width="309" height="119"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="LBe-3R-Vap"/>
                                         <include reference="Ptd-V5-0Pu"/>
@@ -1157,11 +1159,12 @@
                                     <action selector="Reset:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4oA-C3-H4r"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOG-co-mk8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOG-co-mk8">
                                 <rect key="frame" x="124" y="70" width="400" height="30"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="530" id="93p-Bl-Dyx"/>
+                                    <constraint firstAttribute="width" constant="450" id="93p-Bl-Dyx"/>
+                                    <constraint firstAttribute="height" constant="30" id="SBz-jM-lYl"/>
                                     <constraint firstAttribute="width" constant="1000" id="YgF-wM-Efh"/>
                                     <constraint firstAttribute="height" constant="60" id="bA2-iu-YJ6"/>
                                     <constraint firstAttribute="height" constant="30" id="rQf-gT-CCW"/>
@@ -1173,6 +1176,7 @@
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="93p-Bl-Dyx"/>
+                                        <exclude reference="SBz-jM-lYl"/>
                                         <exclude reference="YgF-wM-Efh"/>
                                         <exclude reference="bA2-iu-YJ6"/>
                                         <exclude reference="rQf-gT-CCW"/>
@@ -1181,7 +1185,8 @@
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="93p-Bl-Dyx"/>
-                                        <include reference="rQf-gT-CCW"/>
+                                        <include reference="SBz-jM-lYl"/>
+                                        <exclude reference="rQf-gT-CCW"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
@@ -1230,14 +1235,14 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qJ-tv-E0a">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qJ-tv-E0a">
                                 <rect key="frame" x="124" y="99" width="400" height="30"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1000" id="Hos-NL-r5v"/>
                                     <constraint firstAttribute="height" constant="60" id="enw-sw-t0M"/>
                                     <constraint firstAttribute="height" constant="30" id="mFk-FT-qe4"/>
-                                    <constraint firstAttribute="width" constant="530" id="nN3-eO-iWO"/>
+                                    <constraint firstAttribute="width" constant="450" id="nN3-eO-iWO"/>
                                 </constraints>
                                 <string key="text">Tom                                                                                                                                  0.0</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
@@ -1265,43 +1270,41 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlJ-ah-T6b">
-                                <rect key="frame" x="144" y="20" width="72" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="hhu" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ku7-H1-MFi">
+                                <rect key="frame" x="4" y="166" width="300" height="161"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="72" id="0Jt-eB-Twx"/>
-                                    <constraint firstAttribute="width" constant="198" id="ZiI-yG-jur"/>
-                                    <constraint firstAttribute="height" constant="25" id="eyH-4a-hk7"/>
-                                    <constraint firstAttribute="height" constant="25" id="k38-MC-fo5"/>
+                                    <constraint firstAttribute="width" constant="300" id="7V5-Sg-NCh"/>
+                                    <constraint firstAttribute="width" constant="300" id="O1J-5b-ynZ"/>
+                                    <constraint firstAttribute="height" constant="161" id="itv-OV-2qQ"/>
+                                    <constraint firstAttribute="height" constant="161" id="pcc-pr-yp0"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="B-række 1">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="0Jt-eB-Twx"/>
-                                        <exclude reference="ZiI-yG-jur"/>
-                                        <exclude reference="eyH-4a-hk7"/>
-                                        <exclude reference="k38-MC-fo5"/>
+                                        <exclude reference="7V5-Sg-NCh"/>
+                                        <exclude reference="O1J-5b-ynZ"/>
+                                        <exclude reference="itv-OV-2qQ"/>
+                                        <exclude reference="pcc-pr-yp0"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="36" y="387" width="300" height="161"/>
                                     <mask key="constraints">
-                                        <include reference="0Jt-eB-Twx"/>
-                                        <include reference="k38-MC-fo5"/>
+                                        <include reference="7V5-Sg-NCh"/>
+                                        <include reference="pcc-pr-yp0"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=regular">
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="67" y="417" width="300" height="161"/>
                                     <mask key="constraints">
-                                        <include reference="ZiI-yG-jur"/>
-                                        <include reference="eyH-4a-hk7"/>
+                                        <include reference="O1J-5b-ynZ"/>
+                                        <include reference="itv-OV-2qQ"/>
                                     </mask>
                                 </variation>
-                                <connections>
-                                    <action selector="BRækkeOne:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OUL-gw-JJU"/>
-                                </connections>
-                            </button>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1803,8 +1806,13 @@
                         <outlet property="CRækkeOne" destination="hPQ-qy-Ks3" id="SUW-GS-SAQ"/>
                         <outlet property="CRækkeTwo" destination="dVG-As-uLt" id="r3m-oE-w9h"/>
                         <outlet property="ChooseEight" destination="qK7-0I-csP" id="n0g-BT-dgY"/>
+                        <outlet property="ChooseFive" destination="zgO-GT-Lbz" id="aqd-QG-qqp"/>
+                        <outlet property="ChooseFour" destination="fAU-qk-Ox0" id="LVW-hp-0aE"/>
+                        <outlet property="ChooseOne" destination="7ve-Ug-Qmy" id="Sv8-9D-Vko"/>
                         <outlet property="ChooseSeven" destination="X4S-pK-2YG" id="SBz-TU-aTL"/>
                         <outlet property="ChooseSix" destination="Uie-cc-947" id="QEQ-HZ-b3O"/>
+                        <outlet property="ChooseThree" destination="Q9d-R4-idh" id="7FS-2t-sO5"/>
+                        <outlet property="ChooseTwo" destination="Fj5-zm-8kH" id="L2M-Wg-7J2"/>
                         <outlet property="EliteKrav" destination="XFS-3e-lUF" id="PgY-CV-dcD"/>
                         <outlet property="EliteRækkeOne" destination="nnG-E1-vch" id="2kn-AP-cws"/>
                         <outlet property="EliteRækkeTwo" destination="WMS-cf-Jkm" id="XZy-jo-6EN"/>
