@@ -128,6 +128,7 @@ class Beregner: UIViewController {
         EliteKrav.hidden = true
         BegynderKrav.hidden = false
         ræekke = c1
+        Calculate()
         hideOrAppearButtonsAndLabels()
         BegynderKrav.text = "￼\nMikro og mini: Øvelse 1: Rondat - Flik - whip - flik -\n(frit slutspring)\nJunior og senior: Øvelse 1: Rondat - Flik - whip - flik - (frit slutspring) I enten øvelse 1 eller øvelse 2 skal\nslutspringet indeholde mindst en hel skrue)"
         
@@ -150,6 +151,7 @@ class Beregner: UIViewController {
         EliteKrav.hidden = true
         BegynderKrav.hidden = false
         ræekke = c2
+        Calculate()
         hideOrAppearButtonsAndLabels()
         BegynderKrav.text = "￼\nMikro og mini: Øvelse 2: Rondat - whip - whip - flik -\n(frit slutspring)\nJunior og senior: Øvelse 2: Rondat - whip - whip - flik -\n(frit slutspring) I enten øvelse 1 eller øvelse 2 skal\nslutspringet indeholde mindst en hel skrue)"
         
@@ -172,6 +174,7 @@ class Beregner: UIViewController {
         EliteKrav.hidden = true
         BegynderKrav.hidden = false
         ræekke = b1
+        Calculate()
         hideOrAppearButtonsAndLabels()
         BegynderKrav.text = "\nMini, junior og senior: Øvelse 1: 5 spring - Fri øvelse - minimum 2 saltospring"
         
@@ -194,6 +197,7 @@ class Beregner: UIViewController {
         EliteKrav.hidden = true
         BegynderKrav.hidden = false
         ræekke = b2
+        Calculate()
         hideOrAppearButtonsAndLabels()
         BegynderKrav.text = "\nMini, junior og senior: Øvelse 2: 5 spring - Fri øvelse - minimum\n2 saltospring og et spring med hel skrue"
         
@@ -215,6 +219,7 @@ class Beregner: UIViewController {
         EliteKrav.hidden = false
         BegynderKrav.hidden = true
         ræekke = e1
+        Calculate()
         hideOrAppearButtonsAndLabels()
         EliteKrav.text = "￼￼\nMini og Junior: Øvelse 1: 8 spring - Fri øvelse- minimum 3\nsaltospring.\nSenior: Øvelse 1: 8 spring - Fri øvelse - minimum 3 saltospring - Max en halv skrue."
         
@@ -240,6 +245,7 @@ class Beregner: UIViewController {
         EliteKrav.hidden = false
         BegynderKrav.hidden = true
         ræekke = e2
+        Calculate().
         hideOrAppearButtonsAndLabels()
         EliteKrav.text = "￼\nMini og Junior: Øvelse 2: 8 spring - Fri øvelse - minimum 3\nsaltospring og et spring med hel skrue.\nSenior: Øvelse 2: 8 spring - Fri øvelse - minimum 3\nsaltospring og 2 spring med hel skrue"
     
@@ -400,9 +406,47 @@ class Beregner: UIViewController {
   default:
     break;
 }
-        
+        Calculate()
     }
     
+    func findValue(myString: String) ->Float{
+    
+        var mySubstring = myString.substringFromIndex(advance(myString.startIndex,38))
+        
+        return (mySubstring as NSString).floatValue
+    }
+    
+    func Calculate(){
+        var resultatString = String()
+        var floatResult: [Float] = [1,2,3,4,5,6,7,8,9]
+        
+        resultatString = container[0][0][0][0][ræekke][0]
+        floatResult[1] = findValue(resultatString)
+        
+        resultatString = container[0][0][0][0][ræekke][1]
+        floatResult[2] = findValue(resultatString)
+        
+        resultatString = container[0][0][0][0][ræekke][2]
+        floatResult[3] = findValue(resultatString)
+        
+        resultatString = container[0][0][0][0][ræekke][3]
+        floatResult[4] = findValue(resultatString)
+        
+        resultatString = container[0][0][0][0][ræekke][4]
+        floatResult[5] = findValue(resultatString)
+        
+        resultatString = container[0][0][0][0][ræekke][5]
+        floatResult[6] = findValue(resultatString)
+        
+        resultatString = container[0][0][0][0][ræekke][6]
+        floatResult[7] = findValue(resultatString)
+        
+        resultatString = container[0][0][0][0][ræekke][7]
+        floatResult[8] = findValue(resultatString)
+
+        var Result = floatResult[1] + floatResult[2] + floatResult[3] + floatResult[4] + floatResult[5] + floatResult[6] + floatResult[7] + floatResult[8]
+        NSLog("Result:\(Result)")
+    }
     
     @IBAction func Reset(sender: AnyObject) {
         container[0][0][0][0][ræekke][0] = tom
