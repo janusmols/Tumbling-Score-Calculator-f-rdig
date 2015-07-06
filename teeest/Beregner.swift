@@ -101,6 +101,7 @@ class Beregner: UIViewController {
             ETwo()
         }
         PasteSelectedMomentInLabels()
+        pasteResult()
 
     }
 
@@ -128,7 +129,7 @@ class Beregner: UIViewController {
         EliteKrav.hidden = true
         BegynderKrav.hidden = false
         ræekke = c1
-        Calculate()
+        Calculate(ræekke)
         hideOrAppearButtonsAndLabels()
         BegynderKrav.text = "￼\nMikro og mini: Øvelse 1: Rondat - Flik - whip - flik -\n(frit slutspring)\nJunior og senior: Øvelse 1: Rondat - Flik - whip - flik - (frit slutspring) I enten øvelse 1 eller øvelse 2 skal\nslutspringet indeholde mindst en hel skrue)"
         
@@ -139,11 +140,21 @@ class Beregner: UIViewController {
         EliteRækkeOne.tintColor = UIColor .grayColor()
         EliteRækkeTwo.tintColor = UIColor .grayColor()
         
-        momentTitleOne.text = "Rondat (                             \n0.2"
-        momentTitleTwo.text = "Flikflak f                           \n0.2"
-        momentTitleThree.text = "Whipback ^                           \n0.3"
-        momentTitleFour.text = "Flikflak f                           \n0.2"
+        container[0][0][0][0][c2][0] = "Rondat (                             \n0.2"
+        container[0][0][0][0][c2][1] = "Whipback ^                           \n0.3"
+        container[0][0][0][0][c2][2] = "Whipback ^                           \n0.3"
+        container[0][0][0][0][c2][3] = "Flikflak f                           \n0.2"
+        
+        container[0][0][0][0][c1][0] = "Rondat (                             \n0.2"
+        container[0][0][0][0][c1][1] = "Flikflak f                           \n0.2"
+        container[0][0][0][0][c1][2] = "Whipback ^                           \n0.3"
+        container[0][0][0][0][c1][3] = "Flikflak f                           \n0.2"
+        momentTitleOne.text = container[0][0][0][0][c1][0]
+        momentTitleTwo.text = container[0][0][0][0][c1][1]
+        momentTitleThree.text = container[0][0][0][0][c1][2]
+        momentTitleFour.text = container[0][0][0][0][c1][3]
         momentTitleFive.text = container[0][0][0][0][c1][4]
+        pasteResult()
     
     }
     
@@ -151,7 +162,7 @@ class Beregner: UIViewController {
         EliteKrav.hidden = true
         BegynderKrav.hidden = false
         ræekke = c2
-        Calculate()
+        Calculate(ræekke)
         hideOrAppearButtonsAndLabels()
         BegynderKrav.text = "￼\nMikro og mini: Øvelse 2: Rondat - whip - whip - flik -\n(frit slutspring)\nJunior og senior: Øvelse 2: Rondat - whip - whip - flik -\n(frit slutspring) I enten øvelse 1 eller øvelse 2 skal\nslutspringet indeholde mindst en hel skrue)"
         
@@ -162,11 +173,22 @@ class Beregner: UIViewController {
         EliteRækkeOne.tintColor = UIColor .grayColor()
         EliteRækkeTwo.tintColor = UIColor .grayColor()
         
-        momentTitleOne.text = "Rondat (                             \n0.2"
-        momentTitleTwo.text = "Whipback ^                           \n0.3"
-        momentTitleThree.text = "Whipback ^                           \n0.3"
-        momentTitleFour.text = "Flikflak f                           \n0.2"
+        container[0][0][0][0][c1][0] = "Rondat (                             \n0.2"
+        container[0][0][0][0][c1][1] = "Flikflak f                           \n0.2"
+        container[0][0][0][0][c1][2] = "Whipback ^                           \n0.3"
+        container[0][0][0][0][c1][3] = "Flikflak f                           \n0.2"
+        
+        container[0][0][0][0][c2][0] = "Rondat (                             \n0.2"
+        container[0][0][0][0][c2][1] = "Whipback ^                           \n0.3"
+       container[0][0][0][0][c2][2] = "Whipback ^                           \n0.3"
+        container[0][0][0][0][c2][3] = "Flikflak f                           \n0.2"
+        
+        momentTitleOne.text = container[0][0][0][0][c2][0]
+        momentTitleTwo.text = container[0][0][0][0][c2][1]
+        momentTitleThree.text = container[0][0][0][0][c2][2]
+        momentTitleFour.text = container[0][0][0][0][c2][3]
         momentTitleFive.text = container[0][0][0][0][c2][4]
+        pasteResult()
         
     }
     
@@ -174,7 +196,8 @@ class Beregner: UIViewController {
         EliteKrav.hidden = true
         BegynderKrav.hidden = false
         ræekke = b1
-        Calculate()
+        Calculate(ræekke)
+        pasteResult()
         hideOrAppearButtonsAndLabels()
         BegynderKrav.text = "\nMini, junior og senior: Øvelse 1: 5 spring - Fri øvelse - minimum 2 saltospring"
         
@@ -197,7 +220,8 @@ class Beregner: UIViewController {
         EliteKrav.hidden = true
         BegynderKrav.hidden = false
         ræekke = b2
-        Calculate()
+        Calculate(ræekke)
+        pasteResult()
         hideOrAppearButtonsAndLabels()
         BegynderKrav.text = "\nMini, junior og senior: Øvelse 2: 5 spring - Fri øvelse - minimum\n2 saltospring og et spring med hel skrue"
         
@@ -219,7 +243,8 @@ class Beregner: UIViewController {
         EliteKrav.hidden = false
         BegynderKrav.hidden = true
         ræekke = e1
-        Calculate()
+        Calculate(ræekke)
+        pasteResult()
         hideOrAppearButtonsAndLabels()
         EliteKrav.text = "￼￼\nMini og Junior: Øvelse 1: 8 spring - Fri øvelse- minimum 3\nsaltospring.\nSenior: Øvelse 1: 8 spring - Fri øvelse - minimum 3 saltospring - Max en halv skrue."
         
@@ -245,7 +270,8 @@ class Beregner: UIViewController {
         EliteKrav.hidden = false
         BegynderKrav.hidden = true
         ræekke = e2
-        Calculate().
+        Calculate(ræekke)
+        pasteResult()
         hideOrAppearButtonsAndLabels()
         EliteKrav.text = "￼\nMini og Junior: Øvelse 2: 8 spring - Fri øvelse - minimum 3\nsaltospring og et spring med hel skrue.\nSenior: Øvelse 2: 8 spring - Fri øvelse - minimum 3\nsaltospring og 2 spring med hel skrue"
     
@@ -406,7 +432,7 @@ class Beregner: UIViewController {
   default:
     break;
 }
-        Calculate()
+        Calculate(ræekke)
     }
     
     func findValue(myString: String) ->Float{
@@ -416,7 +442,7 @@ class Beregner: UIViewController {
         return (mySubstring as NSString).floatValue
     }
     
-    func Calculate(){
+    func Calculate(ræekke: Int) ->Float{
         var resultatString = String()
         var floatResult: [Float] = [1,2,3,4,5,6,7,8,9]
         
@@ -444,28 +470,50 @@ class Beregner: UIViewController {
         resultatString = container[0][0][0][0][ræekke][7]
         floatResult[8] = findValue(resultatString)
 
-        var Result = floatResult[1] + floatResult[2] + floatResult[3] + floatResult[4] + floatResult[5] + floatResult[6] + floatResult[7] + floatResult[8]
-        NSLog("Result:\(Result)")
+        var ResultScore = floatResult[1] + floatResult[2] + floatResult[3] + floatResult[4] + floatResult[5] + floatResult[6] + floatResult[7] + floatResult[8]
+        
+        NSLog("Result:\(ResultScore)")
+
+        return ResultScore
+    }
+    
+    func pasteResult(){
+    
+        Result.text = NSString(format: "%.1f", Calculate(ræekke)) as String
+        
+        if ((ræekke == e1)||(ræekke == e2)){
+        samletResult.text = NSString(format: "Σ%.1f", Calculate(e1) + Calculate(e2)) as String
+        }
+        else if ((ræekke == b1)||(ræekke == b2)){
+            samletResult.text = NSString(format: "Σ%.1f", Calculate(b1) + Calculate(b2)) as String
+        }
+        else if ((ræekke == c1)||(ræekke == c2)){
+            samletResult.text = NSString(format: "Σ%.1f", Calculate(c1) + Calculate(c2)) as String
+        }
+
     }
     
     @IBAction func Reset(sender: AnyObject) {
-        container[0][0][0][0][ræekke][0] = tom
-        container[0][0][0][0][ræekke][1] = tom
-        container[0][0][0][0][ræekke][2] = tom
-        container[0][0][0][0][ræekke][3] = tom
-        container[0][0][0][0][ræekke][4] = tom
-        container[0][0][0][0][ræekke][5] = tom
-        container[0][0][0][0][ræekke][6] = tom
-        container[0][0][0][0][ræekke][7] = tom
-        
+
         if ((ræekke == 0)||(ræekke == 1)){
-            
+            container[0][0][0][0][ræekke][4] = tom
+            container[0][0][0][0][ræekke][5] = tom
+            container[0][0][0][0][ræekke][6] = tom
+            container[0][0][0][0][ræekke][7] = tom
             momentTitleFive.text = container[0][0][0][0][ræekke][4]
             momentTitleSix.text = container[0][0][0][0][ræekke][5]
             momentTitleSeven.text = container[0][0][0][0][ræekke][6]
             momentTitleEight.text = container[0][0][0][0][ræekke][7]
         }
         else {
+            container[0][0][0][0][ræekke][0] = tom
+            container[0][0][0][0][ræekke][1] = tom
+            container[0][0][0][0][ræekke][2] = tom
+            container[0][0][0][0][ræekke][3] = tom
+            container[0][0][0][0][ræekke][4] = tom
+            container[0][0][0][0][ræekke][5] = tom
+            container[0][0][0][0][ræekke][6] = tom
+            container[0][0][0][0][ræekke][7] = tom
             momentTitleOne.text = container[0][0][0][0][ræekke][0]
             momentTitleTwo.text = container[0][0][0][0][ræekke][1]
             momentTitleThree.text = container[0][0][0][0][ræekke][2]
@@ -476,6 +524,7 @@ class Beregner: UIViewController {
             momentTitleEight.text = container[0][0][0][0][ræekke][7]
         
         }
+        pasteResult()
     }
 
 }
